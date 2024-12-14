@@ -1,6 +1,14 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: Home
 ---
+
+{% assign latest_post = site.posts.first %}
+
+# {{ latest_post.title }}
+
+<small>Posted on {{ latest_post.date | date: "%B %d, %Y" }}</small>
+
+<p>{{ latest_post.excerpt | strip_html }}</p>
+
+<a href="{{ latest_post.url }}">Read more</a>
