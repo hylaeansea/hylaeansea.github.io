@@ -1,11 +1,9 @@
 ---
 layout: post
 title:  "An Exploration of the Seed of a Project"
-date:   2024-12-14 09:27:02 +0000
+date:   2024-12-19 10:00:00.000 +0000
 categories: blog
 ---
-
-# Introduction and Motivation
 
 This blog is an experiment in response to my taking of the [Blue Dot Impact AI Alignment](https://aisafetyfundamentals.com/alignment/). In this course we get the oprotunity to study various definitions and approaches to AI alignment and then apply them to a project of our choosing in the final month of the class. The course work included techniques such as Reinforcement Learning from Human Feedback (RLHF), Constitutional AI, Mechanisitic Interpretability, and many more. The coursework was intended to provide a broad overview and then allow the students do dive into a field of their choosing. I was particularly intrigued by the discussion around and attempts to understand higher level cognition within a large laguage model as there seems to be a high level of debate about 1) how LLMs represent abstractions internal to the model, and 2) alignment techniques that operate on this level. I wanted to explore this a bit more through my project, however the time constraint of 4 weeks seems rather aggressive to acomplish anything meaningful in this area.
 
