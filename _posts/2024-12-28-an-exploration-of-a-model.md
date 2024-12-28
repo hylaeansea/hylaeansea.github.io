@@ -7,7 +7,8 @@ categories:
 
 ## A Refinement of the Idea
 
-The germ of the idea was computational policy; policy, regulations, social norms, rules, principles, that are by default implemented as natural language and encoded as such. These filaments of language make up the bounding shapes of how our society functions, what is possible, what is not, and a means to shape that. These rules are in some cases as hard and fast as the rules of physics, or chemistry, or biology in the way that they can affect our everyday lives. Several papers and highly successful (read Nobel Prize winning) applications of teaching neural networks about the physical sciences have been well documented in the literature. These neural networks are trained to control the configurations of physical systems and then simulations are run, or in some cases the neural network is the simulation 
+The germ of the idea was computational policy; policy, regulations, social norms, rules, principles, that are by default implemented as natural language and encoded as such. These filaments of language make up the bounding shapes of how our society functions, what is possible, what is not, and a means to shape that. These rules are in some cases as hard and fast as the rules of physics, or chemistry, or biology in the way that they can affect our everyday lives. Several papers and highly successful (read Nobel Prize winning) applications of teaching neural networks about the physical sciences have been well documented in the literature. These neural networks are trained to control the configurations of physical systems and then simulations are run, or in some cases the neural network is the simulation **TODO - Look at how alpha fold is actually implemented**. 
+
 
 
 
