@@ -9,6 +9,6 @@ title: Home
 
 <small>Posted on {{ latest_post.date | date: "%B %d, %Y" }}</small>
 
-<p>{{ latest_post.excerpt | strip_html }}</p>
+<p>{{ latest_post.content }}</p>
 
 <a href="{{ latest_post.url }}">Read more</a>
