@@ -16,6 +16,7 @@ Exploring grid or agent-based models is an excellent way to understand complex s
 
 These models can be explored using platforms such as NetLogo, Repast, or even coding from scratch in Python. They provide insights into how local interactions cascade into systemic effects, making them useful for assessing computational policy impacts.
 
+# Are there models that focus on tech adoption,
 
 Yes, there are several models that focus on technology adoption, which can be adapted to explore how policies influence the diffusion of new technologies. Here are some examples:
 
@@ -219,3 +220,43 @@ Here's how you can do it:
    ```
 
 If you encounter any errors, double-check the syntax and ensure that libraries are correctly installed. If there's a specific error you're running into, let me know, and I can help troubleshoot it!
+
+# What is a erdos_renyi_graph?
+
+The Erdős-Rényi graph is a type of random graph model used to analyze and understand how networks form. It is named after mathematicians Paul Erdős and Alfréd Rényi, who introduced this concept. There are two closely related models often associated with Erdős-Rényi:
+
+1. **\(G(n, p)\) Model**: In this model, a graph is constructed by starting with \(n\) isolated nodes. Then, each possible pair of nodes is connected by an edge with a probability \(p\). This makes the presence of each edge independent from all others, and the number of edges follows a binomial distribution.
+
+2. **\(G(n, M)\) Model**: In this variation, a graph is constructed by starting with \(n\) isolated nodes and then adding \(M\) edges selected uniformly at random from the set of all possible edges. This results in a graph with exactly \(M\) edges.
+
+### Characteristics of the Erdős-Rényi Graph:
+
+- **Average Degree**: The expected degree of a node in a \(G(n, p)\) graph is \(np\). This means that, on average, each node is connected to \(np\) others.
+
+- **Connectivity**: As \(p\) increases, the graph is more likely to be connected. There exists a critical threshold for \(p\) around \(\frac{\log(n)}{n}\) where the graph transitions from being mostly disconnected to mostly connected.
+
+- **Degree Distribution**: In an Erdős-Rényi graph, the degree distribution follows a binomial distribution, which can be approximated by a Poisson distribution if \(n\) is large and \(p\) is small.
+
+- **Applications**: Erdős-Rényi graphs are used in various fields, including social network analysis, biology, and computer science, to model and study the behavior of complex networks.
+
+### Implementation in Python:
+
+Using the NetworkX library, you can readily create an Erdős-Rényi graph with the `erdos_renyi_graph` function:
+
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
+# Parameters
+n = 100  # number of nodes
+p = 0.1  # probability of edge creation
+
+# Create an Erdős-Rényi graph
+G = nx.erdos_renyi_graph(n, p)
+
+# Draw the graph
+nx.draw(G, with_labels=True, node_color='lightblue', edge_color='gray')
+plt.show()
+```
+
+This simple script creates a graph with 100 nodes, where each possible edge is included independently with a probability of 0.1. You can visualize the graph using the `matplotlib` library.
