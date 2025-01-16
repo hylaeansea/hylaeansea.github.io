@@ -7,6 +7,8 @@ categories: blog
 
 # Jupyter notebook for AI Tech Adoption
 
+This is merely a quick rip of my working notebook to an html to get it documented on the site - 
+
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
