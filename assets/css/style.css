@@ -1,0 +1,23 @@
+<style>
+.prompt-box {
+    border: 2px solidrgb(54, 56, 54); 
+    padding: 10px; 
+    border-radius: 5px; 
+    background-color:rgb(215, 191, 255); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
+}
+.chatgpt-4o-box {
+    border: 2px solidrgb(54, 56, 54); 
+    padding: 10px; 
+    border-radius: 5px; 
+    background-color:rgb(202, 235, 194); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
+}
+.llama-box {
+    border: 2px solidrgb(54, 56, 54); 
+    padding: 10px; 
+    border-radius: 5px; 
+    background-color:rgb(209, 209, 209); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
+}
+</style>
