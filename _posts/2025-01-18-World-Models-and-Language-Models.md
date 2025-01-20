@@ -44,7 +44,7 @@ Through the course of this project, I attempted to answer the question:
 
 ***Can we make policy computable?***
 
-I conjecture that many of the tasks that Large Language Models are relatively good at, tend to also be relatively easy to verify the correctness of the output. Testing whether code compiles, having a bilingual human verify a translation, determining if re-written prose sounds better, or a generated poem conforms to rhyme and meter, are all tasks that can be done by humans with relative ease or verified computationally with relative ease.
+**Conjecture 1:** Many of the tasks that Large Language Models are relatively good at, tend to also be relatively easy to verify the correctness of the output. Testing whether code compiles, having a bilingual human verify a translation, determining if re-written prose sounds better, or a generated poem conforms to rhyme and meter, are all tasks that can be done by humans with relative ease or verified computationally with relative ease.
 
 The other major factor in the quality of an LLM response, is of course the prevalence of a large volume of high quality training data. The examples above also satisfy this criteria; many examples of code that compiles, many examples of well written prose, and many examples of good poetry that conforms to the standards of the craft.
 
@@ -207,8 +207,6 @@ Key Elements of a Public Policy to Maximize AI Adoption
 </details>
 </div>
 
-
-
 These responses are coherent, have good diverse suggestions, and seem like they would be good public policy recommendations to increase the general public's understanding and use of emerging AI. However, they lack specific policy details like funding levels, distribution of tech and benefits amongst society, the ability to deal with specific alignment issues, and the relationship between AI companies, the public, and regulating bodies. This is not a critique of these initial responses, and the next logical prompt would be to focus on a specific area of the policy and refine the details.
 
 If we look at prompts to focus on AI education but for two different cities, we see largely similar responses.
@@ -302,7 +300,6 @@ Cost, Admission, Equity, Community Resources, Hurdles
 </div>
 <br>
 
-# Motivation
 We can see from these responses to nearly identical prompts that there are possibly some relevant differences, like cost for the different sized populations, a slight difference in low and middle income emphasis, and some more detail (or at least different formatting) for the engagement of community resources. However, reflecting on my original conjecture:
 
 * *How do we know how well these policies will work?*
@@ -310,10 +307,19 @@ We can see from these responses to nearly identical prompts that there are possi
 * *Is there a better way to bake this knowledge into our LLMs, rather than whole internet base training, followed by fine tuning and alignment?*
 * In short: ***Can we make policy computable?***
 
+This is merely a motivating example, and we need to spend a little time hypothesizing why computable policy might be useful.
 
 ## Why would computable policy be useful?
 
+It is interesting to note that with all of the compute ability that our society possesses, the very structure, law, rules, regulations, and much of written culture is expressed as natural language. A quick internet search on computable policy reveal a handful of relatively modern examples (more on this below), however the most foundational structure of our society, legals system, economic policy, and social policy is defined in a language that does not lend itself to computation. Of course the main topic of this project is exploring Large Language Models and of course the tokenization and processing through transformer networks of natural language is a form of computation. However we are interested in how policies, laws, and regulations transform into economic benefit, equality, enhanced education, and justice, rather than the next tokens of text. 
+
+**Conjecture 2:** By linking natural language policy statements with economic simulations, followed by expression of qualitative or quantitative expressions of value, we can create a training corpus of natural language prompts and responses in order to fine tune LLMs to learn knowledge gained from these simulations.
+
+**Conjecture 3:** LLMs themselves, or agentic systems, can be used to generate these simulations and develop interfaces to specify the policy rules in code, run the simulation with variations on this input, and interpret results back as natural language. By having LLMs develop these external models of society and policy, they can learn knowledge that is not learned during model pre training.
+
 ## Existing work on computable policy and world models
+
+Throughout my investigation for this project I have found many examples of connection
 
 # Methods of Investigation
 
