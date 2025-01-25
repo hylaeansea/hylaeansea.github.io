@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "World Models and Language Models, a Philosophy"
-date:   2025-01-18 08:17:00 +0000
+date:   2025-01-25 16:05:00 +0000
 categories: blog
 ---
 
@@ -117,294 +117,434 @@ My hope is that through these steps I can demonstrate how LLMs can be used to no
 
 A quick disclaimer: I have only interest but no backround in public policy, or public tech policy. Furthermore, I will be exploring only toy models that are not fully descriptive of the complex dynamics, economics, and interactions in public policy analysis. Nevertheless, I think that this project serves as an interesting jumping off point for world model generation in this way, I if I can motivate the true public policy and social computing professionals to think about some of my proposed philosophy this will be a success. With that...*lets go!*
 
-# Results
+# Generating Public Policy with LLMs
 
-## Generating Public Policy with LLMs
-
-In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses. 
+In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses, as well as differences and similarities between models. As stated above, the paper will use as a use case, public policy to increase AI tech adoption across different cross sections of society. 
 
 ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
 *Figure 1: LLM Based Policy Generation and Iteration*
 
+## High level National Policy
 
 <div class="prompt-box">
-<b>Prompt</b>: What are key elements of a public policy to maximize the uptake and adoption of AI technology by the maximum number of people? Be Specific.
+<b>Prompt</b>: Generate a high level public policy that increases the use and adoption of AI across as many sectors of society as possible. Include specific recommendations and key points of the policy.
 </div>
-
-Some example responses include:
+<br>
 
 <div class="chatgpt-4o-box">
-    <b>ChatGPT 4o</b>: Its response focuses on Education, Accessibility, Infrastructure, Trust, Public Awareness, and other suggestions. These categories have a couple of simple bullet points, however this response remains high level.
+    <b>ChatGPT 4o</b>: Public Policy: "AI for All Initiative: Accelerating the Adoption of Artificial Intelligence Across Sectors"
 
 <details>
   <summary>
     Click here for full text of response
   </summary>
-<hr>
-Key Elements of a Public Policy to Maximize AI Adoption
-<br>
-<h3>1. Education and Skills Development</h3>
-<ul>
-    <li><strong>AI Literacy Programs:</strong> Introduce AI literacy in school curricula and adult education programs to demystify the technology.</li>
-    <li><strong>Reskilling Initiatives:</strong> Provide training and certifications in AI-related skills for workers displaced by automation.</li>
-    <li><strong>Community Workshops:</strong> Offer free or low-cost workshops and online courses tailored to different demographics, especially underserved communities.</li>
-</ul>
 
-<h3>2. Accessibility and Affordability</h3>
-<ul>
-    <li><strong>Subsidies for AI Tools:</strong> Provide financial assistance or tax incentives for small businesses and individuals to purchase AI software and hardware.</li>
-    <li><strong>Open-Source Initiatives:</strong> Promote the development and availability of open-source AI tools and platforms.</li>
-    <li><strong>Digital Inclusion Programs:</strong> Expand access to the internet and devices in rural and low-income areas.</li>
-</ul>
+### Public Policy: "AI for All Initiative: Accelerating the Adoption of Artificial Intelligence Across Sectors"
 
-<h3>3. Infrastructure Development</h3>
-<ul>
-    <li><strong>High-Speed Internet:</strong> Invest in nationwide broadband infrastructure to ensure equitable access.</li>
-    <li><strong>Cloud Computing Resources:</strong> Provide access to shared computing resources, such as public AI supercomputing hubs.</li>
-    <li><strong>Data Sharing Frameworks:</strong> Create secure and ethical data-sharing platforms to support AI innovation.</li>
-</ul>
+**Objective:**  
+To maximize the adoption, responsible use, and benefits of artificial intelligence (AI) across all sectors of society while ensuring equitable access, economic growth, workforce preparedness, and ethical governance.
 
-<h3>4. Trust and Ethics</h3>
-<ul>
-    <li><strong>Regulation of Bias and Fairness:</strong> Enforce clear guidelines to reduce bias in AI algorithms and ensure fair outcomes.</li>
-    <li><strong>Transparent AI Policies:</strong> Mandate that organizations disclose how AI systems make decisions.</li>
-    <li><strong>Consumer Protections:</strong> Develop robust policies for data privacy, security, and accountability.</li>
-</ul>
+---
 
-<h3>5. Financial Incentives</h3>
-<ul>
-    <li><strong>Tax Credits:</strong> Offer tax benefits to businesses that adopt AI technologies for productivity or innovation.</li>
-    <li><strong>Grants for Startups:</strong> Provide funding to AI startups and small businesses to encourage experimentation and deployment.</li>
-    <li><strong>Public-Private Partnerships:</strong> Foster collaborations between government, academia, and industry to lower the costs of AI adoption.</li>
-</ul>
+### **Key Policy Components:**
 
-<h3>6. Public Awareness Campaigns</h3>
-<ul>
-    <li><strong>Showcase Success Stories:</strong> Highlight how AI is being used to solve real-world problems in diverse fields such as healthcare, agriculture, and education.</li>
-    <li><strong>Address Fears:</strong> Run campaigns that address concerns about job displacement and AI risks, focusing on its potential benefits.</li>
-</ul>
+#### **1. Infrastructure Development**
+- **AI Hubs:** Establish AI innovation hubs in key regions to provide centralized resources, training, and R&D facilities. Partner with universities, private organizations, and governments to build these hubs.
+- **Cloud Computing Accessibility:** Subsidize access to high-performance computing (HPC) platforms, cloud AI services, and data storage for startups, SMEs, and public organizations.
+- **5G and IoT Expansion:** Accelerate the deployment of 5G networks and IoT infrastructure to enhance real-time AI applications in areas like healthcare, transportation, and agriculture.
 
-<h3>7. Sector-Specific Support</h3>
-<ul>
-    <li><strong>Tailored Adoption Programs:</strong> Develop sector-specific AI adoption guidelines and tools (e.g., for healthcare, education, manufacturing).</li>
-    <li><strong>Incubators and Sandboxes:</strong> Establish environments where businesses can test AI solutions under regulatory guidance.</li>
-</ul>
+#### **2. Workforce and Education**
+- **AI Education in Schools:** Introduce AI-focused curricula in schools starting at the primary level, emphasizing critical thinking, coding, and ethics.
+- **Upskilling Programs:** Fund large-scale, government-sponsored upskilling and reskilling programs for workers in at-risk industries, focusing on AI literacy and related technical skills.
+- **AI Fellowships and Grants:** Provide scholarships, fellowships, and grants for students and professionals pursuing careers in AI and adjacent fields.
+- **Public AI Awareness Campaigns:** Run national campaigns to demystify AI, highlight its benefits, and build trust in AI systems.
 
-<h3>8. Inclusive Design and Participation</h3>
-<ul>
-    <li><strong>Localized Solutions:</strong> Support AI development tailored to local languages, cultural norms, and regional needs.</li>
-    <li><strong>Community Involvement:</strong> Involve diverse stakeholders, including marginalized communities, in the design and implementation of AI policies.</li>
-</ul>
+#### **3. Sector-Specific Implementation Programs**
+- **Healthcare:** Develop national frameworks for AI-driven healthcare systems, such as predictive diagnostics, personalized treatment plans, and telemedicine platforms.
+- **Agriculture:** Promote AI for precision agriculture, crop monitoring, and resource optimization to enhance food security and reduce environmental impact.
+- **Transportation:** Encourage the adoption of AI-powered systems for traffic management, autonomous vehicles, and public transit optimization.
+- **Small Businesses:** Create an "AI Adoption Fund" offering grants and low-interest loans to SMEs for integrating AI into their operations.
+- **Public Services:** Deploy AI tools for improving the efficiency of government services, public safety, and environmental monitoring.
 
-<h3>9. Incentivizing Research and Development</h3>
-<ul>
-    <li><strong>Academic Funding:</strong> Increase funding for AI research in public universities and institutions.</li>
-    <li><strong>Cross-Border Collaboration:</strong> Partner with international entities to share knowledge and resources.</li>
-</ul>
+#### **4. Ethical and Regulatory Frameworks**
+- **AI Governance Standards:** Develop and enforce ethical AI principles focusing on transparency, fairness, accountability, and privacy.
+- **Bias Mitigation:** Establish independent review boards to evaluate and mitigate AI bias in critical applications like hiring, lending, and law enforcement.
+- **Data Privacy:** Strengthen data protection laws to ensure that individuals’ data is used ethically and securely in AI systems.
+- **Explainable AI Mandates:** Require that high-impact AI applications provide transparent and explainable outputs.
 
-<h3>10. Monitoring and Evaluation</h3>
-<ul>
-    <li><strong>Impact Assessment Frameworks:</strong> Continuously evaluate the societal and economic impact of AI adoption.</li>
-    <li><strong>Feedback Mechanisms:</strong> Set up channels for public feedback to iteratively improve AI policies.</li>
-</ul>
+#### **5. Research and Development (R&D)**
+- **National AI R&D Fund:** Allocate a significant budget to fund breakthrough research in AI technologies, with a focus on societal benefit.
+- **Public-Private Partnerships:** Foster collaborations between government, academia, and industry to accelerate AI innovation.
+- **Open-Source AI:** Promote the development and adoption of open-source AI frameworks to democratize access and reduce barriers for innovators.
 
-<h3>Implementation Strategy</h3>
-<ul>
-    <li><strong>Pilot Programs:</strong> Roll out pilot projects in targeted communities to test policies and adjust based on outcomes.</li>
-    <li><strong>Scalable Models:</strong> Focus on scalable models for AI deployment to maximize reach.</li>
-</ul>
+#### **6. International Collaboration**
+- **Global AI Standards:** Work with international organizations to develop and adopt global AI standards for ethics, safety, and interoperability.
+- **Knowledge Sharing:** Participate in global AI knowledge-sharing platforms and partnerships to access cutting-edge research and practices.
+- **Technology Transfer:** Facilitate AI technology transfer to developing nations to ensure global equity in AI benefits.
 
-<h3>Legal and Policy Support</h3>
-<ul>
-    <li><strong>Legal Frameworks:</strong> Simplify compliance requirements for AI technology adoption while maintaining ethical standards.</li>
-    <li><strong>AI Ombudsman:</strong> Create an independent body to address grievances and ensure fair AI implementation.</li>
-</ul>
+#### **7. Incentives for Adoption**
+- **Tax Benefits:** Offer tax credits and deductions for organizations adopting AI technologies or conducting AI R&D.
+- **Recognition Programs:** Create awards and certifications for businesses and public organizations that demonstrate exemplary use of AI to solve societal challenges.
+- **Procurement Policies:** Implement government procurement policies that prioritize vendors leveraging AI to improve efficiency and sustainability.
 
+#### **8. Monitoring and Evaluation**
+- **Impact Assessments:** Regularly assess the societal, economic, and environmental impact of AI deployment.
+- **AI Readiness Index:** Publish an annual "AI Readiness Index" to track progress in AI adoption across sectors and regions.
+- **Feedback Mechanisms:** Establish channels for public and industry feedback to continuously refine AI-related policies.
 
+---
+
+### **Expected Outcomes:**
+- Enhanced productivity and innovation across all sectors.
+- Creation of new industries and job opportunities, mitigating the risks of automation displacement.
+- Improved public services, healthcare, and environmental sustainability.
+- A globally competitive AI ecosystem with strong ethical foundations.
+
+This policy framework aims to ensure that AI becomes a transformative tool for societal progress while addressing risks and ensuring inclusivity.
 </details>
 
 </div>
 
+
+<br>
 <div class="llama-box">
-
-<b>llama3.1:8b</b> provided fewer focus elements than <b>o4</b>, however they were similar: Education, Infrastructure, Regulation, and Economic Incentives. Similarly to <b>4o</b>, <b>llama3.1:8b</b> remains at a high level without much detail.
+    <b>Llama3.1:8b</b>: Public Policy: "Accelerating the Adoption of Artificial Intelligence for Economic Growth and Social Progress"
 
 <details>
   <summary>
     Click here for full text of response
   </summary>
-    <hr>
-    To maximize the uptake and adoption of AI technology by the maximum number of people, a public policy should include the following key elements:
-    <br>
-    <h3><strong>I. Infrastructure and Accessibility</strong></h3>
-    <ol>
-        <li><strong>Universal Broadband</strong>: Ensure that all households have access to high-speed internet (at least 100 Mbps) to facilitate AI-powered applications.</li>
-        <li><strong>Digital Literacy Training</strong>: Provide training programs for individuals to develop basic digital skills, including understanding of AI concepts and how to use AI-enabled devices.</li>
-        <li><strong>Accessibility Standards</strong>: Implement accessibility standards for AI systems, ensuring that they can be used by people with disabilities.</li>
-    </ol>
+  **Public Policy: "Accelerating the Adoption of Artificial Intelligence for Economic Growth and Social Progress"**
 
-    <h3><strong>II. Education and Awareness</strong></h3>
-    <ol>
-        <li><strong>AI Education in Schools</strong>: Integrate AI education into school curricula, starting from primary level, to foster a generation of AI-literate individuals.</li>
-        <li><strong>Public Awareness Campaigns</strong>: Launch public awareness campaigns to educate citizens about the benefits, risks, and applications of AI technology.</li>
-        <li><strong>Research Grants</strong>: Provide research grants for academia and industry to develop AI-related educational materials and programs.</li>
-    </ol>
+**Objective:** To encourage the widespread adoption and utilization of Artificial Intelligence (AI) across various sectors of society, fostering economic growth, improving social outcomes, and enhancing quality of life.
 
-    <h3><strong>III. Regulations and Governance</strong></h3>
-    <ol>
-        <li><strong>Clear AI Regulations</strong>: Establish clear regulations and guidelines for AI development, deployment, and use in various sectors (e.g., healthcare, finance).</li>
-        <li><strong>Data Protection and Privacy</strong>: Strengthen data protection laws and regulations to safeguard citizens' personal data used by AI systems.</li>
-        <li><strong>Transparency and Accountability</strong>: Mandate transparency in AI decision-making processes and hold developers accountable for AI-related errors or harm.</li>
-    </ol>
+**Key Principles:**
 
-    <h3><strong>IV. Economic and Social Incentives</strong></h3>
-    <ol>
-        <li><strong>Tax Incentives</strong>: Offer tax incentives to businesses that invest in AI research, development, and deployment.</li>
-        <li><strong>Job Training Programs</strong>: Develop job training programs to upskill workers in areas where AI is transforming industries (e.g., manufacturing, customer service).</li>
-        <li><strong>Social Benefits</strong>: Provide social benefits, such as subsidies or vouchers, for low-income individuals who want to access AI-enabled services.</li>
-    </ol>
+1. **Invest in AI Education and Training**: Develop a comprehensive education system that equips students with AI literacy and programming skills, preparing them for the AI-driven workforce.
+2. **Foster an Enabling Regulatory Environment**: Implement policies that facilitate AI innovation while ensuring data protection, privacy, and safety.
+3. **Promote Public-Private Partnerships**: Encourage collaboration between governments, businesses, research institutions, and academia to accelerate AI adoption.
+4. **Develop Infrastructure for AI Adoption**: Invest in high-speed computing infrastructure, data storage, and networking capabilities to support AI development and deployment.
 
-    <h3><strong>V. Collaboration and Partnerships</strong></h3>
-    <ol>
-        <li><strong>Public-Private Partnerships</strong>: Foster partnerships between government agencies, industry leaders, and academia to drive AI innovation and adoption.</li>
-        <li><strong>AI Ecosystem Development</strong>: Encourage the development of AI ecosystems in various regions, promoting collaboration among startups, researchers, and businesses.</li>
-        <li><strong>Global Cooperation</strong>: Engage in international collaborations to establish global standards for AI development, deployment, and use.</li>
-    </ol>
+**Recommendations:**
 
-    <h3><strong>VI. Monitoring and Evaluation</strong></h3>
-    <ol>
-        <li><strong>Impact Assessment</strong>: Conduct regular impact assessments to evaluate the effectiveness of public policies on AI adoption and usage.</li>
-        <li><strong>Data Collection</strong>: Establish a data collection framework to monitor AI-related trends, challenges, and best practices.</li>
-        <li><strong>Continuous Review and Update</strong>: Regularly review and update policies as new evidence emerges or as AI technology evolves.</li>
-    </ol>
+1. **Establish an AI Advisory Council**: Form a council comprising experts from various fields to provide guidance on AI policy development and implementation.
+2. **Create an AI Innovation Fund**: Provide grants for businesses, startups, and research institutions to develop and deploy AI solutions addressing societal challenges.
+3. **Implement AI-Specific Tax Incentives**: Offer tax breaks to companies investing in AI R&D, training programs, or job creation related to AI adoption.
+4. **Develop AI-Related Workforce Development Programs**: Launch apprenticeships, vocational training, and certification programs for workers transitioning into AI-related roles.
+5. **Conduct Regular AI Impact Assessments**: Monitor and evaluate the effects of AI on employment, skills, and industry competitiveness, informing policy adjustments as needed.
 
-    <p>By incorporating these key elements, a public policy can effectively support the widespread adoption of AI technology and maximize its benefits for society as a whole.</p>
+**Sector-Specific Recommendations:**
+
+1. **Healthcare:** Invest in AI-powered healthcare platforms, electronic health records systems, and medical imaging analysis tools to improve patient outcomes and streamline care delivery.
+2. **Transportation:** Promote the adoption of autonomous vehicles, traffic management systems, and smart logistics solutions to enhance safety, efficiency, and mobility.
+3. **Education:** Develop AI-driven educational platforms for personalized learning, adaptive curricula, and virtual teaching assistants to support student success.
+4. **Energy and Environment:** Leverage AI in renewable energy integration, energy efficiency monitoring, and environmental monitoring systems to mitigate climate change impacts.
+5. **Agriculture:** Utilize precision agriculture techniques, AI-optimized crop management, and livestock tracking systems to boost food production, reduce waste, and enhance resource usage.
+
+**Key Performance Indicators (KPIs):**
+
+1. **AI Adoption Rate**: Monitor the number of businesses and individuals adopting AI solutions across various sectors.
+2. **Job Creation in AI-Related Fields**: Track job growth in AI-related industries, such as data science, software engineering, and research.
+3. **AI Research Output**: Measure the increase in peer-reviewed publications, patents, and innovations related to AI development.
+4. **Economic Growth**: Assess the impact of AI adoption on GDP growth, productivity, and competitiveness.
+5. **Social Outcomes**: Evaluate AI's effects on education outcomes, healthcare access, and environmental sustainability.
+
+**Implementation Plan:**
+
+1. **Short-Term (0-2 years)**:
+	* Establish the AI Advisory Council
+	* Launch AI Innovation Fund
+	* Develop workforce development programs
+2. **Medium-Term (2-5 years)**:
+	* Implement tax incentives for AI-related investments
+	* Conduct regular AI impact assessments
+	* Develop sector-specific AI strategies and pilots
+3. **Long-Term (5+ years)**:
+	* Evaluate policy effectiveness and adjust as needed
+	* Expand the AI Innovation Fund and workforce development programs
+	* Establish a national AI strategy to guide future policy decisions
+
+**Budget Allocation:**
+
+1. **AI Education and Training**: 20%
+2. **Regulatory Framework Development**: 15%
+3. **Public-Private Partnerships**: 20%
+4. **Infrastructure Development**: 25%
+5. **Research and Development**: 10%
+
+This comprehensive public policy aims to accelerate the adoption of AI across various sectors, addressing societal challenges while fostering economic growth and social progress.
+
 </details>
+
 </div>
 
-These responses are coherent, have good diverse suggestions, and seem like they would be good public policy recommendations to increase the general public's understanding and use of emerging AI. However, they lack specific policy details like funding levels, distribution of tech and benefits amongst society, the ability to deal with specific alignment issues, and the relationship between AI companies, the public, and regulating bodies. This is not a critique of these initial responses, and the next logical prompt would be to focus on a specific area of the policy and refine the details.
+<br>
+<div class="claude-box">
+    <b>Claude 3.5 Haiku</b>: National AI Integration and Development Policy
 
-If we look at prompts to focus on AI education but for two different cities, we see largely similar responses.
+<details>
+  <summary>
+    Click here for full text of response
+  </summary>
+Here's a comprehensive AI Adoption and Integration Public Policy Framework:
 
-<div class="prompt-box">
-provide a specific policy for the increasing of education on AI for <b>Denver</b> Public Schools, focus on program cost, student admittance, whether it should focus on low and middle income schools, use of other resources in the community and provide hurdles to this implementation, please write the response in html with the highest level of header being h2
+# National AI Integration and Development Policy
+
+## Core Objectives
+- Accelerate responsible AI adoption across public and private sectors
+- Develop robust national AI infrastructure and capabilities
+- Create adaptive regulatory frameworks supporting innovation
+- Ensure ethical and safe AI implementation
+
+## Key Policy Recommendations
+
+### 1. National AI Education and Workforce Development
+- Mandate AI literacy and skills training in K-12 and higher education curricula
+- Create federal grants for AI skills retraining programs
+- Develop standardized AI competency certification frameworks
+
+### 2. Research and Innovation Incentives
+- Establish substantial research funding for AI technologies
+- Provide tax credits for AI R&D investments
+- Create public-private AI innovation partnerships
+- Support emerging AI startups through dedicated venture funding
+
+### 3. Sector-Specific AI Integration Strategies
+- Healthcare: Accelerate AI diagnostic and treatment optimization
+- Government: Implement AI for administrative efficiency and service delivery
+- Manufacturing: Support AI-driven automation and process optimization
+- Agriculture: Develop precision farming and crop management technologies
+- Transportation: Advance autonomous vehicle and logistics technologies
+
+### 4. Regulatory Framework
+- Create adaptive AI governance structures
+- Develop clear ethical guidelines for AI development
+- Establish robust data privacy and algorithmic transparency standards
+- Design risk assessment protocols for high-impact AI applications
+
+### 5. Infrastructure Investment
+- Build high-performance computing networks
+- Develop secure, interoperable AI data platforms
+- Support advanced semiconductor and computational infrastructure
+
+### 6. International Collaboration
+- Lead global AI standards and cooperation initiatives
+- Facilitate international AI research exchanges
+- Promote responsible AI development principles globally
+
+### Implementation Mechanism
+- Create a cross-ministerial AI Strategy Board
+- Annual policy review and adaptation process
+- Dedicated federal AI implementation budget
+
+The policy aims to position the nation as a global leader in responsible, innovative AI integration across society.
+</details>
+
 </div>
+<br>
+Each model's response to this (admitedly) very high level prompt is available in the boxes above. Some of the main similarities include a focus on 1) education and upskilling, 2) governance, 3) incentives, and 4) infrastructure. These response are again, very high level, however they do provide some details on specific infrastructure that is needed, some specific details around budget (only llama3.1) and on technology emphasis. Further prompts (not all shown to keep this document manageable) about the reasons for the specific tech recomendations produced a couple interesting results:
+
+* When further prompts to Claude asked why it chose to focus on HPC and if centralized or decentralized data centers were preferred, it replied:
+<br>
+<div class="claude-box">
+    <b>Claude 3.5 Haiku</b>: Distributed HPC approach is superior. Reasons:
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+Distributed HPC approach is superior. Reasons:
+
+1. Decentralization benefits
+- Reduces single point of failure risks
+- Democratizes computational access
+- Increases overall national computational resilience
+
+2. Local ecosystem advantages
+- Universities can specialize in domain-specific research
+- K-12 schools develop computational skills early
+- Local research groups/communities drive innovation
+- Reduces geographical computational inequality
+
+3. Cost-effectiveness 
+- Shared infrastructure reduces individual investment burdens
+- Allows flexible, modular computational resource scaling
+- Encourages collaborative computational resource sharing
+
+Recommended strategy: Create national framework incentivizing distributed HPC network with standardized interoperability protocols, while providing funding and technical support for local infrastructure development.
+</details>
+
+</div>
+<br>
+* When further prompted about the most important piece of its policy, ChatGPT-4o replied:
 
 <div class="chatgpt-4o-box">
-<b>ChatGPT-4o</b> - Policy for Expanding AI Education in Denver Public Schools
+    <b>ChatGPT 4o</b>: The **most important aspect** to focus on for maximizing AI adoption and unlocking its economic benefits is **education, awareness, and workforce readiness**. Here's why:
+
 <details>
-<summary>
-Cost, Admission, Community Resources, Hurdles
-</summary>
-    <h3>Program Cost</h3>
-    <p>The estimated cost for the program is $2.5 million annually. This includes curriculum development, teacher training, purchasing technology (computers, AI software), and funding extracurricular activities such as AI clubs or hackathons. Additional funding will be allocated for partnerships with local tech companies and universities.</p>
+    <summary>
+    Click here for full text of response
+    </summary>
 
-    <h3>Student Admittance</h3>
-    <p>Admission to the program will be open to all students in Denver Public Schools. However, priority will be given to students from low- and middle-income backgrounds to ensure equitable access to AI education. Outreach efforts will focus on underrepresented groups in STEM fields, including girls and minorities.</p>
 
-    <h3>Focus on Low and Middle-Income Schools</h3>
-    <p>The program will initially target low and middle-income schools where access to technology and advanced STEM education is limited. By addressing educational disparities, the program aims to bridge the digital divide and prepare students for future opportunities in AI-related fields.</p>
+### **Why Focus on Education, Awareness, and Workforce Readiness?**
+1. **Breaking Barriers to Adoption:**
+   - Many people and organizations hesitate to adopt AI because they don’t understand it, feel intimidated, or perceive it as a threat to jobs.
+   - By demystifying AI and building widespread AI literacy, individuals and organizations are more likely to adopt the technology.
 
-    <h3>Utilizing Community Resources</h3>
-    <ul>
-        <li><strong>Local Tech Companies:</strong> Collaborate with tech firms in Denver to provide mentorship, internships, and funding for resources.</li>
-        <li><strong>Universities:</strong> Partner with the University of Colorado and other institutions to develop a robust AI curriculum and offer dual-enrollment courses.</li>
-        <li><strong>Community Centers:</strong> Use existing community centers to host AI workshops and provide after-school programs.</li>
-        <li><strong>Nonprofits:</strong> Work with nonprofit organizations focused on STEM education to secure grants and additional resources.</li>
-    </ul>
+2. **Empowering Workers and Businesses:**
+   - Without a workforce equipped to use AI, even the most advanced technologies will remain underutilized.
+   - Upskilling workers and supporting SMEs to integrate AI ensures broad economic participation and reduces fears of automation-driven unemployment.
 
-    <h3>Hurdles to Implementation</h3>
-    <ul>
-        <li><strong>Funding:</strong> Securing sustainable funding may be challenging due to budget constraints and competing priorities within the school district.</li>
-        <li><strong>Teacher Training:</strong> There may be a shortage of educators with the expertise to teach AI effectively, necessitating significant investment in professional development.</li>
-        <li><strong>Infrastructure:</strong> Many schools, especially in low-income areas, may lack the necessary technology infrastructure to support AI education.</li>
-        <li><strong>Community Buy-In:</strong> Gaining support from parents, teachers, and local stakeholders may require extensive outreach and demonstration of the program's value.</li>
-        <li><strong>Equity Challenges:</strong> Ensuring equitable access and avoiding unintentional exclusion of marginalized groups will require careful planning and oversight.</li>
-    </ul>
+3. **Creating Trust and Social Buy-In:**
+   - A lack of trust in AI systems is a key adoption barrier. Public education campaigns that show tangible benefits of AI and address concerns (e.g., job displacement, privacy) build public confidence.
+
+4. **Expanding the Talent Pool:**
+   - Making AI education accessible increases the number of people who can develop, implement, and manage AI systems, ensuring a sustained pipeline of talent for economic growth.
+
+---
+
+### **Key Actions to Prioritize:**
+
+#### **1. National AI Literacy Programs**
+   - Launch free or low-cost online and offline AI training for all ages, from basic AI concepts to advanced technical skills.
+   - Partner with tech companies and universities to create tailored content for diverse groups (e.g., students, business leaders, workers in at-risk industries).
+
+#### **2. Upskilling the Workforce**
+   - Provide government-funded, industry-aligned AI reskilling programs for workers in automation-prone sectors.
+   - Offer incentives for businesses to retrain employees instead of replacing them with AI.
+
+#### **3. AI Awareness Campaigns**
+   - Run large-scale, engaging public campaigns showcasing real-world examples of AI improving lives (e.g., healthcare innovations, safer transportation, personalized education).
+   - Emphasize how AI creates new job opportunities and reduces repetitive, mundane work.
+
+#### **4. Support for Small Businesses and Entrepreneurs**
+   - Launch "AI Starter Kits" for SMEs, including easy-to-use tools, training, and access to consultants, helping them integrate AI without requiring advanced technical expertise.
+   - Subsidize AI implementation costs for small businesses to lower the financial barrier.
+
+#### **5. Early AI Education**
+   - Embed AI concepts into primary and secondary school curricula to prepare future generations.
+   - Promote AI clubs, hackathons, and competitions for young learners to build interest and skills early.
+
+---
+
+### **Expected Results of This Focus:**
+- **Broad Adoption:** A workforce and public that understand AI will be more willing and able to adopt it in their lives and workplaces.
+- **Economic Growth:** Businesses that integrate AI see higher productivity, cost savings, and competitive advantages, which translate into economic gains at a national scale.
+- **Social Equity:** Education and reskilling efforts ensure all communities, not just the affluent or urban ones, benefit from the AI revolution.
+
+By focusing on **education, workforce readiness, and awareness**, this policy ensures that AI is not only accessible but embraced by as many people and sectors as possible.
 </details>
+
 </div>
+<br>
+* Llama3.1 was the only model to mention specific industries that would benefit from AI adoption, when asked which is the one that stands to gain the most, it replied:
+<br>
+<div class="llama-box">
+    <b>Llama3.1:8b</b>: While AI has the potential to transform many industries, I'd argue that Healthcare stands to be transformed the most by increased adoption of AI. Here's why:
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+While AI has the potential to transform many industries, I'd argue that **Healthcare** stands to be transformed the most by increased adoption of AI. Here's why:
+
+1. **Data-Driven Decision Making**: Healthcare generates vast amounts of data from electronic health records (EHRs), medical imaging, and wearable devices. AI can help analyze this data to identify patterns, predict patient outcomes, and inform treatment decisions.
+2. **Personalized Medicine**: AI can help tailor treatments to individual patients based on their unique genetic profiles, medical histories, and lifestyle factors.
+3. **Predictive Analytics**: AI-powered predictive models can forecast patient outcomes, allowing for proactive interventions and reduced hospital readmissions.
+4. **Medical Imaging Analysis**: AI-assisted imaging analysis can improve diagnosis accuracy and reduce false positives/negatives in areas like cancer detection, cardiovascular disease, and neurology.
+5. **Clinical Research**: AI can help accelerate clinical trials by identifying relevant patient populations, streamlining data collection, and predicting trial outcomes.
+6. **Patient Engagement**: AI-powered chatbots and virtual assistants can enhance patient engagement, education, and adherence to treatment plans.
+7. **Operational Efficiency**: AI can optimize hospital workflows, streamline supply chain management, and reduce administrative burdens.
+
+**Potential AI Applications in Healthcare:**
+
+1. **Computer-aided diagnosis (CAD) systems**: Automated image analysis for diagnosing diseases like cancer, diabetic retinopathy, or cardiovascular disease.
+2. **Predictive modeling**: Forecasting patient outcomes, identifying high-risk patients, and optimizing resource allocation.
+3. **Virtual nursing assistants**: AI-powered chatbots to support patient care, answer questions, and provide medication reminders.
+4. **Personalized treatment planning**: AI-driven recommendations for tailored treatment plans based on individual patient characteristics.
+5. **Clinical decision support systems (CDSS)**: Real-time advice for healthcare professionals on diagnosis, treatment, and patient care.
+
+**Potential Benefits of Increased AI Adoption in Healthcare:**
+
+1. **Improved patient outcomes**
+2. **Reduced hospital readmissions**
+3. **Enhanced clinical trial efficiency**
+4. **Increased operational efficiency**
+5. **Better resource allocation**
+6. **Improved patient engagement and experience**
+
+While AI has the potential to transform many industries, its impact on healthcare is likely to be particularly significant due to the vast amounts of data generated in this sector and the need for more efficient, effective, and personalized care delivery.
+</details>
+
+</div>
+<br>
+I would say that the prompts at this high level were fairly diverse. While they did have several similarities, each model had unique atributes that the others did not. This shouldn't be entirely surprising as even the same model with the same prompt can (and often do) give varying responses. This highlights one of the strengths of LLMs: to provide a jumping off point for further investigation. Lets go one level deeper; all of the models emphasized AI upskilling and education, lets dive into that.
+
+## AI Up-skilling and Education
 
 <div class="prompt-box">
-provide a specific policy for the increasing of education on AI for <b>Boulder</b> Public Schools, focus on program cost, student admittance, whether it should focus on low and middle income schools, use of other resources in the community and provide hurdles to this implementation, please write the response in html with the highest level of header being h2
+    <b>Prompt</b>: You mention AI upskilling and education being a key component, can you further expand on 5 key aspects of your education policy? 
+</div>
+<br>
+<div class="chatgpt-4o-box">
+    <b>ChatGPT 4o</b>: 
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+
+</details>
+
+</div>
+<br>
+<div class="llama-box">
+    <b>Llama3.1:8b</b>: 
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+
+</details>
+
 </div>
 
-<div class="chatgpt-4o-box">
-<b>ChatGPT-4o</b> - Policy for Expanding AI Education in Boulder Public Schools
+<br>
+<div class="claude-box">
+    <b>Claude 3.5 Haiku</b>: 
+
 <details>
-<summary>
-Cost, Admission, Equity, Community Resources, Hurdles
-</summary>
-
-    <h2>AI Education Policy for Boulder Public Schools</h2>
-
-    <h3>Program Cost</h3>
-    <p>
-        The program is estimated to cost $500,000 annually, with funding allocated to teacher training, AI curriculum development, and equipment such as computers and software licenses. Grants from technology companies and state educational funds should be pursued to reduce the burden on the school district.
-    </p>
-
-    <h3>Student Admittance</h3>
-    <p>
-        The program should initially target middle and high school students with demonstrated interest in technology and science. Admission will be determined by teacher recommendations, application essays, and interest surveys to ensure students' commitment.
-    </p>
-
-    <h3>Focus on Low and Middle-Income Schools</h3>
-    <p>
-        The policy will prioritize low and middle-income schools to bridge the digital divide. Schools in these areas will receive additional resources, including outreach initiatives to inform students and parents about the benefits of AI education.
-    </p>
-
-    <h3>Use of Other Resources in the Community</h3>
-    <p>
-        Partnerships with local universities, tech companies, and libraries will provide additional support. These resources may include guest lectures, internships, AI-focused workshops, and access to advanced computing facilities.
-    </p>
-
-    <h3>Hurdles to Implementation</h3>
-    <ul>
-        <li><strong>Funding:</strong> Securing consistent funding from public and private sources could be challenging.</li>
-        <li><strong>Teacher Training:</strong> Current staff may lack the expertise to teach AI concepts, requiring extensive professional development.</li>
-        <li><strong>Curriculum Development:</strong> Crafting a relevant and engaging curriculum will take time and specialized knowledge.</li>
-        <li><strong>Equity:</strong> Ensuring all students have access to necessary hardware and internet connectivity at home may be difficult.</li>
-        <li><strong>Community Buy-In:</strong> Gaining support from parents, teachers, and administrators may require significant effort to highlight the program's benefits.</li>
-    </ul>
-
-    <p>
-        Implementing AI education in Boulder Public Schools will require careful planning and collaboration with community partners. By addressing funding and training challenges while focusing on equity, the district can create a robust program that benefits students and prepares them for future careers.
-    </p>
+    <summary>
+    Click here for full text of response
+    </summary>
 
 </details>
 
 </div>
 <br>
 
-We can see from these responses to nearly identical prompts that there are possibly some relevant differences, like cost for the different sized populations, a slight difference in low and middle income emphasis, and some more detail (or at least different formatting) for the engagement of community resources. However, reflecting on my original conjecture:
+Again there were some pretty strong similarities:
+1. AI literacy and education across all ages, K-12, University, and Adult
+2. A focus on reaching underserved groups and communities
+3. Upskilling in the workplace as well as in school
+4. Practical, hands on education
+5. Addressing alignment, ethical, and social education
 
-* *How do we know how well these policies will work?*
-* *What accounts for the differences between the policies for different municipalities?*
-* *Is there a better way to bake this knowledge into our LLMs, rather than whole internet base training, followed by fine tuning and alignment?*
-* In short: ***Can we make policy computable?***
+And some marked differences:
+1. ChatGPT-4o provided much more detail including specific curriculum elements, specific workforce sectors (which is intresting as it did not mention specific sectors in the high level prompt), and highlights grass roots efforts
+2. Llama3.1 mentions a direct integration of AI ethics into the curriculum rather than a standalone element.
+3. Claude 3.5 was rather brief with its response - This may have been due to the fact that the time of day of my inquiry was a high demand time and I did get a message that the responses would be made brief.
 
-This is merely a motivating example, and we need to spend a little time hypothesizing why computable policy might be useful.
+Again, the responses at this level were similar in some respects, however each one emphasized a different aspect of the policy. As an interesting aside, I wonder if in an agentic system that leverages several diverse LLMs to produce responses to a fairly complex prompt (like these), if the similarities can be viewed as a sort of voting mechanism to elicit the high level ideas that are the biggest priority. For example, if all three mention education and specifically life long education, maybe that can be used as an indication of where to expend resources. *Perhaps the topic of another paper*
 
-## Why would computable policy be useful?
 
-It is interesting to note that with all of the compute ability that our society possesses, the very structure, law, rules, regulations, and much of written culture is expressed as natural language. A quick internet search on computable policy reveal a handful of relatively modern examples (more on this below), however the most foundational structure of our society, legals system, economic policy, and social policy is defined in a language that does not lend itself to computation. Of course the main topic of this project is exploring Large Language Models and of course the tokenization and processing through transformer networks of natural language is a form of computation. However we are interested in how policies, laws, and regulations transform into economic benefit, equality, enhanced education, and justice, rather than the next tokens of text. 
-
-**Conjecture 2:** By linking natural language policy statements with economic simulations, followed by expression of qualitative or quantitative expressions of value, we can create a training corpus of natural language prompts and responses in order to fine tune LLMs to learn knowledge gained from these simulations.
-
-**Conjecture 3:** LLMs themselves, or agentic systems, can be used to generate these simulations and develop interfaces to specify the policy rules in code, run the simulation with variations on this input, and interpret results back as natural language. By having LLMs develop these external models of society and policy, they can learn knowledge that is not learned during model pre training.
-
-## Existing work on computable policy and world models
-
-Throughout my investigation for this project I have found many examples of connection
-
-# Methods of Investigation
-
-# Results
 
 # Discussion
 
 ## What does this mean for safety
 
-Talk about agentic and a diversity of specifically fine tuned models
 
 # Future Work
 
