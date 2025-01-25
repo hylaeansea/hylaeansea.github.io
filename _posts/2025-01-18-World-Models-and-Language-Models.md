@@ -488,6 +488,214 @@ I would say that the prompts at this high level were fairly diverse. While they 
 </div>
 <br>
 <div class="chatgpt-4o-box">
+    <b>ChatGPT 4o</b>: Certainly! Expanding on the education policy for AI upskilling and literacy, here are **5 key aspects** to ensure inclusivity, effectiveness, and long-term impact:
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+
+### **1. Comprehensive AI Literacy for All Ages**
+**Goal:** Build a society that understands and feels confident using AI.
+
+- **School Curricula Integration:**  
+  Introduce AI concepts progressively from primary school to high school:
+  - Primary Level: Fun, interactive modules on problem-solving, logic, and data basics (e.g., identifying patterns).
+  - Secondary Level: Coding, ethics of AI, and real-world AI applications like chatbots, robotics, or image recognition.
+  - Tertiary Level: Advanced technical programs on machine learning, data science, and AI entrepreneurship.
+  
+- **Adult Education:**  
+  Launch free or subsidized evening classes, workshops, and online courses tailored for adults in diverse sectors, ensuring they can use AI in their roles.
+
+- **Accessible Learning Materials:**  
+  Provide AI content in multiple languages, simplified for people with no technical background. Leverage engaging media formats like short videos, gamified apps, and interactive simulations.
+
+---
+
+### **2. Focused Workforce Reskilling Programs**
+**Goal:** Enable workers in vulnerable industries to transition into AI-related roles or augment their current roles with AI skills.
+
+- **Sector-Specific Programs:**  
+  Create tailored AI training programs for industries like:
+  - **Manufacturing:** AI-powered predictive maintenance and robotics operation.
+  - **Healthcare:** AI-based diagnostics, patient management, and data analytics.
+  - **Agriculture:** Precision farming using AI for yield optimization and pest control.
+
+- **Microcredentialing:**  
+  Offer short-term, stackable credentials (e.g., "AI for Business Managers," "AI in Retail") that workers can earn without committing to long, expensive degree programs.
+
+- **Public-Private Partnerships:**  
+  Collaborate with tech companies to co-design training programs and ensure skills taught match real-world demands.
+
+---
+
+### **3. AI Awareness Campaigns and Grassroots Initiatives**
+**Goal:** Increase public trust in AI and dispel myths or fears.
+
+- **Community AI Workshops:**  
+  Partner with libraries, NGOs, and local governments to hold grassroots workshops in underserved areas, explaining AI in a relatable, non-technical way.
+
+- **AI in Action Showcases:**  
+  Create interactive exhibitions showcasing how AI solves real problems—e.g., detecting diseases, optimizing traffic, or protecting the environment.
+
+- **Media Campaigns:**  
+  Use TV, social media, and radio to run engaging campaigns, focusing on how AI empowers individuals (e.g., farmers using AI to predict weather) and creates opportunities.
+
+---
+
+### **4. Empowering Teachers and Educators**
+**Goal:** Equip educators with the tools and knowledge to teach AI effectively.
+
+- **Teacher Training Programs:**  
+  Develop specific certifications for teachers in AI education, covering:
+  - How to introduce AI concepts in the classroom.
+  - Ethics and inclusivity in AI education.
+  - Project-based learning for students (e.g., building simple AI models).
+
+- **Ready-to-Use Resources:**  
+  Provide schools and educators with ready-made lesson plans, activity kits, and free software platforms to reduce preparation time.
+
+- **AI Mentorship Networks:**  
+  Pair teachers with AI experts or professionals to guide them in developing content and running AI-related projects.
+
+---
+
+### **5. Accessible AI Learning Platforms**
+**Goal:** Democratize access to AI learning resources, ensuring no one is left behind.
+
+- **Open Educational Platforms:**  
+  Create a free, government-supported AI education portal with tiered learning tracks:
+  - Beginners: Basic literacy and fun AI experiments (e.g., training a chatbot).
+  - Intermediate: Application of AI in various industries.
+  - Advanced: Machine learning and algorithm design.
+
+- **AI-Powered Personalized Learning:**  
+  Use adaptive AI systems on these platforms to personalize lessons for users based on their learning pace and goals.
+
+- **Hardware and Connectivity Support:**  
+  Provide free or subsidized laptops, tablets, or internet access to underserved communities so they can access these programs.  
+
+---
+
+### **How This Policy Creates Impact**
+1. **Widespread Literacy:** A foundational understanding of AI empowers individuals to adopt AI tools at work and home.
+2. **Job Creation:** Reskilled workers can transition to higher-paying AI-related roles, fueling economic growth.
+3. **Equity:** Accessible education reduces the digital divide, ensuring rural and underserved communities can benefit from the AI revolution.
+4. **Trust:** Increased awareness and understanding reduce skepticism and resistance to AI adoption.
+5. **Global Competitiveness:** A well-educated population positions the country as a leader in AI innovation and workforce readiness. 
+
+By focusing on these five areas, the education policy ensures a holistic approach to AI adoption, addressing knowledge gaps and fostering a culture of innovation across all segments of society.
+</details>
+
+</div>
+<br>
+<div class="llama-box">
+    <b>Llama3.1:8b</b>: Here are **5 Key Aspects** of an AI-focused Education Policy:
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+
+1. **AI Literacy for All Ages**:
+	* Integrate basic AI concepts into school curricula (K-12) to ensure future generations understand the basics of AI.
+	* Develop adult education programs and online courses to upskill workers in AI-related fields.
+	* Make AI education accessible to underrepresented groups, such as women, minorities, and individuals with disabilities.
+2. **STEM Education Enhancements**:
+	* Strengthen core STEM subjects (math, science, technology, engineering) to provide a solid foundation for AI studies.
+	* Incorporate project-based learning, coding, and robotics to foster hands-on experience with AI technologies.
+	* Encourage interdisciplinary approaches to combine AI with other fields like social sciences, humanities, and arts.
+3. **AI-Specific Training Programs**:
+	* Develop specialized training programs for AI developers, data scientists, and AI engineers.
+	* Offer certification programs in AI-related areas, such as natural language processing (NLP), computer vision, or machine learning (ML).
+	* Collaborate with industry partners to create apprenticeships and on-the-job training opportunities.
+4. **Continuous Learning and Upward Mobility**:
+	* Foster a culture of lifelong learning by providing resources for continuous education and skill development.
+	* Develop AI-focused career pathways and job descriptions to help workers navigate the evolving job market.
+	* Encourage cross-functional collaboration between AI experts, business leaders, and educators to ensure AI adoption aligns with industry needs.
+5. **Addressing Ethical and Societal Implications**:
+	* Integrate ethics and societal implications of AI into education curricula to address concerns around bias, transparency, and accountability.
+	* Encourage critical thinking, creativity, and human-centered design approaches in AI development and deployment.
+	* Foster a deeper understanding of the impact of AI on society, including issues related to job displacement, digital divide, and cybersecurity.
+
+**Key Features of an Effective Education Policy:**
+
+1. **Collaboration**: Partner with industry leaders, educators, researchers, and policymakers to ensure education programs align with workforce needs.
+2. **Flexibility**: Offer flexible learning options (online courses, part-time programs) to accommodate diverse learner needs.
+3. **Interdisciplinary Approaches**: Combine AI with other disciplines to foster a more comprehensive understanding of its applications and limitations.
+4. **Inclusivity**: Prioritize accessibility and diversity in education programs to ensure equal opportunities for all learners.
+5. **Continuous Evaluation**: Regularly assess the effectiveness of education programs, making adjustments as needed to address emerging trends and challenges.
+
+By incorporating these key aspects into an AI-focused Education Policy, we can equip future generations with the skills, knowledge, and critical thinking abilities necessary to thrive in an AI-driven world.
+</details>
+
+</div>
+
+<br>
+<div class="claude-box">
+    <b>Claude 3.5 Haiku</b>: 5 Key AI Education Policy Aspects:
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+
+
+1. Curriculum Integration
+- Embed AI literacy from elementary through higher education
+- Develop age-appropriate computational thinking modules
+- Teach AI ethics, capabilities, and societal implications alongside technical skills
+
+2. Teacher Training & Development
+- Comprehensive professional development programs
+- Provide AI pedagogical resources and certification tracks
+- Create instructor exchange programs with tech industry
+
+3. Practical Skills Framework
+- Hands-on AI project-based learning
+- Establish student AI innovation challenge programs
+- Partner with industries for real-world AI application experiences
+
+4. Inclusive Access Strategy
+- Provide computational resources in underserved communities
+- Create scholarships targeting underrepresented groups in tech
+- Develop free/low-cost online AI learning platforms
+
+5. Continuous Learning Infrastructure
+- Design lifelong AI skill update mechanisms
+- Create micro-credentialing systems for AI competencies
+- Develop adaptive learning pathways matching technological evolution
+
+Core Philosophy: Transform education from passive technology consumption to active AI capability development.
+</details>
+
+</div>
+<br>
+
+Again there were some pretty strong similarities:
+1. AI literacy and education across all ages, K-12, University, and Adult
+2. A focus on reaching underserved groups and communities
+3. Upskilling in the workplace as well as in school
+4. Practical, hands on education
+5. Addressing alignment, ethical, and social education
+
+And some marked differences:
+1. ChatGPT-4o provided much more detail including specific curriculum elements, specific workforce sectors (which is intresting as it did not mention specific sectors in the high level prompt), and highlights grass roots efforts
+2. Llama3.1 mentions a direct integration of AI ethics into the curriculum rather than a standalone element.
+3. Claude 3.5 was rather brief with its response - This may have been due to the fact that the time of day of my inquiry was a high demand time and I did get a message that the responses would be made brief.
+
+Again, the responses at this level were similar in some respects, however each one emphasized a different aspect of the policy. As an interesting aside, I wonder if in an agentic system that leverages several diverse LLMs to produce responses to a fairly complex prompt (like these), if the similarities can be viewed as a sort of voting mechanism to elicit the high level ideas that are the biggest priority. For example, if all three mention education and specifically life long education, maybe that can be used as an indication of where to expend resources. *Perhaps the topic of another paper*
+
+Lets go 1 level more detailed in our prompt, but also try to elicit some more specifics about two diverse municipalities.
+
+## Differences in Municipalities
+
+<div class="prompt-box">
+<b>Prompt</b>: Provide a concise but specific education plan for AI adoption in K-12 in the Boulder Valley School District.
+</div>
+<br>
+
+<div class="chatgpt-4o-box">
     <b>ChatGPT 4o</b>: 
 
 <details>
@@ -498,6 +706,7 @@ I would say that the prompts at this high level were fairly diverse. While they 
 </details>
 
 </div>
+
 <br>
 <div class="llama-box">
     <b>Llama3.1:8b</b>: 
@@ -524,22 +733,48 @@ I would say that the prompts at this high level were fairly diverse. While they 
 
 </div>
 <br>
+<div class="prompt-box">
+<b>Prompt</b>: Provide a concise but specific education plan for AI adoption in K-12 in the Denver Public School District.
+</div>
+<br>
 
-Again there were some pretty strong similarities:
-1. AI literacy and education across all ages, K-12, University, and Adult
-2. A focus on reaching underserved groups and communities
-3. Upskilling in the workplace as well as in school
-4. Practical, hands on education
-5. Addressing alignment, ethical, and social education
+<div class="chatgpt-4o-box">
+    <b>ChatGPT 4o</b>: 
 
-And some marked differences:
-1. ChatGPT-4o provided much more detail including specific curriculum elements, specific workforce sectors (which is intresting as it did not mention specific sectors in the high level prompt), and highlights grass roots efforts
-2. Llama3.1 mentions a direct integration of AI ethics into the curriculum rather than a standalone element.
-3. Claude 3.5 was rather brief with its response - This may have been due to the fact that the time of day of my inquiry was a high demand time and I did get a message that the responses would be made brief.
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
 
-Again, the responses at this level were similar in some respects, however each one emphasized a different aspect of the policy. As an interesting aside, I wonder if in an agentic system that leverages several diverse LLMs to produce responses to a fairly complex prompt (like these), if the similarities can be viewed as a sort of voting mechanism to elicit the high level ideas that are the biggest priority. For example, if all three mention education and specifically life long education, maybe that can be used as an indication of where to expend resources. *Perhaps the topic of another paper*
+</details>
 
+</div>
 
+<br>
+<div class="llama-box">
+    <b>Llama3.1:8b</b>: 
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+
+</details>
+
+</div>
+
+<br>
+<div class="claude-box">
+    <b>Claude 3.5 Haiku</b>: 
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+
+</details>
+
+</div>
 
 # Discussion
 
