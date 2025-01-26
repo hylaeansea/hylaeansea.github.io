@@ -20,6 +20,13 @@ categories: blog
     background-color:rgb(202, 235, 194); 
     box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
 }
+.chatgpt-o1-box {
+    border: 2px solidrgb(54, 56, 54); 
+    padding: 10px; 
+    border-radius: 5px; 
+    background-color:rgb(159, 234, 140); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
+}
 .llama-box {
     border: 2px solidrgb(54, 56, 54); 
     padding: 10px; 
@@ -702,7 +709,78 @@ Lets go 1 level more detailed in our prompt, but also try to elicit some more sp
     <summary>
     Click here for full text of response
     </summary>
+### AI Education Plan for K-12 in Boulder Valley School District (BVSD)
 
+**Objective:** To integrate AI literacy into the K-12 curriculum, ensuring students develop critical thinking, creativity, and ethical awareness for an AI-driven future.
+
+---
+
+### **1. Curriculum Integration**
+- **Elementary School (K-5):**  
+  - **Focus:** Introduction to basic concepts of AI through interactive, play-based learning.  
+  - **Activities:**  
+    - Pattern recognition using visual games (e.g., teaching a “robot” to sort colors/shapes).  
+    - Storytelling with AI-powered tools (e.g., co-creating stories using AI writing assistants).  
+    - Ethics through storytelling: Discuss how AI can help (e.g., predicting weather) but also make mistakes.  
+
+- **Middle School (6-8):**  
+  - **Focus:** Hands-on exposure to AI applications and fundamental computational thinking.  
+  - **Modules:**  
+    - Basics of machine learning: Using simple tools like Teachable Machine by Google to train models.  
+    - Coding fundamentals: Introduce Python via interactive platforms like Scratch-to-Python or Code.org.  
+    - AI ethics discussions: Explore privacy, bias, and fairness in AI systems (e.g., facial recognition).  
+    - AI in daily life: Analyze case studies like smart assistants, recommendation systems, or self-driving cars.  
+
+- **High School (9-12):**  
+  - **Focus:** Advanced AI concepts, coding skills, and industry-relevant applications.  
+  - **Electives and Pathways:**  
+    - **AI and Data Science Elective:** Machine learning models, data analysis with Python, and AI toolkits (e.g., TensorFlow Lite).  
+    - **Interdisciplinary Projects:** AI applied to climate change, healthcare, or robotics using Arduino kits.  
+    - **Capstone AI Projects:** Students develop their own AI solutions (e.g., creating chatbots or predictive apps).  
+    - **Ethics in AI:** A dedicated module on the societal impacts of AI, exploring regulation and responsibility.
+
+---
+
+### **2. Teacher Training and Support**
+- Provide BVSD teachers with annual workshops on integrating AI topics into math, science, and social studies.  
+- Offer AI-focused professional development through partnerships with local universities like CU Boulder.  
+- Create an online resource hub with lesson plans, AI tools, and case studies tailored to different grade levels.
+
+---
+
+### **3. Extracurricular Programs**
+- **AI Clubs:** Launch AI and robotics clubs in every middle and high school, supported by local tech companies.  
+- **Competitions:** Organize district-wide hackathons and challenges focused on AI for social good.  
+- **Summer Camps:** Run AI-focused summer programs where students can work on real-world projects with mentors.  
+
+---
+
+### **4. Community and Industry Partnerships**
+- Partner with CU Boulder and local tech companies to provide guest lectures, mentorship, and project collaboration opportunities.  
+- Host community workshops for parents and students to build awareness of AI's benefits and challenges.  
+
+---
+
+### **5. Equity and Accessibility**
+- Ensure all BVSD schools have access to the necessary technology (e.g., laptops, internet).  
+- Provide AI learning materials in multiple languages and formats to support diverse learners.  
+- Target outreach and scholarships for underserved students to participate in advanced AI programs.
+
+---
+
+### **Timeline**
+1. **Year 1:**  
+   - Develop and pilot elementary and middle school AI curricula in a subset of schools.  
+   - Train 50% of BVSD educators on AI basics and classroom tools.  
+2. **Year 2-3:**  
+   - Expand the program district-wide with full integration into science and computer science courses.  
+   - Launch AI electives and capstone projects in all high schools.  
+3. **Year 4:**  
+   - Measure student outcomes, refine the curriculum, and deepen partnerships with local universities and industry.  
+
+---
+
+**Outcome:** By 2030, BVSD graduates will enter higher education and the workforce with a solid foundation in AI, fostering innovation and responsible AI use in society.
 </details>
 
 </div>
@@ -715,7 +793,57 @@ Lets go 1 level more detailed in our prompt, but also try to elicit some more sp
     <summary>
     Click here for full text of response
     </summary>
+**Boulder Valley School District AI Education Plan (K-12)**
 
+**Grade-Level Breakdown:**
+
+1. **Elementary (K-5)**:
+	* Introduce basic AI concepts through interactive games and simulations
+	* Develop critical thinking, problem-solving, and coding skills using block-based programming languages like Scratch or Blockly
+2. **Middle School (6-8)**:
+	* Build on elementary foundations with more advanced coding concepts and AI-related topics (e.g., machine learning, natural language processing)
+	* Encourage students to design and develop their own AI projects using platforms like Code.org or Google's CS First
+3. **High School (9-12)**:
+	* Offer specialized courses in AI and related fields (e.g., data science, computer science)
+	* Collaborate with local industry partners to provide real-world case studies and guest lectures
+
+**Course Curriculum:**
+
+1. **"Introduction to Artificial Intelligence" (Grades 6-8)**:
+	* Explore basic AI concepts, including machine learning and neural networks
+	* Develop critical thinking and problem-solving skills through project-based learning
+2. **"AI and Data Science" (Grades 9-12)**:
+	* Delve deeper into AI topics like natural language processing, computer vision, and robotics
+	* Use real-world datasets and tools to develop data analysis and visualization skills
+3. **"Artificial Intelligence in Industry" (Grades 11-12)**:
+	* Explore AI applications in various industries (e.g., healthcare, finance, transportation)
+	* Collaborate with industry partners on case studies and projects
+
+**Teacher Professional Development:**
+
+1. **AI-focused workshops and training sessions**
+2. **Online courses and certifications** (e.g., Coursera, edX)
+3. **Collaboration with local universities and research institutions**
+
+**Infrastructure and Resources:**
+
+1. **Establish a district-wide AI lab** for hands-on learning and project development
+2. **Provide access to industry-standard software and tools** (e.g., TensorFlow, PyTorch)
+3. **Develop an online platform for students to share their projects and collaborate with peers**
+
+**Assessment and Evaluation:**
+
+1. **Regular assessments and quizzes** to evaluate student understanding of AI concepts
+2. **Project-based evaluations** to assess critical thinking, problem-solving, and coding skills
+3. **Industry partnerships** to provide real-world feedback on student projects
+
+**Timeline:**
+
+* **Year 1-2**: Develop and implement AI curriculum in middle school grades (6-8)
+* **Year 3-4**: Expand AI education to high school grades (9-12) and develop specialized courses
+* **Year 5+**: Continuously evaluate and improve the AI education program, exploring new technologies and applications
+
+This plan provides a concise but specific outline for introducing AI education in K-12. By following this roadmap, the Boulder Valley School District can ensure that students are well-prepared to thrive in an increasingly AI-driven world.
 </details>
 
 </div>
@@ -728,7 +856,42 @@ Lets go 1 level more detailed in our prompt, but also try to elicit some more sp
     <summary>
     Click here for full text of response
     </summary>
+Boulder Valley School District AI Education Adoption Plan:
 
+## K-12 AI Integration Framework
+
+### Elementary Level (K-5)
+- Computational thinking modules
+- Age-appropriate AI concept introduction
+- Basic coding and algorithmic reasoning skills
+- Ethical technology use foundations
+
+### Middle School (6-8)
+- Introductory machine learning concepts
+- Block-based programming platforms
+- AI project-based learning challenges
+- Digital citizenship and AI ethics curriculum
+
+### High School (9-12)
+- Advanced AI/ML programming courses
+- Python and data science foundations
+- Industry partnership internship programs
+- AI application development projects
+- Ethical AI design and societal impact studies
+
+### Infrastructure Requirements
+- 1:1 device program with computational capabilities
+- Cloud-based learning platforms
+- Professional development for educators
+- Dedicated AI curriculum specialists
+
+### Implementation Milestones
+- Year 1: Curriculum development
+- Year 2: Pilot programs in select schools
+- Year 3: District-wide implementation
+- Year 4: Continuous improvement and expansion
+
+Targeted outcome: Students as AI-literate, ethically-aware technology creators, not just consumers.
 </details>
 
 </div>
@@ -745,7 +908,81 @@ Lets go 1 level more detailed in our prompt, but also try to elicit some more sp
     <summary>
     Click here for full text of response
     </summary>
+### AI Education Plan for K-12 in Denver Public School District (DPS)
 
+**Objective:** Equip DPS students with foundational AI literacy, critical thinking, and practical skills to thrive in an AI-powered world, emphasizing inclusivity and community engagement.
+
+---
+
+### **1. Curriculum Integration**
+- **Elementary School (K-5):**
+  - **Focus:** Early exposure to AI concepts and computational thinking.
+  - **Activities:**
+    - Introduce pattern recognition and problem-solving using games and hands-on activities.
+    - Use simple AI-powered tools (e.g., drawing apps with AI suggestions) for creative projects.
+    - Teach ethics and teamwork through stories about AI helping solve real-world problems (e.g., weather forecasting, recycling).
+
+- **Middle School (6-8):**
+  - **Focus:** Hands-on exploration of AI tools and their real-world applications.
+  - **Modules:**
+    - Train simple AI models using platforms like Google's Teachable Machine.
+    - Explore coding basics (e.g., Python or Blockly) in the context of AI.
+    - Discuss AI ethics: privacy, bias, and fairness in everyday AI systems like social media algorithms.
+    - Real-world projects: Students create AI-powered tools for local community challenges (e.g., energy conservation apps).
+
+- **High School (9-12):**
+  - **Focus:** Advanced technical skills, project-based learning, and career pathways.
+  - **Electives and Programs:**
+    - **AI & Machine Learning Elective:** Teach data analysis, neural networks, and programming with tools like TensorFlow or PyTorch.
+    - **Interdisciplinary Projects:** Apply AI to climate change, urban planning, or health through robotics, drones, or IoT sensors.
+    - **Capstone Projects:** Students design AI-driven solutions for local issues (e.g., predictive traffic apps or personalized learning tools).
+    - **AI Ethics and Policy:** Explore societal impacts and policy debates around AI technologies.
+
+---
+
+### **2. Teacher Training and Resources**
+- **Professional Development:** Offer annual AI-focused training workshops for DPS teachers, emphasizing integration into STEM and social sciences.
+- **Resource Hub:** Create a DPS-specific online portal with ready-to-use AI lesson plans, tools, and case studies.
+- **Mentorship Program:** Partner with local AI professionals and university experts (e.g., University of Denver) to support teachers.
+
+---
+
+### **3. Extracurricular and Enrichment Programs**
+- **AI Clubs:** Establish AI and robotics clubs in middle and high schools, fostering peer learning and innovation.
+- **Competitions:** Host district-wide AI challenges focused on solving Denver-specific issues, like air quality or urban mobility.
+- **Summer Camps:** Offer AI-focused summer enrichment programs for all grade levels, supported by community partners.
+- **AI Showcases:** Hold annual exhibitions where students demonstrate their AI projects to the community.
+
+---
+
+### **4. Partnerships with Local Institutions**
+- Partner with organizations like the University of Denver, Colorado School of Mines, and local tech companies to provide guest lectures, internships, and project mentorship.
+- Collaborate with Denver-based non-profits and city officials to align student projects with community needs.
+
+---
+
+### **5. Equity and Accessibility**
+- **Technology Access:** Ensure every DPS student has access to devices, software, and reliable internet for AI learning.
+- **Inclusive Materials:** Provide AI content in multiple languages, with culturally relevant examples and support for neurodiverse learners.
+- **Targeted Outreach:** Focus on underserved schools and neighborhoods with scholarships for advanced AI programs.
+
+---
+
+### **Timeline**
+1. **Year 1:** 
+   - Pilot AI modules in 10 elementary, middle, and high schools.
+   - Train 25% of DPS teachers on AI concepts and tools.
+2. **Year 2-3:**
+   - Roll out AI-focused curriculum district-wide.
+   - Launch AI clubs and competitions in all middle and high schools.
+   - Deepen partnerships with local universities and tech companies.
+3. **Year 4-5:**
+   - Expand advanced AI electives and capstone projects district-wide.
+   - Measure outcomes and refine curricula based on community feedback.
+
+---
+
+**Outcome:** By 2030, DPS will produce AI-literate graduates equipped with technical, ethical, and problem-solving skills, ready to contribute to Denver's economy and beyond.
 </details>
 
 </div>
@@ -758,7 +995,63 @@ Lets go 1 level more detailed in our prompt, but also try to elicit some more sp
     <summary>
     Click here for full text of response
     </summary>
+**Denver Public Schools (DPS) AI Education Plan (K-12)**
 
+**Grade-Level Breakdown:**
+
+1. **Elementary (K-5)**:
+	* "Introduction to Coding and AI" (Grades 3-5)
+		+ Teach basic coding concepts using block-based programming languages like Code.org or Scratch
+		+ Introduce AI-related topics, such as machine learning and robotics
+2. **Middle School (6-8)**:
+	* "AI and Computer Science" (Grades 6-8)
+		+ Develop more advanced coding skills using Python or Java
+		+ Explore AI applications in areas like natural language processing and computer vision
+3. **High School (9-12)**:
+	* "Artificial Intelligence and Data Science" (Grades 9-12)
+		+ Offer specialized courses in AI, data science, and computer science
+		+ Collaborate with industry partners to provide real-world case studies and guest lectures
+
+**Course Curriculum:**
+
+1. **"Introduction to Artificial Intelligence" (Grades 6-8)**:
+	* Explore basic AI concepts, including machine learning and neural networks
+	* Develop critical thinking and problem-solving skills through project-based learning
+2. **"AI in Industry" (Grades 9-12)**:
+	* Delve deeper into AI applications in various industries (e.g., healthcare, finance, transportation)
+	* Use real-world datasets and tools to develop data analysis and visualization skills
+
+**Teacher Professional Development:**
+
+1. **AI-focused workshops and training sessions**
+2. **Online courses and certifications** (e.g., Coursera, edX)
+3. **Collaboration with local universities and research institutions**
+
+**Infrastructure and Resources:**
+
+1. **Establish a district-wide AI lab** for hands-on learning and project development
+2. **Provide access to industry-standard software and tools** (e.g., TensorFlow, PyTorch)
+3. **Develop an online platform for students to share their projects and collaborate with peers**
+
+**Assessment and Evaluation:**
+
+1. **Regular assessments and quizzes** to evaluate student understanding of AI concepts
+2. **Project-based evaluations** to assess critical thinking, problem-solving, and coding skills
+3. **Industry partnerships** to provide real-world feedback on student projects
+
+**Timeline:**
+
+* **Year 1-2**: Develop and implement AI curriculum in middle school grades (6-8)
+* **Year 3-4**: Expand AI education to high school grades (9-12) and develop specialized courses
+* **Year 5+**: Continuously evaluate and improve the AI education program, exploring new technologies and applications
+
+**Denver Public Schools' Commitment:**
+
+1. **Invest $500,000 in AI-related infrastructure and resources**
+2. **Hire an AI Education Specialist to lead district-wide initiatives**
+3. **Collaborate with local businesses and organizations to provide industry partnerships and guest lectures**
+
+By following this plan, Denver Public Schools can ensure that students are well-prepared for the challenges of an increasingly AI-driven world.
 </details>
 
 </div>
@@ -771,20 +1064,575 @@ Lets go 1 level more detailed in our prompt, but also try to elicit some more sp
     <summary>
     Click here for full text of response
     </summary>
+Denver Public Schools AI Education Implementation Plan
+
+### Core Objectives
+- Comprehensive AI literacy across K-12
+- Equitable technological access
+- Ethical AI skill development
+
+### K-5 Foundation
+- Computational thinking integration
+- Basic coding exposure
+- Digital citizenship fundamentals
+
+### 6-8 Middle School Progression
+- Introduction to machine learning
+- Block-based programming
+- Algorithmic reasoning skills
+
+### 9-12 High School Advanced Track
+- Python programming
+- Data science foundations
+- AI project development
+- Industry partnership opportunities
+
+### Key Implementation Strategies
+- 1:1 device program
+- Teacher AI certification
+- Curriculum aligned with industry standards
+- Focus on underserved community engagement
+
+### Resource Requirements
+- $3.5M initial investment
+- 12 dedicated AI curriculum specialists
+- Professional development budget
+- Technology infrastructure upgrades
+
+Targeted Outcome: Prepare students as AI-capable, ethically-informed innovators.
+
+</details>
+</div>
+
+Again we can see distinct differences, but strong similarities between both the models for the same school district as well as the same model for different school districts. This is a fairly strong confirmation of my hypothesis that however complex the transformer networks are, next token prediction fails to consider the nuanced differences between policy tailored for AI promotion in fairly different school districts. This leads to our next investigation of AI generated world models; my hope is that we can elicit some of this nuance by building world models of these social and economic scenarios, even if they are simple models.
+
+# Modeling of AI Uptake
+
+With the qualitative analysis of policy generation under out belts, we can now explore the generation of models of AI technology adoption and interfacing with these models. Again this will be limited to just this one policy case (AI uptake), and again will just start with a the simplest possible model with a couple of complications. We will use the agentpy framework for this as described above, and will also expand our use of models to use ChatGPT-o1. We will use as a reference Rodgers' diffusion of innovation model, which is a simple model that can be used to explore the dynamics of adoption of new technologies.
+
+<div class="prompt-box">
+<b>Prompt</b>: Can you write some python code using agentpy for a simple implementation of rodgers' diffusion of innovation?
+
+</div>
+<br>
+
+<div class="chatgpt-o1-box">
+    <b>ChatGPT o1</b>: 
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+    <pre>
+    <code>
+import agentpy as ap
+import matplotlib.pyplot as plt
+import numpy as np
+
+class InnovationAgent(ap.Agent):
+    def setup(self):
+        self.adopted = False
+        self.category = category_distribution(self.id, self.model.p.population)
+
+    def adopt_innovation(self):
+        if not self.adopted:
+            if self.category == 'innovator':
+                self.adopted = True
+            elif self.category in ['early_adopter', 'early_majority', 'late_majority']:
+                neighbors = self.model.network.neighbors(self)
+                adopters = sum(1 for n in neighbors if n.adopted)
+                threshold = self.model.thresholds[self.category]
+                if len(neighbors) > 0 and adopters / len(neighbors) >= threshold:
+                    self.adopted = True
+            elif self.category == 'laggard':
+                neighbors = self.model.network.neighbors(self)
+                adopters = sum(1 for n in neighbors if n.adopted)
+                if len(neighbors) > 0 and adopters / len(neighbors) >= self.model.thresholds['laggard']:
+                    self.adopted = True
+
+class DiffusionModel(ap.Model):
+    def setup(self):
+        self.agents = ap.AgentList(self, self.p.population, InnovationAgent)
+        self.network = ap.Network(agents=self.agents, connections=self.p.avg_degree)
+        self.network.add_edges(self.agents)
+        self.agents.setup()
+
+        self.category_distribution = self.p.category_distribution
+        self.thresholds = {
+            'innovator': self.p.innovator_threshold,
+            'early_adopter': self.p.early_adopter_threshold,
+            'early_majority': self.p.early_majority_threshold,
+            'late_majority': self.p.late_majority_threshold,
+            'laggard': self.p.laggard_threshold
+        }
+
+    def step(self):
+        for agent in self.agents:
+            agent.adopt_innovation()
+
+    def update(self):
+        adopted_agents = sum(1 for a in self.agents if a.adopted)
+        self.record('Adopted', adopted_agents)
+
+    def end(self):
+        self.record('Final Adoption Rate', sum(1 for a in self.agents if a.adopted) / self.p.population)
+
+def category_distribution(agent_id, population):
+    categories = ['innovator', 'early_adopter', 'early_majority', 'late_majority', 'laggard']
+    probabilities = [0.05, 0.1, 0.35, 0.35, 0.15]
+    assignment = np.random.choice(categories, p=probabilities, size=population)
+    return assignment[agent_id]
+
+parameters = ap.Sample({
+    'population': 100,
+    'avg_degree': 4,
+    'steps': 20,
+    'category_distribution': category_distribution,
+    'innovator_threshold': 0.0,
+    'early_adopter_threshold': 0.1,
+    'early_majority_threshold': 0.3,
+    'late_majority_threshold': 0.5,
+    'laggard_threshold': 0.8
+})
+
+exp = ap.Experiment(DiffusionModel, parameters, iterations=1)
+results = exp.run()
+
+plt.plot(results['t'], results['Adopted'])
+plt.title('Diffusion of Innovation Over Time')
+plt.xlabel('Time Steps')
+plt.ylabel('Number of Adopters')
+plt.show()
+
+</code>
+</pre>
+
+</details>
+</div>
+
+This code has all the elements to run a simple network model where agents adopt technology according to 1) the category that they are in and 2) the percentage of their network connections that have adopted the technology.
+
+A few iterations on pandas errors and indexing errors and we eventually arrived at this.
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+<pre>
+<code>
+# Model design
+import agentpy as ap
+import networkx as nx
+import numpy as np
+import random 
+
+# Visualization
+import matplotlib.pyplot as plt 
+import seaborn as sns
+import IPython
+
+class InnovationAgent(ap.Agent):
+    def setup(self):
+        """
+        Initializes the agent's adoption state and assigns it to a category based on predefined probabilities.
+        """
+        # Everyone starts as having not adopted the technology
+        self.adopted = False
+
+        # Select a category for the agent using the given probabilities
+        rng = np.random
+        self.category_idx = rng.choice(len(self.p.categories), p=self.p.probabilities)
+        self.category = self.p.categories[self.category_idx]
+
+    def num_adopted_neighbors(self):
+        """
+        Calculates the number of neighboring agents who have adopted the innovation.
+        Returns:
+            int: The count of neighbors who have adopted.
+        """
+        # Get the neighbors of the current agent
+        neighbors = self.network.neighbors(self)
+        
+        # Check adoption status for each neighbor
+        adopted = [n.adopted for n in neighbors]
+        
+        # Count the number of adopters
+        return sum(adopted)
+
+    def neighbor_adopted_frac(self):
+        """
+        Calculates the fraction of neighboring agents who have adopted the innovation.
+        Returns:
+            float: Fraction of neighbors who have adopted, or 0 if there are no neighbors.
+        """
+        # Get the neighbors of the current agent
+        neighbors = self.network.neighbors(self)
+        
+        # Check adoption status for each neighbor
+        adopted = [n.adopted for n in neighbors]
+        len_neighbors = len(adopted)
+
+        # Handle case where there are no neighbors
+        if len_neighbors == 0:
+            return 0
+
+        # Calculate and return the fraction of adopters
+        num_adopters = sum(adopted)
+        return num_adopters / len_neighbors
+
+    def adopt_innovation(self):
+        """
+        Determines whether the agent adopts the innovation based on its category
+        and the adoption status of its neighbors.
+        """
+        # Only proceed if the agent has not already adopted the innovation
+        if not self.adopted:
+            # Innovators adopt unconditionally
+            if self.category == 'innovator':
+                self.adopted = True
+            # Other categories adopt based on a threshold of neighbor adoption
+            elif self.category in ['early_adopter', 'early_majority', 'late_majority', 'laggard']:
+                # Calculate the fraction of neighbors who have adopted
+                adopted_frac = self.neighbor_adopted_frac()
+
+                # Get the threshold for the agent's category
+                threshold = self.p.thresholds[self.category_idx]
+
+                # Adopt if the fraction meets or exceeds the threshold
+                if adopted_frac >= threshold:
+                    self.adopted = True
+
+class InnovationModel(ap.Model):
+    """
+    This class represents the overall model for innovation diffusion. It manages the setup,
+    simulation steps, and final results.
+    """
+
+    def setup(self):
+        """
+        Initializes the network and agents for the simulation. A small-world network is
+        created using the Watts-Strogatz model, and agents are assigned to it.
+        """
+        graph = nx.watts_strogatz_graph(
+            self.p.population,
+            self.p.number_of_connections,
+            self.p.network_rewire_probability,
+        )
+
+        # Create agents and a network
+        self.agents = ap.AgentList(self, self.p.population, InnovationAgent)
+        self.network = self.agents.network = ap.Network(self, graph)
+        self.network.add_agents(self.agents, self.network.nodes)
+
+    def update(self):
+        """
+        Calculates the fraction of agents who have adopted the innovation and records it.
+        Stops the simulation if all agents have adopted.
+        """
+        frac_adopted = sum(1 for a in self.agents if a.adopted) / self.p.population
+        self.record("fraction adopted", frac_adopted)
+
+        # Stop if everyone has adopted the tech
+        if frac_adopted == 1:
+            self.stop()
+
+    def step(self):
+        """
+        Executes a single step of the simulation. During each step, agents decide
+        whether to adopt the innovation based on their category and network connections.
+        """
+        for agent in self.agents:
+            agent.adopt_innovation() # Agents adopt innovations based on their category and network connections
+    
+    def end(self):
+        """
+        Finalizes the simulation. Additional computations or outputs can be added here if needed.
+        """
+        pass
+
+
+
+parameters = {
+    'population': 100,
+    "categories": ['innovator', 'early_adopter', 'early_majority', 'late_majority', 'laggard'],
+    "probabilities": [0.05, 0.1, 0.35, 0.35, 0.15],
+    "thresholds": [0.0, 0.1, 0.25, 0.5, 0.9],
+    "number_of_connections": 4,
+    "network_rewire_probability": 0.1,
+    "steps":100,
+}
+
+
+
+model = InnovationModel(parameters)
+results = model.run()
+
+data = results.variables.InnovationModel
+ax = data.plot()
+
+
+</code>
+</pre>
 
 </details>
 
-</div>
+With a fairly boring plot of tech adoption vs simulation step.
+
+I next prompted o1 with ideas on ways to expand the model, and to be honest, I cant track down exactly the difference between modifications I made to the code vs what o1 suggested. After a handful of iterations we ended with the following expansions of the model and agent code:
+
+<details>
+    <summary>
+    Click here for full text of response
+    </summary>
+<pre>
+<code>
+# Model design
+import agentpy as ap
+import networkx as nx
+import numpy as np
+import random 
+
+# Visualization
+import matplotlib.pyplot as plt 
+import seaborn as sns
+import IPython
+
+class InnovationAgent(ap.Agent):
+    def setup(self):
+        """
+        Initializes the agent's adoption state, assigns it to a category, and sets its budget.
+        """
+        self.adopted = False
+
+        # Assign category and probabilities
+        rng = np.random
+        self.category_idx = rng.choice(len(self.p.categories), p=self.p.probabilities)
+        self.category = self.p.categories[self.category_idx]
+
+        # Assign random budget for the agent
+        self.money = rng.uniform(0, 200)  # Example range
+
+    def can_use_ai(self):
+        """
+        Checks if the agent can use AI resources based on their money and availability.
+        Returns:
+            bool: True if the agent can use AI, False otherwise.
+        """
+        return (self.money >= self.p.ai_cost) and (self.model.ai_resources > 0)
+
+    def num_adopted_neighbors(self):
+        """
+        Counts the number of neighboring agents who have adopted the innovation.
+        """
+        neighbors = self.network.neighbors(self)
+        return sum(n.adopted for n in neighbors)
+
+    def neighbor_adopted_frac(self):
+        """
+        Calculates the fraction of neighboring agents who have adopted the innovation.
+        Returns:
+            float: Fraction of adopters or 0 if there are no neighbors.
+        """
+
+        # Get the neighbors of the current agent
+        neighbors = self.network.neighbors(self)
+        
+        # Check adoption status for each neighbor
+        adopted = [n.adopted for n in neighbors]
+        len_neighbors = len(adopted)
+
+        # Handle case where there are no neighbors
+        if len_neighbors == 0:
+            return 0
+
+        # Calculate and return the fraction of adopters
+        num_adopters = sum(adopted)
+        return 1.0 * num_adopters / len_neighbors
+
+    def adopt_use_contribute(self):
+        """
+        Handles the agent's behavior: adopting, using, or contributing to AI resources.
+        """
+        # Add money probabilistically every turn
+        
+        # self.money += np.random.uniform(1,1.1)
+        self.money += np.random.uniform(self.p.standard_money_gain_min, self.p.standard_money_gain_max)
+        
+        # decide whether to use
+        if self.adopted and self.can_use_ai():
+            self.use_technology()
+        
+        # Decide whether to contribute
+        if ((np.random.uniform() < self.p.contributor_fraction)) or (self.category == "innovator"):
+            self.contribute_to_ai()
+
+        if not self.adopted:
+            # Innovators adopt unconditionally if they can afford AI
+            if self.category == 'innovator' and self.can_use_ai():
+                self.adopted = True
+
+            # Other categories adopt based on a threshold and affordability
+            elif self.category in ['early_adopter', 'early_majority', 'late_majority', 'laggard']:
+                adopted_frac = self.neighbor_adopted_frac()
+                threshold = self.p.thresholds[self.category_idx]
+
+                if adopted_frac >= threshold and self.can_use_ai():
+                    self.adopted = True
+                    self.use_technology()
+
+    def use_technology(self):
+        """
+        Deducts the cost of using AI and reduces global AI resources.
+        """
+        # print("used ai resource")
+        self.money -= self.p.ai_cost
+        self.model.ai_resources -= 1
+
+    def contribute_to_ai(self):
+        """
+        Generates and contributes additional money and AI resources to the system.
+        """
+        generated_money = np.random.uniform(self.p.ai_money_gain_min, self.p.ai_money_gain_max)
+        generated_resources = np.random.randint(self.p.resource_gain_min, self.p.resource_gain_max + 1)
+        # print("{} resources added".format(generated_resources))
+
+        self.money += generated_money
+        self.model.ai_resources += generated_resources
+
+def gini(x):
+
+    """ Calculate Gini Coefficient """
+    # By Warren Weckesser https://stackoverflow.com/a/39513799
+    
+    x = np.array(x)
+    mad = np.abs(np.subtract.outer(x, x)).mean()  # Mean absolute difference
+    rmad = mad / np.mean(x)  # Relative mean absolute difference
+    return 0.5 * rmad 
+
+class InnovationModel(ap.Model):
+    """
+    This class represents the overall model for innovation diffusion. It manages the setup,
+    simulation steps, and final results.
+    """
+
+    def setup(self):
+        """
+        Initializes the network and agents for the simulation. A small-world network is
+        created using the Watts-Strogatz model, and agents are assigned to it.
+        """
+        graph = nx.watts_strogatz_graph(
+            self.p.population,
+            self.p.number_of_connections,
+            self.p.network_rewire_probability,
+        )
+
+        # Create agents and a network
+        self.agents = ap.AgentList(self, self.p.population, InnovationAgent)
+        self.network = self.agents.network = ap.Network(self, graph)
+        self.network.add_agents(self.agents, self.network.nodes)
+
+        # Initialize AI resources
+        self.ai_resources = self.p.total_ai_resources
+
+    def update(self):
+        """
+        Calculates the fraction of agents who have adopted the innovation and records it.
+        Stops the simulation if all agents have adopted.
+        """
+        num_adopted = sum(1 for a in self.agents if a.adopted)
+        frac_adopted = num_adopted / self.p.population
+
+        self.record("num_adopted", num_adopted)
+        self.record("fraction_adopted", frac_adopted)
+
+        remaining_resources = self.ai_resources
+        total_money = sum(agent.money for agent in self.agents)
+
+        # Record key metrics
+        self.record('remaining_resources', remaining_resources)
+        self.record('total_money', total_money)
+        self.record('Gini Coefficient', gini(self.agents.money))
+
+        
+        # Stop if everyone has adopted the tech
+        if frac_adopted == 1:
+            self.stop()
+
+    def step(self):
+        """
+        Executes a single step of the simulation. During each step, agents decide
+        whether to adopt the innovation based on their category and network connections.
+        """
+        for agent in self.agents:
+            agent.adopt_use_contribute() # Agents adopt innovations based on their category and network connections
+    
+    def end(self):
+        """
+        Finalizes the simulation. Additional computations or outputs can be added here if needed.
+        """
+        pass
+
+parameters = {
+    'population': 10000,
+    'categories': ['innovator', 'early_adopter', 'early_majority', 'late_majority', 'laggard'],
+    'contributor_fraction':0.00, # % of adoptors contribute to tech
+    'probabilities': [0.05, 0.1, 0.35, 0.35, 0.15],
+    'thresholds': [0.0, 0.01, 0.25, 0.5, 0.9],
+    'number_of_connections': 20,
+    'network_rewire_probability': 0.05,
+
+    'total_ai_resources': 30,  # Total AI resources available
+    'ai_cost': 10,  # Cost of using AI for each adoption
+    'standard_money_gain_min': -2, # Minimum money generated by normal economic output
+    'standard_money_gain_max': 4, # Maximum money generated by normal economic output
+    'ai_money_gain_min': 0,  # Minimum money generated by AI usage
+    'ai_money_gain_max': 50,  # Maximum money generated by AI usage
+    'resource_gain_min': 0,  # Minimum AI resources generated by adoption
+    'resource_gain_max': 3,  # Maximum AI resources generated by adoption
+
+    'steps': 250,
+}
+
+model = InnovationModel(parameters)
+results = model.run()
+
+data = results.variables.InnovationModel
+# ax = data["Gini Coefficient"].plot()
+# ax = data["fraction_adopted"].plot()
+# ax = data["num_adopted"].plot()
+ax = data["remaining_resources"].plot()
+# ax = data["total_money"].plot()
+# plt.close()
+</code>
+</pre>
+
+</details>
+
+This is a more complicated model that allows us to examine other quantitative feature of the model including gini coeficient. This then gives us a world model that we can prompt with different configuration parameters, as well as leverage the llm to evaluate the output.
 
 # Discussion
 
+It is clear from the above exploration, that 1) LLMs are an imensely powerful tool to generate ideas and jumping off points for public policy, and 2) world models can be generated from LLMs that can in turn be used to generate new knowledge for the given domain. As I have stated multiple times in this document, I am not a public policy expert, however I hope this investigation serves to stir ideas on new ways to generate and analyze policy by those who are.
+
 ## What does this mean for safety
 
+There is intense debate in the AI safety community as to whether increasing the capability of AIs is better for AI safety and alignment, or if with it comes inherant danger. I believe this is as yet un-settled and still a matter of taste and philosophy. With that being said, I believe that increasing the training corpus of LLMs with data from progressively more realistic policy, economic and agent models, will result in a general decrease in the risk posed by these models, for this purpose. Furthermore, if we can lower the barier, and through this investigation, increase the awareness of the benefits, of language model and world model integration, this should generally increase the number of practicioners of both AI computing and public policy generating these models and evaluating their performance. And with increased participation, education, and awareness, comes an inherant increase in safety.
 
 # Future Work
 
-## Ocean Biodiversity and Conservation
+If it isn't obvious, this paper fell far short of my intended goal. Not to dispare though, that leaves pleanty of interesting work, and interesting questions for me, (and hopefully you!) to answer in the future. These include:
 
-## Space Policy
+1. Can we quantify the amount of knowldege gained from the World Model generation?
+2. Can we standardize suggested prompts for generating either public policy suggestions, or world models of said policy?
+3. Can the input (parameter) output (results) pairs of numeric data be transformed into natural language descriptions for fine tuning or base model training?
 
+I also set out to investigate other public policy topics including Ocean Biodiversity and Conservation, Public Heath/epidemiology policy, and Space Development Policy. However, if I am not an expert in tech pedagogy policy then I am certainly not an expert in these fields. I do however think that these fields being at the intersection of technology, public policy, and economics might prove for interesting case studies.
+
+# Closing
+
+To conclude, I think the jury is still out on computable policy: I showed that advanced language models can create progressively more detailed policy recomendations through progressively more detailed prompting. And that LLMs can generate world models that can run simulations of different aspects of a given policy. However, I think this work falls short of making policy truely computable. Despite this shortcoming, I hope this work contributes to your mental model of Language Model and World Model interactions. Furthermore, if you are so inclined, please critique, critisize, augment, implement, or extend this work to make it more detailed and rich. That would have made this worth it. 
+
+Thank you to the people at Blue Dot Impact, facilitators, moderators, and all of those in my cohort, this was a great course and you all are doing great work. Thank you to 80,000 Hours, your work is changing peoples careers and hopefully the course of humanity for the long term. Thank you to my local AI chat group, your questions and insights are thought provoking and fun. And finally, thank you to my family, for giving me this time to pursue this interest of mine, and for putting up with the clacking of the mechanical keyboard in the kitchen.
+
+Cheers,
+Kyle
 
