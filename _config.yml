@@ -42,6 +42,8 @@ header_pages:
 # markdown: kramdown
 # kramdown:
 #   parse_block_html: true
+markdown: kramdown
+highlighter: rouge
 
 
 # Exclude from processing.

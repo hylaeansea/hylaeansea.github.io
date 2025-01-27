@@ -1105,7 +1105,7 @@ After a couple of rounds of iteration, this was the first working model.
     <b>ChatGPT o1</b>: 
 <details  markdown="1">
 
-```
+```python
 # Model design
 import agentpy as ap
 import networkx as nx
@@ -1267,7 +1267,7 @@ A few iterations on pandas errors and indexing errors and we eventually arrived 
 
 <details  markdown="1">
 
-```
+```python
 # Model design
 import agentpy as ap
 import networkx as nx
@@ -1786,7 +1786,7 @@ I next prompted o1 with ideas on ways to expand the model, and to be honest, I c
 
 <details  markdown="1">
 
-```
+```python
 # Model design
 import agentpy as ap
 import networkx as nx
