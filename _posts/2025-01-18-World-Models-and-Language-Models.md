@@ -141,10 +141,8 @@ In this first step I generated public policy recommendations at different levels
 <div class="chatgpt-4o-box">
     <b>ChatGPT 4o</b>: Public Policy: "AI for All Initiative: Accelerating the Adoption of Artificial Intelligence Across Sectors"
 
-<details>
-  <summary>
-    Click here for full text of response
-  </summary>
+<details markdown="1">
+
 
 ### Public Policy: "AI for All Initiative: Accelerating the Adoption of Artificial Intelligence Across Sectors"
 
@@ -217,10 +215,8 @@ This policy framework aims to ensure that AI becomes a transformative tool for s
 <div class="llama-box">
     <b>Llama3.1:8b</b>: Public Policy: "Accelerating the Adoption of Artificial Intelligence for Economic Growth and Social Progress"
 
-<details>
-  <summary>
-    Click here for full text of response
-  </summary>
+<details markdown="1">
+
   **Public Policy: "Accelerating the Adoption of Artificial Intelligence for Economic Growth and Social Progress"**
 
 **Objective:** To encourage the widespread adoption and utilization of Artificial Intelligence (AI) across various sectors of society, fostering economic growth, improving social outcomes, and enhancing quality of life.
@@ -289,10 +285,8 @@ This comprehensive public policy aims to accelerate the adoption of AI across va
 <div class="claude-box">
     <b>Claude 3.5 Haiku</b>: National AI Integration and Development Policy
 
-<details>
-  <summary>
-    Click here for full text of response
-  </summary>
+<details markdown="1">
+
 Here's a comprehensive AI Adoption and Integration Public Policy Framework:
 
 # National AI Integration and Development Policy
@@ -356,10 +350,8 @@ Each model's response to this (admitedly) very high level prompt is available in
 <div class="claude-box">
     <b>Claude 3.5 Haiku</b>: Distributed HPC approach is superior. Reasons:
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details markdown="1">
+
 Distributed HPC approach is superior. Reasons:
 
 1. Decentralization benefits
@@ -388,10 +380,8 @@ Recommended strategy: Create national framework incentivizing distributed HPC ne
 <div class="chatgpt-4o-box">
     <b>ChatGPT 4o</b>: The **most important aspect** to focus on for maximizing AI adoption and unlocking its economic benefits is **education, awareness, and workforce readiness**. Here's why:
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 
 
 ### **Why Focus on Education, Awareness, and Workforce Readiness?**
@@ -450,10 +440,8 @@ By focusing on **education, workforce readiness, and awareness**, this policy en
 <div class="llama-box">
     <b>Llama3.1:8b</b>: While AI has the potential to transform many industries, I'd argue that Healthcare stands to be transformed the most by increased adoption of AI. Here's why:
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 While AI has the potential to transform many industries, I'd argue that **Healthcare** stands to be transformed the most by increased adoption of AI. Here's why:
 
 1. **Data-Driven Decision Making**: Healthcare generates vast amounts of data from electronic health records (EHRs), medical imaging, and wearable devices. AI can help analyze this data to identify patterns, predict patient outcomes, and inform treatment decisions.
@@ -497,10 +485,8 @@ I would say that the prompts at this high level were fairly diverse. While they 
 <div class="chatgpt-4o-box">
     <b>ChatGPT 4o</b>: Certainly! Expanding on the education policy for AI upskilling and literacy, here are **5 key aspects** to ensure inclusivity, effectiveness, and long-term impact:
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 
 ### **1. Comprehensive AI Literacy for All Ages**
 **Goal:** Build a society that understands and feels confident using AI.
@@ -599,10 +585,8 @@ By focusing on these five areas, the education policy ensures a holistic approac
 <div class="llama-box">
     <b>Llama3.1:8b</b>: Here are **5 Key Aspects** of an AI-focused Education Policy:
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 
 1. **AI Literacy for All Ages**:
 	* Integrate basic AI concepts into school curricula (K-12) to ensure future generations understand the basics of AI.
@@ -642,10 +626,8 @@ By incorporating these key aspects into an AI-focused Education Policy, we can e
 <div class="claude-box">
     <b>Claude 3.5 Haiku</b>: 5 Key AI Education Policy Aspects:
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 
 
 1. Curriculum Integration
@@ -705,10 +687,8 @@ Lets go 1 level more detailed in our prompt, but also try to elicit some more sp
 <div class="chatgpt-4o-box">
     <b>ChatGPT 4o</b>: 
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 ### AI Education Plan for K-12 in Boulder Valley School District (BVSD)
 
 **Objective:** To integrate AI literacy into the K-12 curriculum, ensuring students develop critical thinking, creativity, and ethical awareness for an AI-driven future.
@@ -789,10 +769,8 @@ Lets go 1 level more detailed in our prompt, but also try to elicit some more sp
 <div class="llama-box">
     <b>Llama3.1:8b</b>: 
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 **Boulder Valley School District AI Education Plan (K-12)**
 
 **Grade-Level Breakdown:**
@@ -852,10 +830,8 @@ This plan provides a concise but specific outline for introducing AI education i
 <div class="claude-box">
     <b>Claude 3.5 Haiku</b>: 
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 Boulder Valley School District AI Education Adoption Plan:
 
 ## K-12 AI Integration Framework
@@ -904,10 +880,8 @@ Targeted outcome: Students as AI-literate, ethically-aware technology creators, 
 <div class="chatgpt-4o-box">
     <b>ChatGPT 4o</b>: 
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 ### AI Education Plan for K-12 in Denver Public School District (DPS)
 
 **Objective:** Equip DPS students with foundational AI literacy, critical thinking, and practical skills to thrive in an AI-powered world, emphasizing inclusivity and community engagement.
@@ -991,10 +965,8 @@ Targeted outcome: Students as AI-literate, ethically-aware technology creators, 
 <div class="llama-box">
     <b>Llama3.1:8b</b>: 
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 **Denver Public Schools (DPS) AI Education Plan (K-12)**
 
 **Grade-Level Breakdown:**
@@ -1060,10 +1032,8 @@ By following this plan, Denver Public Schools can ensure that students are well-
 <div class="claude-box">
     <b>Claude 3.5 Haiku</b>: 
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 Denver Public Schools AI Education Implementation Plan
 
 ### Core Objectives
@@ -1133,12 +1103,9 @@ After a couple of rounds of iteration, this was the first working model.
 
 <div class="chatgpt-o1-box">
     <b>ChatGPT o1</b>: 
-<details>
-    <summary>
-    Click here for full code block of initial working model
-    </summary>
-    <pre>
-    <code>
+<details  markdown="1">
+
+```
 # Model design
 import agentpy as ap
 import networkx as nx
@@ -1286,9 +1253,8 @@ results = model.run()
 %matplotlib inline
 data = results.variables.InnovationModel
 ax = data.plot()
+```
 
-</code>
-</pre>
 
 </details>
 </div>
@@ -1299,12 +1265,9 @@ This code has all the elements to run a simple network model where agents adopt 
 
 A few iterations on pandas errors and indexing errors and we eventually arrived at this.
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
-<pre>
-<code>
+<details  markdown="1">
+
+```
 # Model design
 import agentpy as ap
 import networkx as nx
@@ -1455,9 +1418,7 @@ results = model.run()
 data = results.variables.InnovationModel
 ax = data.plot()
 
-
-</code>
-</pre>
+```
 
 </details>
 <br>
@@ -1488,10 +1449,8 @@ and what would you expect the model to do given these parameters?
 <div class="chatgpt-o1-box">
     <b>ChatGPT o1</b>: Qualitative Description of the Parameters
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 Below is a **qualitative description** of each parameter in your model and **what you would expect** the simulation to do given these settings:
 
 ---
@@ -1536,10 +1495,8 @@ Below is a **qualitative description** of each parameter in your model and **wha
 <div class="chatgpt-o1-box">
     <b>ChatGPT o1</b>: Expected Model Behavior
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 ## Expected Model Behavior
 
 Given these parameters, here’s how the simulation is expected to unfold:
@@ -1576,10 +1533,8 @@ Straight away we can see a discrepancy between what ChatGPT-o1 expects to happen
 <div class="chatgpt-o1-box">
     <b>ChatGPT o1</b>: With these parameter choices, you will typically see **nearly 100%** of agents adopt by the end of the simulation. The most critical reasons are:
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 
 1. **Innovators Provide the Initial Spark**  
    Roughly 5% of the population adopts immediately (threshold = 0.0), seeding adoption across the network.
@@ -1610,10 +1565,8 @@ And;
 <div class="chatgpt-o1-box">
     <b>ChatGPT o1</b>: When using these specific parameters, **you generally won’t see a large variation** in the *final fraction* of adopters from one simulation run to another. Most runs will reach near 100% adoption by the end. However, **there can be moderate variation** in:
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 
 
 1. **How quickly** the adoption spreads:  
@@ -1643,10 +1596,8 @@ From this plot we can see that the final fraction of the population that adopts 
 <div class="chatgpt-o1-box">
     <b>ChatGPT o1</b>: By step 6, half the population adopted the innovation; from step 7 onward, adoption is frozen at 52%. The model has reached an equilibrium: no additional agents are swayed, likely because the non-adopting agents’ thresholds are not met in their local networks.
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 Below is an **interpretation** of the simulation output:
 
 ---
@@ -1727,10 +1678,8 @@ From this it is clear that we have some large clusters of category 4 nodes (lagg
 <div class="chatgpt-o1-box">
     <b>ChatGPT o1</b>:     Because the model incorporates randomness (e.g., network structure, agent categories), there can be **clusters** of high-threshold agents or poorly connected areas that fail to reach a critical mass of adopters. Although the model *often* reaches near 100% adoption in theory, in *practice* a particular random seed or network layout can cause the process to **stall**—as happened at 52% in your data.
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 **Short Answer**  
 ---
 
@@ -1793,10 +1742,8 @@ And we can also upload the plot of the final network and ask it to interpret the
 - A **predominantly green region** (adopters) toward the upper‐left, where most agents ended up adopting.  
 - A **predominantly gray region** (non‐adopters) toward the bottom‐right, where adoption stalled.
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
+<details  markdown="1">
+
 
 Each node’s label appears to be its **Rogers category** (*0 = innovator, 1 = early adopter, etc.*), and the color indicates whether that agent ended up adopting. Several observations stand out:
 
@@ -1837,12 +1784,9 @@ Well this is quite interesting, already we can see signs of the LLM being able t
 
 I next prompted o1 with ideas on ways to expand the model, and to be honest, I cant track down exactly the difference between modifications I made to the code vs what o1 suggested. After a handful of iterations we ended with the following expansions of the model and agent code:
 
-<details>
-    <summary>
-    Click here for full text of response
-    </summary>
-<pre>
-<code>
+<details  markdown="1">
+
+```
 # Model design
 import agentpy as ap
 import networkx as nx
@@ -2060,8 +2004,7 @@ data = results.variables.InnovationModel
 ax = data["remaining_resources"].plot()
 # ax = data["total_money"].plot()
 # plt.close()
-</code>
-</pre>
+```
 
 </details>
 
