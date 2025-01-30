@@ -101,22 +101,22 @@ To explore these questions, I will break my investigation into the following ste
 
 1. First I will explore current AI models (gpt4o, claude 3.5 haiku, and ollama3.1:8b) capability in designing a policy to increase the adoption of AI. I will examine the qualitative features of the models at progressively higher levels of detail in the policy. This initial method of model comparison is illustrated in the following figure:
 
-![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
+    ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
 *Figure 1: LLM Based Policy Generation and Iteration*
 
 2. Next, I will also compare the model responses for different situations (AI education policy for two different municipalities) which I believe should cause substantive differences in the policy recommendations and outcomes. By comparing the different social situations, I will draw (again qualitative) comparisons between these. My hypothesis in this, is that while detailed and specific, there will be few differences between amongst the models for the same prompt, as well as few differences between the responses for the two municipalities. This method is illustrated below: 
 
-![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_02.png)
+    ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_02.png)
 *Figure 2: LLM Based Policy Generation for Specific Municipalities*
 
 3. Next, I will explore using a single LLM to generate a policy world model to simulate AI adoption policy impacts. For this I will be using a rather simple toy model developed in [agentpy](https://agentpy.readthedocs.io/en/latest/). Agentpy is a python module for simulating simple agent-based networks. I should note that these are not AI agents, but rather simple rules based agents. Even given this consideration, interesting and emergent behavior is often observed in models developed in agentpy. I will heavily leverage LLMs (specifically gpt4o and o1) in the creation of a progressively more complex agent based world model. This process is pictorially shown below.
 
-![LLM generated world model]({{ site.baseurl }}/assets/images/LLM_generated_world_model_01.png)
+    ![LLM generated world model]({{ site.baseurl }}/assets/images/LLM_generated_world_model_01.png)
 *Figure 3: LLM Generated World Model*
 
 4. After the world model is built, I will leverage LLMs to generate the starting conditions and parameters of the agentpy simulation, as well as interpret the numeric results in a qualitative natural language way. My hypothesis for this step is that the LLM is capable of generating an agent based world model simulation, from which it can gain knowledge that it doesn't have in its base model. This step is illustrated below:
 
-![New Knowledge]({{ site.baseurl }}/assets/images/New_Knowledge.png)
+    ![New Knowledge]({{ site.baseurl }}/assets/images/New_Knowledge.png)
 *Figure 4: New Knowledge is potentially generated from the World Model interacting with the Language Model*
 
 
@@ -678,6 +678,10 @@ Again, the responses at this level were similar in some respects, however each o
 Lets go 1 level more detailed in our prompt, but also try to elicit some more specifics about two diverse municipalities.
 
 ## Differences in Municipalities
+![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_02.png)
+*Figure 2: LLM Based Policy Generation for Specific Municipalities*
+
+If you recall from the introduction, I want to explore these three models and policy they suggest for two different municipalities which should produce different suggestions for educational policy. 
 
 <div class="prompt-box">
 <b>Prompt</b>: Provide a concise but specific education plan for AI adoption in K-12 in the Boulder Valley School District.
@@ -1077,6 +1081,9 @@ Targeted Outcome: Prepare students as AI-capable, ethically-informed innovators.
 Again we can see distinct differences, but strong similarities between both the models for the same school district as well as the same model for different school districts. This is a fairly strong confirmation of my hypothesis that however complex the transformer networks are, next token prediction fails to consider the nuanced differences between policy tailored for AI promotion in fairly different school districts. This leads to our next investigation of AI generated world models; my hope is that we can elicit some of this nuance by building world models of these social and economic scenarios, even if they are simple models.
 
 # Modeling of AI Uptake
+
+![LLM generated world model]({{ site.baseurl }}/assets/images/LLM_generated_world_model_01.png)
+*LLM Generated World Model*
 
 With the qualitative analysis of policy generation under out belts, we can now explore the generation of models of AI technology adoption and interfacing with these models. Again this will be limited to just this one policy case (AI uptake), and again will just start with a the simplest possible model with a couple of complications. We will use the agentpy framework for this as described above, and will also expand our use of models to use ChatGPT-o1. We will use as a reference Rodgers' diffusion of innovation model, which is a simple model that can be used to explore the dynamics of adoption of new technologies.
 
@@ -2122,8 +2129,536 @@ We get this new curve for the Gini Coefficient:
 ![gini coefficient with 30% contributing]({{base.url}}/assets/images/gini_coef_with_30_contribution.png)
 *Gini Coefficient with contribution raised to 30%*
 
-And we see that in fact the Gini Coeficient at the end of 250 simulation step is lower meaning more equality as the Language Model predicted. 
+And we see that in fact the Gini Coeficient at the end of 250 simulation step is lower meaning more equality as the Language Model predicted. If we plot the coeficient for multiple contribution fractions we get:
 
+![gini coef with multiple contrib]({{ base.url }}/assets/images/gini_coef_with_multiple_contrib.png)
+
+And we can see that the output Gini coeficient behaves as the o1 model suggested it would: with an increasing fraction of the population that contribute to AI, we get increasing equality of financial resources.
+
+
+
+## Natural Language Descriptions of Parameters in, and Results Out
+
+![New Knowledge]({{ site.baseurl }}/assets/images/New_Knowledge.png)
+
+I now have a collaboratively-built World Model of AI adoption in a small toy agent based simulated network. We can now use an LLM to generate input parameters to our World Model (and natural language descriptions of the parameters). In this way we can have the LLM explore different configurations of how the World Model is run. We can also have the LLM evaluate the output metrics of the various runs, and provide a qualitative, natural language description of the output of the run.
+
+
+<div class="prompt-box">
+<b>Prompt</b>: give me 20 configurations of the following parameters, choose them to explore different features of the model. Be sure to fill in the 'qualitative description field' with a text based description of what the particular configuration of the parameters mean. Format them as json text:
+<details markdown="1">
+
+example parameters:
+
+```python
+parameters = {
+    'population': 10000,
+    'categories': ['innovator', 'early_adopter', 'early_majority', 'late_majority', 'laggard'],
+    'contributor_fraction':0.50, # % of adoptors contribute to tech
+    'probabilities': [0.05, 0.1, 0.35, 0.35, 0.15],
+    'thresholds': [0.0, 0.01, 0.25, 0.5, 0.9],
+    'number_of_connections': 20,
+    'network_rewire_probability': 0.05,
+
+    'total_ai_resources': 30,  # Total AI resources available
+    'ai_cost': 10,  # Cost of using AI for each adoption
+    'standard_money_gain_min': -2, # Minimum money generated by normal economic output
+    'standard_money_gain_max': 4, # Maximum money generated by normal economic output
+    'ai_money_gain_min': 0,  # Minimum money generated by AI usage
+    'ai_money_gain_max': 50,  # Maximum money generated by AI usage
+    'resource_gain_min': 0,  # Minimum AI resources generated by adoption
+    'resource_gain_max': 3,  # Maximum AI resources generated by adoption
+
+    'steps': 250,
+    'qualitative_description': <fill in>
+
+}
+```
+
+</details>
+</div>
+<br>
+
+<div class="chatgpt-o1-box">
+    <b>ChatGPT o1</b>: 
+
+<details markdown="1">
+
+```python
+[
+  {
+    "population": 10000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.50,
+    "probabilities": [0.05, 0.1, 0.35, 0.35, 0.15],
+    "thresholds": [0.0, 0.01, 0.25, 0.5, 0.9],
+    "number_of_connections": 20,
+    "network_rewire_probability": 0.05,
+    "total_ai_resources": 30,
+    "ai_cost": 10,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 4,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 50,
+    "resource_gain_min": 0,
+    "resource_gain_max": 3,
+    "steps": 250,
+    "qualitative_description": "Base reference scenario. Balanced distribution of adopter types and moderate network rewiring to see a baseline diffusion and AI resource usage."
+  },
+  {
+    "population": 5000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.30,
+    "probabilities": [0.06, 0.09, 0.35, 0.35, 0.15],
+    "thresholds": [0.0, 0.02, 0.2, 0.5, 0.8],
+    "number_of_connections": 10,
+    "network_rewire_probability": 0.1,
+    "total_ai_resources": 20,
+    "ai_cost": 5,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 3,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 40,
+    "resource_gain_min": 0,
+    "resource_gain_max": 2,
+    "steps": 200,
+    "qualitative_description": "Smaller population with fewer connections but slightly higher rewiring, focusing on faster spread dynamics and slightly lower AI cost to encourage AI use."
+  },
+  {
+    "population": 15000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.70,
+    "probabilities": [0.02, 0.08, 0.3, 0.4, 0.2],
+    "thresholds": [0.0, 0.1, 0.3, 0.6, 0.9],
+    "number_of_connections": 25,
+    "network_rewire_probability": 0.02,
+    "total_ai_resources": 50,
+    "ai_cost": 10,
+    "standard_money_gain_min": -3,
+    "standard_money_gain_max": 4,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 60,
+    "resource_gain_min": 1,
+    "resource_gain_max": 3,
+    "steps": 300,
+    "qualitative_description": "Larger population with a higher share of contributors. Lower rewiring encourages local clustering, and a moderate AI cost with higher total AI resources."
+  },
+  {
+    "population": 8000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.40,
+    "probabilities": [0.05, 0.15, 0.3, 0.3, 0.2],
+    "thresholds": [0.0, 0.05, 0.2, 0.45, 0.8],
+    "number_of_connections": 15,
+    "network_rewire_probability": 0.08,
+    "total_ai_resources": 40,
+    "ai_cost": 8,
+    "standard_money_gain_min": -1,
+    "standard_money_gain_max": 2,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 30,
+    "resource_gain_min": 0,
+    "resource_gain_max": 2,
+    "steps": 150,
+    "qualitative_description": "Balanced scenario with a bit larger fraction of early adopters. Moderate connections, slightly higher rewiring, and moderate AI usage cost."
+  },
+  {
+    "population": 20000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.20,
+    "probabilities": [0.07, 0.13, 0.3, 0.3, 0.2],
+    "thresholds": [0.0, 0.01, 0.25, 0.5, 0.9],
+    "number_of_connections": 30,
+    "network_rewire_probability": 0.05,
+    "total_ai_resources": 60,
+    "ai_cost": 12,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 5,
+    "ai_money_gain_min": 5,
+    "ai_money_gain_max": 50,
+    "resource_gain_min": 1,
+    "resource_gain_max": 4,
+    "steps": 350,
+    "qualitative_description": "Large population with lower contributor fraction. More total AI resources but higher AI cost, exploring how resource constraints affect adoption."
+  },
+  {
+    "population": 12000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.60,
+    "probabilities": [0.03, 0.07, 0.3, 0.4, 0.2],
+    "thresholds": [0.0, 0.1, 0.2, 0.5, 0.8],
+    "number_of_connections": 40,
+    "network_rewire_probability": 0.02,
+    "total_ai_resources": 25,
+    "ai_cost": 5,
+    "standard_money_gain_min": -1,
+    "standard_money_gain_max": 4,
+    "ai_money_gain_min": 2,
+    "ai_money_gain_max": 45,
+    "resource_gain_min": 0,
+    "resource_gain_max": 3,
+    "steps": 200,
+    "qualitative_description": "Moderate population, high contributor fraction. Many connections with low rewiring. Lower AI cost encourages more frequent AI adoption."
+  },
+  {
+    "population": 30000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.55,
+    "probabilities": [0.05, 0.1, 0.35, 0.3, 0.2],
+    "thresholds": [0.0, 0.02, 0.3, 0.6, 0.85],
+    "number_of_connections": 50,
+    "network_rewire_probability": 0.01,
+    "total_ai_resources": 80,
+    "ai_cost": 15,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 6,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 70,
+    "resource_gain_min": 1,
+    "resource_gain_max": 5,
+    "steps": 400,
+    "qualitative_description": "Very large population with extensive connectivity but minimal rewiring. High total AI resources and cost to test resource trade-offs at scale."
+  },
+  {
+    "population": 6000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.25,
+    "probabilities": [0.1, 0.15, 0.3, 0.3, 0.15],
+    "thresholds": [0.0, 0.05, 0.25, 0.55, 0.9],
+    "number_of_connections": 8,
+    "network_rewire_probability": 0.15,
+    "total_ai_resources": 10,
+    "ai_cost": 5,
+    "standard_money_gain_min": -3,
+    "standard_money_gain_max": 3,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 35,
+    "resource_gain_min": 0,
+    "resource_gain_max": 2,
+    "steps": 100,
+    "qualitative_description": "Smaller population with a higher rewiring rate, leading to quicker rearrangement of networks. Low initial AI resources to see if scarcity limits adoption."
+  },
+  {
+    "population": 18000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.45,
+    "probabilities": [0.04, 0.1, 0.33, 0.33, 0.2],
+    "thresholds": [0.0, 0.01, 0.2, 0.4, 0.85],
+    "number_of_connections": 20,
+    "network_rewire_probability": 0.1,
+    "total_ai_resources": 55,
+    "ai_cost": 7,
+    "standard_money_gain_min": -1,
+    "standard_money_gain_max": 4,
+    "ai_money_gain_min": 3,
+    "ai_money_gain_max": 55,
+    "resource_gain_min": 0,
+    "resource_gain_max": 4,
+    "steps": 300,
+    "qualitative_description": "Mid-size population with moderate rewiring and a healthy pool of AI resources. Slightly less skewed adoption probabilities for earlier categories."
+  },
+  {
+    "population": 25000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.35,
+    "probabilities": [0.08, 0.12, 0.3, 0.35, 0.15],
+    "thresholds": [0.0, 0.02, 0.25, 0.55, 0.9],
+    "number_of_connections": 30,
+    "network_rewire_probability": 0.07,
+    "total_ai_resources": 75,
+    "ai_cost": 10,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 6,
+    "ai_money_gain_min": 2,
+    "ai_money_gain_max": 60,
+    "resource_gain_min": 1,
+    "resource_gain_max": 3,
+    "steps": 250,
+    "qualitative_description": "Larger population aiming for a balanced approach in adoption categories. Medium network rewiring, substantial AI resources, and moderate AI cost."
+  },
+  {
+    "population": 5000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.80,
+    "probabilities": [0.01, 0.09, 0.35, 0.35, 0.2],
+    "thresholds": [0.0, 0.01, 0.2, 0.4, 0.9],
+    "number_of_connections": 5,
+    "network_rewire_probability": 0.2,
+    "total_ai_resources": 15,
+    "ai_cost": 10,
+    "standard_money_gain_min": -4,
+    "standard_money_gain_max": 2,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 40,
+    "resource_gain_min": 0,
+    "resource_gain_max": 2,
+    "steps": 200,
+    "qualitative_description": "Very high fraction of contributors in a small population. Low connectivity but high rewiring for rapidly changing network structure. Higher AI cost tests commitment."
+  },
+  {
+    "population": 28000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.50,
+    "probabilities": [0.05, 0.1, 0.3, 0.35, 0.2],
+    "thresholds": [0.0, 0.05, 0.3, 0.6, 0.95],
+    "number_of_connections": 45,
+    "network_rewire_probability": 0.05,
+    "total_ai_resources": 90,
+    "ai_cost": 18,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 5,
+    "ai_money_gain_min": 4,
+    "ai_money_gain_max": 80,
+    "resource_gain_min": 0,
+    "resource_gain_max": 5,
+    "steps": 450,
+    "qualitative_description": "High population, high connectivity, and large AI resource pool but also a high AI cost. Tests whether the payoff still motivates AI adoption."
+  },
+  {
+    "population": 10000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.25,
+    "probabilities": [0.05, 0.15, 0.25, 0.35, 0.2],
+    "thresholds": [0.0, 0.02, 0.2, 0.5, 0.85],
+    "number_of_connections": 20,
+    "network_rewire_probability": 0.03,
+    "total_ai_resources": 35,
+    "ai_cost": 7,
+    "standard_money_gain_min": -3,
+    "standard_money_gain_max": 3,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 40,
+    "resource_gain_min": 0,
+    "resource_gain_max": 3,
+    "steps": 300,
+    "qualitative_description": "Back to a moderate population size, with fewer innovators and more early adopters. Mild rewiring. Balanced AI resource scenario with moderate cost."
+  },
+  {
+    "population": 22000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.55,
+    "probabilities": [0.05, 0.1, 0.35, 0.35, 0.15],
+    "thresholds": [0.0, 0.01, 0.25, 0.45, 0.8],
+    "number_of_connections": 35,
+    "network_rewire_probability": 0.1,
+    "total_ai_resources": 45,
+    "ai_cost": 12,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 4,
+    "ai_money_gain_min": 2,
+    "ai_money_gain_max": 55,
+    "resource_gain_min": 1,
+    "resource_gain_max": 3,
+    "steps": 350,
+    "qualitative_description": "Larger population with a healthy contributor fraction. Strong middle category presence, moderate-high rewiring, and a slightly elevated AI cost."
+  },
+  {
+    "population": 4000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.50,
+    "probabilities": [0.15, 0.2, 0.25, 0.25, 0.15],
+    "thresholds": [0.0, 0.05, 0.15, 0.4, 0.9],
+    "number_of_connections": 12,
+    "network_rewire_probability": 0.05,
+    "total_ai_resources": 8,
+    "ai_cost": 5,
+    "standard_money_gain_min": -5,
+    "standard_money_gain_max": 2,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 30,
+    "resource_gain_min": 0,
+    "resource_gain_max": 2,
+    "steps": 150,
+    "qualitative_description": "Smaller population heavily skewed toward early adopter types. Low AI resources create a strong competition for them. Higher chance of negative standard income."
+  },
+  {
+    "population": 32000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.65,
+    "probabilities": [0.03, 0.07, 0.3, 0.35, 0.25],
+    "thresholds": [0.0, 0.08, 0.25, 0.5, 0.95],
+    "number_of_connections": 25,
+    "network_rewire_probability": 0.02,
+    "total_ai_resources": 100,
+    "ai_cost": 20,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 6,
+    "ai_money_gain_min": 5,
+    "ai_money_gain_max": 100,
+    "resource_gain_min": 0,
+    "resource_gain_max": 4,
+    "steps": 500,
+    "qualitative_description": "Large population, high contributor fraction, and very large AI resource pool—but also the highest AI cost. Tests extremes of resource abundance and cost."
+  },
+  {
+    "population": 9000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.45,
+    "probabilities": [0.05, 0.1, 0.3, 0.35, 0.2],
+    "thresholds": [0.0, 0.02, 0.3, 0.55, 0.85],
+    "number_of_connections": 18,
+    "network_rewire_probability": 0.06,
+    "total_ai_resources": 25,
+    "ai_cost": 8,
+    "standard_money_gain_min": -1,
+    "standard_money_gain_max": 4,
+    "ai_money_gain_min": 1,
+    "ai_money_gain_max": 40,
+    "resource_gain_min": 0,
+    "resource_gain_max": 2,
+    "steps": 250,
+    "qualitative_description": "Moderate population with well-rounded probabilities. Medium connections and rewiring for steady network evolution. AI resource usage slightly encouraged by moderate cost."
+  },
+  {
+    "population": 14000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.55,
+    "probabilities": [0.07, 0.08, 0.3, 0.35, 0.2],
+    "thresholds": [0.0, 0.03, 0.2, 0.4, 0.9],
+    "number_of_connections": 22,
+    "network_rewire_probability": 0.12,
+    "total_ai_resources": 35,
+    "ai_cost": 6,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 5,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 45,
+    "resource_gain_min": 1,
+    "resource_gain_max": 3,
+    "steps": 300,
+    "qualitative_description": "Balanced approach with a moderate population. Slightly higher rewiring fosters dynamic network shifts. AI resources remain moderate, with a modest usage cost."
+  },
+  {
+    "population": 27000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.30,
+    "probabilities": [0.05, 0.1, 0.35, 0.35, 0.15],
+    "thresholds": [0.0, 0.02, 0.25, 0.45, 0.85],
+    "number_of_connections": 28,
+    "network_rewire_probability": 0.03,
+    "total_ai_resources": 65,
+    "ai_cost": 9,
+    "standard_money_gain_min": -3,
+    "standard_money_gain_max": 4,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 60,
+    "resource_gain_min": 1,
+    "resource_gain_max": 4,
+    "steps": 350,
+    "qualitative_description": "Large population, medium connectivity, and modest rewiring. Lower contributor fraction and a healthy total AI resource pool for investigating sustained adoption."
+  },
+  {
+    "population": 10000,
+    "categories": ["innovator", "early_adopter", "early_majority", "late_majority", "laggard"],
+    "contributor_fraction": 0.50,
+    "probabilities": [0.05, 0.1, 0.35, 0.35, 0.15],
+    "thresholds": [0.0, 0.01, 0.25, 0.5, 0.9],
+    "number_of_connections": 20,
+    "network_rewire_probability": 0.05,
+    "total_ai_resources": 30,
+    "ai_cost": 10,
+    "standard_money_gain_min": -2,
+    "standard_money_gain_max": 4,
+    "ai_money_gain_min": 0,
+    "ai_money_gain_max": 50,
+    "resource_gain_min": 0,
+    "resource_gain_max": 3,
+    "steps": 250,
+    "qualitative_description": "Identical to the base scenario to facilitate direct comparison with other variations. Used as a control test to evaluate the impact of changes in other runs."
+  }
+]
+
+```
+
+</details>
+</div>
+<br>
+I then ran each of these parameters dictionaries through our colaborative world model and stored the output metrics vs time step as a list of json strings. I then prompted the LLM to interpret this list qualitatively to obtain a natural language description of the results of the World Model run.*Note: I transitioned to GPT-4o for this step as o1 did not support uploading of json files via the chat interface.*
+
+<div class="prompt-box">
+    <b>Prompt</b>: provide a qualitative description of the effect of the simulation for each of the 20 runs in this data out file: the file was uploaded as well.
+
+    And then: please provide a single qualitative description of each of the 20 runs formatted as a json object
+</div>
+<br>
+
+<div class="chatgpt-4o-box">
+    <b>ChatGPT 4o</b>: 
+
+<details markdown="1">
+
+```python
+[{'Simulation_Run': 1,
+  'Qualitative_Description': 'Moderate adoption, with strong uptake among early adopters and early majority. AI resources were heavily consumed, indicating high AI adoption. Moderate economic inequality, with wealth concentrated in certain groups.'},
+ {'Simulation_Run': 2,
+  'Qualitative_Description': 'High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 3,
+  'Qualitative_Description': 'Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 4,
+  'Qualitative_Description': 'High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 5,
+  'Qualitative_Description': 'Moderate adoption, with strong uptake among early adopters and early majority. AI resources remained largely unused, suggesting low AI adoption. Significant economic inequality developed during the simulation.'},
+ {'Simulation_Run': 6,
+  'Qualitative_Description': 'Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 7,
+  'Qualitative_Description': 'Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 8,
+  'Qualitative_Description': 'Moderate adoption, with strong uptake among early adopters and early majority. AI resources were heavily consumed, indicating high AI adoption. Moderate economic inequality, with wealth concentrated in certain groups.'},
+ {'Simulation_Run': 9,
+  'Qualitative_Description': 'High adoption, most of the population has adopted the technology. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 10,
+  'Qualitative_Description': 'High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Moderate economic inequality, with wealth concentrated in certain groups.'},
+ {'Simulation_Run': 11,
+  'Qualitative_Description': 'Moderate adoption, with strong uptake among early adopters and early majority. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 12,
+  'Qualitative_Description': 'Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 13,
+  'Qualitative_Description': 'Moderate adoption, with strong uptake among early adopters and early majority. AI resources were heavily consumed, indicating high AI adoption. Significant economic inequality developed during the simulation.'},
+ {'Simulation_Run': 14,
+  'Qualitative_Description': 'High adoption, most of the population has adopted the technology. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 15,
+  'Qualitative_Description': 'High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Moderate economic inequality, with wealth concentrated in certain groups.'},
+ {'Simulation_Run': 16,
+  'Qualitative_Description': 'Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 17,
+  'Qualitative_Description': 'Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 18,
+  'Qualitative_Description': 'High adoption, most of the population has adopted the technology. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth.'},
+ {'Simulation_Run': 19,
+  'Qualitative_Description': 'High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Significant economic inequality developed during the simulation.'},
+ {'Simulation_Run': 20,
+  'Qualitative_Description': 'High adoption, most of the population has adopted the technology. Moderate AI resource consumption, balancing AI and traditional approaches. Moderate economic inequality, with wealth concentrated in certain groups.'}]
+```
+
+</details>
+</div>
+<br>
+Finally, we have arrived at a table of descriptions of inputs to a World Model, paired with descriptions of the results of each individual model run. For this toy example, it is a simple model and not representative of a real world technology adoption network, and I have only included 20 results, however, this very initial exploration of this idea of collaborative World Model building, followed by LLM generated run parameters and output interpretation, might lead to a technique for "self specialization" or "strong-to-self generalization" for model alignment. The full table of qualitative input and output descriptions is shown below.
+
+| Qualitative Description of the Input Parameters | Qualitative Description of the Output of the Results |
+|-------------------------------------------------|----------------------------------------------------|
+| Base reference scenario. Balanced distribution of adopter types and moderate network rewiring to see a baseline diffusion and AI resource usage. | Moderate adoption, with strong uptake among early adopters and early majority. AI resources were heavily consumed, indicating high AI adoption. Moderate economic inequality, with wealth concentrated in certain groups. |
+| Smaller population with fewer connections but slightly higher rewiring, focusing on faster spread dynamics and slightly lower AI cost to encourage AI use. | High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Larger population with a higher share of contributors. Lower rewiring encourages local clustering, and a moderate AI cost with higher total AI resources. | Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Balanced scenario with a bit larger fraction of early adopters. Moderate connections, slightly higher rewiring, and moderate AI usage cost. | High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Large population with lower contributor fraction. More total AI resources but higher AI cost, exploring how resource constraints affect adoption. | Moderate adoption, with strong uptake among early adopters and early majority. AI resources remained largely unused, suggesting low AI adoption. Significant economic inequality developed during the simulation. |
+| Moderate population, high contributor fraction. Many connections with low rewiring. Lower AI cost encourages more frequent AI adoption. | Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Very large population with extensive connectivity but minimal rewiring. High total AI resources and cost to test resource trade-offs at scale. | Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Smaller population with a higher rewiring rate, leading to quicker rearrangement of networks. Low initial AI resources to see if scarcity limits adoption. | Moderate adoption, with strong uptake among early adopters and early majority. AI resources were heavily consumed, indicating high AI adoption. Moderate economic inequality, with wealth concentrated in certain groups. |
+| Mid-size population with moderate rewiring and a healthy pool of AI resources. Slightly less skewed adoption probabilities for earlier categories. | High adoption, most of the population has adopted the technology. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Larger population aiming for a balanced approach in adoption categories. Medium network rewiring, substantial AI resources, and moderate AI cost. | High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Moderate economic inequality, with wealth concentrated in certain groups. |
+| Very high fraction of contributors in a small population. Low connectivity but high rewiring for rapidly changing network structure. Higher AI cost tests commitment. | Moderate adoption, with strong uptake among early adopters and early majority. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| High population, high connectivity, and large AI resource pool but also a high AI cost. Tests whether the payoff still motivates AI adoption. | Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Back to a moderate population size, with fewer innovators and more early adopters. Mild rewiring. Balanced AI resource scenario with moderate cost. | Moderate adoption, with strong uptake among early adopters and early majority. AI resources were heavily consumed, indicating high AI adoption. Significant economic inequality developed during the simulation. |
+| Larger population with a healthy contributor fraction. Strong middle category presence, moderate-high rewiring, and a slightly elevated AI cost. | High adoption, most of the population has adopted the technology. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Smaller population heavily skewed toward early adopter types. Low AI resources create a strong competition for them. Higher chance of negative standard income. | High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Moderate economic inequality, with wealth concentrated in certain groups. |
+| Large population, high contributor fraction, and very large AI resource pool—but also the highest AI cost. Tests extremes of resource abundance and cost. | Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Moderate population with well-rounded probabilities. Medium connections and rewiring for steady network evolution. AI resource usage slightly encouraged by moderate cost. | Low adoption, technology failed to reach widespread usage. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Balanced approach with a moderate population. Slightly higher rewiring fosters dynamic network shifts. AI resources remain moderate, with a modest usage cost. | High adoption, most of the population has adopted the technology. AI resources remained largely unused, suggesting low AI adoption. Relatively equitable economic outcomes, with distributed wealth. |
+| Large population, medium connectivity, and modest rewiring. Lower contributor fraction and a healthy total AI resource pool for investigating sustained adoption. | High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Significant economic inequality developed during the simulation. |
+| Identical to the base scenario to facilitate direct comparison with other variations. Used as a control test to evaluate the impact of changes in other runs. | High adoption, most of the population has adopted the technology. Moderate AI resource consumption, balancing AI and traditional approaches. Moderate economic inequality, with wealth concentrated in certain groups. |
+
+I desperately wanted to get to fine tuning on these pairs, however I am afraid time did not allow. However, I will describe in some detail, ideas that I have around how these paired descriptions can be used. Even with this shortfall of the final goal, this super-simple toy model, collaboratively built, and run with LLM generated input, does hold (I think) a great deal of promise for coupling Language Models and World Models to discover "New Knowledge."
 
 # Discussion
 
