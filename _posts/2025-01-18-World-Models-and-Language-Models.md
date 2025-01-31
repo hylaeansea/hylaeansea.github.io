@@ -10,48 +10,59 @@ categories: blog
     border: 2px solidrgb(54, 56, 54); 
     padding: 10px; 
     border-radius: 5px; 
-    background-color:rgb(215, 191, 255); 
+    background-color:rgb(215, 191, 255); /* #D7BFFF */
     box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
 }
 .chatgpt-4o-box {
     border: 2px solidrgb(54, 56, 54); 
     padding: 10px; 
     border-radius: 5px; 
-    background-color:rgb(202, 235, 194); 
+    background-color:rgb(202, 235, 194); /* #CAEBC2 */
     box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
 }
 .chatgpt-o1-box {
     border: 2px solidrgb(54, 56, 54); 
     padding: 10px; 
     border-radius: 5px; 
-    background-color:rgb(159, 234, 140); 
+    background-color:rgb(159, 234, 140); /* #9FEA8C */
     box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
 }
 .llama-box {
     border: 2px solidrgb(54, 56, 54); 
     padding: 10px; 
     border-radius: 5px; 
-    background-color:rgb(209, 209, 209); 
+    background-color:rgb(209, 209, 209); /* #D1D1D1 */
     box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
 }
 .claude-box {
     border: 2px solidrgb(54, 56, 54); 
     padding: 10px; 
     border-radius: 5px; 
-    background-color:rgb(187, 135, 116); 
+    background-color:rgb(187, 135, 116); /* BB8774 */
     box-shadow: 2px 2px 5px rgba(0, 0, 1, 0.1);
 }
 
 </style>
 
-
+<!-- <font style="background-color: #CAEBC2">ChatGPT-4o</font>, <font cstyle="background-color: #9FEA8C">ChatGPT-o1</font>, <font style="background-color: #D1D1D1">llama3.1:8b</font>, and <font style="background-color: #BB8774">Claude 3.5 Haiku</font> -->
 
 # Abstract
 
+The problem of AI Alignment and the desire to develop safe but also helpful AI has seen a staggering increase in research and innovation over the last year or two. Many of the most successful innovations however, rely on expensive human feedback. This has lead to innovative ideas such as constitutional AI, Reinforcement Learning through AI Feedback, and others. Also, the explosion of computational power, scientific computing frameworks, and openly available software have made it easier than ever to simulate many aspects of the world. 
+
+In this paper I expand on the concept that (many) others have proposed and developed, for linking the natural language power of Language Models with the computational precision and numerical simulation capabilities of World Models. While this concept can and should be applied to a wide range of domains, I explore public policy development for technology adoption as an example and explore answers to the question; **can we make policy computable**.
 
 ![Computable Policy]({{ site.baseurl }}/assets/images/DALL·E_2025-01-18_11.27.13-A_futuristic_and_realistic_scene_depicting_the_concept_of_computable_policy.webp) 
 *Image generated with DALL·E; prompt: make a futuristic but realistic image that exemplifies "computable policy" as you have just described*
 
+In this investigation, I demonstrate that:
+
+1. through progressively more detailed prompts, modern Language Models provide a great starting point for policy development, but also lack detail that might be required for *effective* or *optimal* policy development,
+2. Large Language Models can (through clever prompting) produce code to simulate a specific domain in the form of a World Model,
+3. runs of these World Models can produce emergent behaviour and "New Knowledge" that the generating LLM did not expect, and that
+4. these concepts can be used to generate input output pairs of natural language descriptions computed on by the world model. 
+
+This investigation shows a potential path to leverage the ever-increasing power of LLMs for the generation and analysis of policy that can be hopefully more creative, more impactful, and more effective. I conclude with a discussion of the findings as well as a non-exhaustive enumeration of ideas for further work. 
 
 # Introduction
 
@@ -62,32 +73,36 @@ Many of the incredible advances in AI over the last few years have come as the r
 - [Nvidia World Foundation Models](https://blogs.nvidia.com/blog/cosmos-world-foundation-models/)
 - and many many others,
 
-...provide LLMs with external simulations, application programming interfaces (APIs), data, and computation that doesn't have to be learned as part of the base model training or fine tuning. This allows for the LLM to access a much more diverse and rich set of data and ideas than it would otherwise have access to in it's training corpus. In fact, this idea of LLMs as a sort of "glue" for various tasks, data sets, and APIs form the foundational idea of Agentic AI. 
+...provide LLMs with external simulations, application programming interfaces (APIs), data, and computation that doesn't have to be learned as part of the base model training or fine tuning. This allows the LLM to access a much more diverse and rich set of data and ideas than it would otherwise have access to in it's training corpus. In fact, this idea of LLMs as a sort of "glue" for various tasks, data sets, and APIs form the foundational idea of Agentic AI. 
 
 This approach however, has seen most of its success in domains that are readily computable such as access to APIs, physics simulations, or database queries. The very nature of "world models" is that their response can be calculated from physics models of the objects and agents in the virtual world. Another term for these are "Digital Twins" that simulate the behavior of a physical factory, smart city, or other physical system for example. I believe the reason for this rests in the fact that while they can be computationally expensive, we have really good mathematical models for many of these physical systems and thus they lend themselves to computation. This leads to my first conjecture about AIs and World Models: 
 
 **Conjecture 1:** Large Language Models often excel at tasks where the accuracy of their output is relatively easy to verify. Testing whether code compiles, having a bilingual human verify a translation, determining if re-written prose sounds better, or a generated poem conforms to rhyme and meter, are all tasks that can be done by humans or verified computationally with relative ease. This makes reinforcement learning more tractable because we can plainly see (or test) if the output is correct.
 
-However, there still exist a wide range of domains where it is more difficult, more subjective, and not as obvious to verify or test the correctness of an LLM output. It is not as easy, for example, to verify that a public policy recommendation is going to have the desired affect, or if a post on social media is going to foster civil discussion or cause harm, or if a particular social program is going to reach the desired people. These problems can't be "complied" as computer code can, these problems can sound coherent and well thought out, but then have secondary effects that are unintended. LLM generated public policy recommendations can be very detailed (especially with more and more detailed prompts as we will see below) and read very eloquently, however they will have been generated by "next token prediction" by a transformer network rather than generated by a simulation of, or contemplation and deliberation on, the outcome of the policy. Furthermore, if we can somehow make these foundations of society (law, policy, regulations, cultural text) more computable, we could auto generate massive amounts of training data to bake in this computable policy knowledge into the language models at training time. This could result in a future where our frontier AI models have computational knowledge of complex social, cultural, social, and civic domains. 
+However, there remain many domains where verifying or testing an LLM's output is more challenging, subjective, and less obvious. For instance, assessing whether a public policy recommendation will achieve its intended effect, determining if a social media post will encourage civil discourse or cause harm, or evaluating if a social program will reach its target audience is not as straightforward. Unlike code, these outputs cannot be "compiled” and, though they may appear coherent, could have unintended secondary effects. While LLM-generated policy recommendations can be detailed and eloquent, they result from "next token prediction" by a transformer network rather than thoughtful simulation or deliberation on policy outcomes.
 
-Therefore, the foundational motivation for this work is to answer the question:
+If we could make societal foundations such as law, policy, regulations, and cultural texts more computable, we might automatically generate vast training datasets. This would embed computable policy knowledge into language models during training, leading to a future where advanced AI models possess precise, computational knowledge of complex social, cultural, and civic domains.
+
+From this we arrive at this works foundational motivating question:
 
 ***Can we make policy computable?***
 
 # Prior Work
 
-This idea of social, economic, policy, civic, and society simulation is not novel and there are many (many) examples where complex computational models have been used to guide public policy and decision making:
+The concept of using complex computational models for simulating social, economic, policy, and civic systems is well-established, with numerous examples demonstrating its application in guiding public policy and decision-making. Notable works in this area include:
 
 - *John Sterman* (2000). Business Dynamics: System Thinking and Modeling for a Complex World. New York: McGraw-Hill.
 - *Stephen Wolfram (2016), [Computational Law, Symbolic Discourse and the AI Constitution](https://writings.stephenwolfram.com/2016/10/computational-law-symbolic-discourse-and-the-ai-constitution/)
 - *Edward J Walters* (2019). [Data Driven Law](https://www.routledge.com/Data-Driven-Law-Data-Analytics-and-the-New-Legal-Services/Walters/p/book/9781498766654)
 - [MIT Computable Law Project](https://www.media.mit.edu/articles/a-perspective-on-legal-algorithms/)
 
-...and of course many others. So this idea is not new, and in fact has been pontificated on by some computing and legal luminaries. I do think though, that as AIs in general and LLMs in particular continue to find use in more and more domains in our society, that highlighting the particular shortcomings of the frontier models for policy generation, and providing a philosophy on how we can remedy them through this approach is important. Through this work I also want to explore two particular avenues that I think are relatively novel and warrant further work: 
+These examples illustrate that the idea is not new and has attracted the attention of leading thinkers in computing and law. The roots of computable policy and computational language can be traced back to antiquity with Aristotelian logic and gained momentum during the scientific revolution with philosophers like Leibniz and John Wilkins who explored foundational languages of discourse.
 
-1) **Can an LLM be used to create the "world model" and then by running the model, learn knowledge it wouldn't otherwise have?** That is, does an LLM have the internal knowledge to (with clever prompting) create the computational world model, create configurations of specific runs of the model, and then learn from the output? This would hint at "weak-to-strong-***self*** generalization" as an adaptation of [Weak-to-Strong Generalization](https://openai.com/index/weak-to-strong-generalization/) if the LLM can create, and then learn from a computational world model. This **self** generalization may have alignment implications as we more fully explore agentic systems. 
+As artificial intelligence, especially large language models (LLMs), increasingly infiltrate various societal domains, it's vital to recognize their limitations in policy generation. Addressing these shortcomings and suggesting solutions is crucial. Beyond the primary exploration of computable policy, this work seeks to investigate two relatively novel avenues:
 
-2) **Can we use computational policy and LLMs to design policy or ideas around increasing AI equality in our society?** 2025 is turning out to be a pivotal year for public policy and AI technological development each individually, but this might be an especially important year for the intersection of these two domains. The adoption, distribution, and development of AI systems by different slices of society in the near term, might have feedback effects that entrench these early distributions of the technology for a long time to come. It might be especially important then to leverage these rapidly advancing technologies to design AI policy and regulation that most closely align with the values of freedom, equality, and democracy. 
+**Leveraging LLMs to Create and Learn from "World Models":** Can an LLM be used to construct a "world model" and, through simulations, acquire knowledge it would otherwise lack? This involves determining if an LLM, with strategic prompting, can generate computational world models, configure specific simulation runs, and then learn from the outcomes. If successful, this would suggest a form of "weak-to-strong-self generalization," adapting [Weak-to-Strong Generalization](https://openai.com/index/weak-to-strong-generalization/), where the LLM could create and learn from its own computational world model. Such self-generalization might have significant implications for alignment as we delve deeper into agentic systems.
+
+**Designing AI Policy for Societal Equality:** Can we use computational models and LLMs to develop policies that enhance AI equality in society? The year 2025 is shaping up to be pivotal for both public policy and AI technological development. The way AI systems are adopted, distributed, and developed in different societal sectors could have lasting impacts, potentially reinforcing early technological distributions. It's particularly important to use these rapidly advancing technologies to craft AI policy and regulation that uphold values like freedom, equality, and democracy.
 
 # Methodology
 
@@ -104,7 +119,7 @@ To explore these questions, I will break my investigation into the following ste
     ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
 *Figure 1: LLM Based Policy Generation and Iteration*
 
-2. Next, I will also compare the model responses for different situations (AI education policy for two different municipalities) which I believe should cause substantive differences in the policy recommendations and outcomes. By comparing the different social situations, I will draw (again qualitative) comparisons between these. My hypothesis in this, is that while detailed and specific, there will be few differences between amongst the models for the same prompt, as well as few differences between the responses for the two municipalities. This method is illustrated below: 
+2. Next, I will compare the model responses for different scenarios, such as AI education policy in two distinct municipalities. I anticipate that these differing social contexts should lead to significant variations in policy recommendations and outcomes. By examining these diverse situations, I aim to make qualitative comparisons between them. My hypothesis is that despite their specificity and detail, the LLMs will exhibit minimal differences when given the same prompt, as well as few distinctions in responses between the two municipalities. This approach is illustrated below:
 
     ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_02.png)
 *Figure 2: LLM Based Policy Generation for Specific Municipalities*
@@ -114,22 +129,24 @@ To explore these questions, I will break my investigation into the following ste
     ![LLM generated world model]({{ site.baseurl }}/assets/images/LLM_generated_world_model_01.png)
 *Figure 3: LLM Generated World Model*
 
-4. After the world model is built, I will leverage LLMs to generate the starting conditions and parameters of the agentpy simulation, as well as interpret the numeric results in a qualitative natural language way. My hypothesis for this step is that the LLM is capable of generating an agent based world model simulation, from which it can gain knowledge that it doesn't have in its base model. This step is illustrated below:
+4. Finally, after the world model is built, I will leverage LLMs to generate the starting conditions and parameters of the agentpy simulation, as well as interpret the numeric results in a qualitative manner with natural language. My hypothesis for this step is that the LLM is capable of generating an agent based world model simulation, from which it can gain knowledge that it doesn't have in its base model. This step is illustrated below:
 
     ![New Knowledge]({{ site.baseurl }}/assets/images/New_Knowledge.png)
 *Figure 4: New Knowledge is potentially generated from the World Model interacting with the Language Model*
 
 
-My hope is that through these steps I can demonstrate how LLMs can be used to not only generate rich world models for public policy recommendation and analysis, but also by using **AI tech adoption** as the exemplar policy in the above steps, develop some intuition about how we might adopt policy to increase that adoption. 
+My hope is that through these steps I can demonstrate how LLMs can be used to not only generate rich world models for public policy recommendation and analysis, but also by using **AI tech adoption** as the exemplar policy in the above steps, develop some intuition about how we might design policy to increase that adoption. 
 
-A quick disclaimer: I have only interest but no backround in public policy, or public tech policy. Furthermore, I will be exploring only toy models that are not fully descriptive of the complex dynamics, economics, and interactions in public policy analysis. Nevertheless, I think that this project serves as an interesting jumping off point for world model generation in this way, I if I can motivate the true public policy and social computing professionals to think about some of my proposed philosophy this will be a success. With that...*lets go!*
+A quick disclaimer: I have an interest in public policy and public tech policy, but no formal background in these areas. I will be exploring simplified models that do not fully capture the complex dynamics, economics, and interactions involved in public policy analysis. However, I believe this project could serve as an intriguing starting point for generating world models. If I can motivate true public policy and social computing professionals to consider some of my proposed ideas, this will be a success. With that said... *let's get started!*
 
 # Generating Public Policy with LLMs
 
-In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses, as well as differences and similarities between models. As stated above, the paper will use as a use case, public policy to increase AI tech adoption across different cross sections of society. 
+In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses, as well as differences and similarities between models. For clarity, all the <font style="background-color: #D7BFFF">prompts</font> and model responses(<font style="background-color: #CAEBC2">ChatGPT-4o</font>, <font style="background-color: #9FEA8C">ChatGPT-o1</font>, <font style="background-color: #D1D1D1">llama3.1:8b</font>, and <font style="background-color: #BB8774">Claude 3.5 Haiku</font> will be highlighted with their respective color. Recalling the figure from before, three models will be given the same prompt and then the differences and similarities between them will be analyzed. This is to test the hypothesis that different models will produce largely similar responses given the fact that the base models have a lot of overlap in training data.
 
 ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
 *Figure 1: LLM Based Policy Generation and Iteration*
+
+We will begin at a high level and see what each model has to say about a national level policy for AI adoption.
 
 ## High level National Policy
 
