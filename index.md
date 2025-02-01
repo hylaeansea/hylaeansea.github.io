@@ -7,7 +7,7 @@ title: Home
 
 # {{ latest_post.title }}
 
-<small>Posted on {{ latest_post.date | date: "%B %d, %Y" }}</small>
+<small>Updated on {{ latest_post.date | date: "%B %d, %Y" }}</small>
 
 <p>{{ latest_post.content }}</p>
 
