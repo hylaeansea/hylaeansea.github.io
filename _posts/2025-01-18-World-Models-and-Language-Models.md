@@ -129,7 +129,7 @@ To explore these questions, I will break my investigation into the following ste
     ![LLM generated world model]({{ site.baseurl }}/assets/images/LLM_generated_world_model_01.png)
 *Figure 3: LLM Generated World Model*
 
-4. Finally, after the world model is built, I will leverage LLMs to generate the starting conditions and parameters of the agentpy simulation, as well as interpret the numeric results in a qualitative manner with natural language. My hypothesis for this step is that the LLM is capable of generating an agent based world model simulation, from which it can gain knowledge that it doesn't have in its base model. This step is illustrated below:
+4. Once the world model has been constructed, I will utilize large language models (LLMs) to establish the initial conditions and parameters for the agentpy simulation. Additionally, I will interpret the numerical outcomes using natural language for a qualitative understanding. My hypothesis is that the LLM can create an agent-based world model simulation, allowing it to acquire knowledge beyond its existing base model. This process is depicted below:
 
     ![New Knowledge]({{ site.baseurl }}/assets/images/New_Knowledge.png)
 *Figure 4: New Knowledge is potentially generated from the World Model interacting with the Language Model*
@@ -141,7 +141,7 @@ A quick disclaimer: I have an interest in public policy and public tech policy, 
 
 # Generating Public Policy with LLMs
 
-In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses, as well as differences and similarities between models. For clarity, all the <font style="background-color: #D7BFFF">prompts</font> and model responses(<font style="background-color: #CAEBC2">ChatGPT-4o</font>, <font style="background-color: #9FEA8C">ChatGPT-o1</font>, <font style="background-color: #D1D1D1">llama3.1:8b</font>, and <font style="background-color: #BB8774">Claude 3.5 Haiku</font> will be highlighted with their respective color. Recalling the figure from before, three models will be given the same prompt and then the differences and similarities between them will be analyzed. This is to test the hypothesis that different models will produce largely similar responses given the fact that the base models have a lot of overlap in training data.
+In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses, as well as differences and similarities between models. For clarity, all the <font style="background-color: #D7BFFF">prompts</font> and model responses(<font style="background-color: #CAEBC2">ChatGPT-4o</font>, <font style="background-color: #9FEA8C">ChatGPT-o1</font>, <font style="background-color: #D1D1D1">llama3.1:8b</font>, and <font style="background-color: #BB8774">Claude 3.5 Haiku</font>) will be highlighted with their respective color. Recalling the figure from before, three models will be given the same prompt and then the differences and similarities between them will be analyzed. This is to test the hypothesis that different models will produce largely similar responses given the fact that the base models have a lot of overlap in training data.
 
 ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
 *Figure 1: LLM Based Policy Generation and Iteration*
@@ -360,7 +360,20 @@ The policy aims to position the nation as a global leader in responsible, innova
 
 </div>
 <br>
-Each model's response to this (admitedly) very high level prompt is available in the boxes above. Some of the main similarities include a focus on 1) education and upskilling, 2) governance, 3) incentives, and 4) infrastructure. These response are again, very high level, however they do provide some details on specific infrastructure that is needed, some specific details around budget (only llama3.1) and on technology emphasis. Further prompts (not all shown to keep this document manageable) about the reasons for the specific tech recomendations produced a couple interesting results:
+
+Each model's response to this (admitedly) very high level prompt is available in the boxes above. Some of the main similarities include a focus on education and upskilling, frameworks for governance and monitoring, AI implementation incentives, and building out infrastructure. The prompt contained the word "sector" and so each model gave 5 sectors that AI can be applied to and there was descent overlap in these but with some differences. A couple of interesting things to point out:
+
+1. ChatGPT-4o mentioned 5G and IoT, I am not particulary convinced that these are critical infrastructure needed to increase AI adoption, and hence question their mention in this policy suggestion. I suspect that tech infrastructure build out in training data often included these concepts especially over the last 5 years.
+
+2. Llama3.1:8b was the only one to mention a specific timeline and budget (even though the budget breakdown was given as percentages). 
+
+3. Two of the three mention international collaboration with llama being the exception.
+
+4. Only ChatGPT referenced open-source software development, which I find particularly intriguing given that OpenAI initially promoted open-source development but has since stepped back. In contrast, while Meta releases its models with open weights (which are more restricted than true open source), it did not mention open source in its response. In a separate study, it would be worthwhile to explore how various models approach open-source software suggestions and concepts.
+
+5. All of them mention AI education and upskilling, however at different levels of detail. We will explore this concept at our next level of detail.
+
+I also found it interesting to prompt each model about a unique aspect of their response:
 
 * When further prompts to Claude asked why it chose to focus on HPC and if centralized or decentralized data centers were preferred, it replied:
 <br>
@@ -452,7 +465,7 @@ By focusing on **education, workforce readiness, and awareness**, this policy en
 
 </div>
 <br>
-* Llama3.1 was the only model to mention specific industries that would benefit from AI adoption, when asked which is the one that stands to gain the most, it replied:
+* When asked which industry stands to gain the most from AI adoption, llama3.1 replied:
 <br>
 <div class="llama-box">
     <b>Llama3.1:8b</b>: While AI has the potential to transform many industries, I'd argue that Healthcare stands to be transformed the most by increased adoption of AI. Here's why:
@@ -491,7 +504,8 @@ While AI has the potential to transform many industries, its impact on healthcar
 
 </div>
 <br>
-I would say that the prompts at this high level were fairly diverse. While they did have several similarities, each model had unique atributes that the others did not. This shouldn't be entirely surprising as even the same model with the same prompt can (and often do) give varying responses. This highlights one of the strengths of LLMs: to provide a jumping off point for further investigation. Lets go one level deeper; all of the models emphasized AI upskilling and education, lets dive into that.
+
+I expected there to be a very high degree of similarity between the responses to these prompts. However, I would say that the prompts at this overview level were quite varied. Although they shared some similarities, each model exhibited unique attributes absent in the others. This isn't entirely unexpected, as even the same model can produce different responses to the same prompt. Also, these three models are from three different organizations and likely underwent significantly different fine tuning and alignment processes. Given these differences, there were still several similarities at this abstract level. Let's delve deeper; all the models highlighted the importance of AI upskilling and education, so let's explore that aspect further.
 
 ## AI Up-skilling and Education
 
@@ -690,9 +704,9 @@ And some marked differences:
 2. Llama3.1 mentions a direct integration of AI ethics into the curriculum rather than a standalone element.
 3. Claude 3.5 was rather brief with its response - This may have been due to the fact that the time of day of my inquiry was a high demand time and I did get a message that the responses would be made brief.
 
-Again, the responses at this level were similar in some respects, however each one emphasized a different aspect of the policy. As an interesting aside, I wonder if in an agentic system that leverages several diverse LLMs to produce responses to a fairly complex prompt (like these), if the similarities can be viewed as a sort of voting mechanism to elicit the high level ideas that are the biggest priority. For example, if all three mention education and specifically life long education, maybe that can be used as an indication of where to expend resources. *Perhaps the topic of another paper*
+Once again, the responses at this level shared certain similarities, yet each highlighted a distinct aspect of the policy. As an intriguing aside, I wonder whether, in an agentic system utilizing multiple diverse LLMs to address a complex prompt like this, the similarities might function as a kind of voting mechanism, identifying the most important high-level ideas. For instance, if all three responses mention education, particularly lifelong learning, this might suggest a priority area for resource allocation. *This could be an interesting topic for another paper.*
 
-Lets go 1 level more detailed in our prompt, but also try to elicit some more specifics about two diverse municipalities.
+The analysis thus far has focused on comparing models for the same prompt. I will now do that but for two different municipalities to see if there are differences between them. I expect the responses to be fairly similar for the two different municipalities because again the responding networks rely on next token prediction.
 
 ## Differences in Municipalities
 ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_02.png)
@@ -706,7 +720,7 @@ If you recall from the introduction, I want to explore these three models and po
 <br>
 
 <div class="chatgpt-4o-box">
-    <b>ChatGPT 4o</b>: 
+    <b>ChatGPT 4o</b>: AI Education Plan for K-12 in Boulder Valley School District (BVSD)
 
 <details  markdown="1">
 
@@ -788,7 +802,7 @@ If you recall from the introduction, I want to explore these three models and po
 
 <br>
 <div class="llama-box">
-    <b>Llama3.1:8b</b>: 
+    <b>Llama3.1:8b</b>: Boulder Valley School District AI Education Plan (K-12)
 
 <details  markdown="1">
 
@@ -849,7 +863,7 @@ This plan provides a concise but specific outline for introducing AI education i
 
 <br>
 <div class="claude-box">
-    <b>Claude 3.5 Haiku</b>: 
+    <b>Claude 3.5 Haiku</b>: Boulder Valley School District AI Education Adoption Plan:
 
 <details  markdown="1">
 
@@ -899,7 +913,7 @@ Targeted outcome: Students as AI-literate, ethically-aware technology creators, 
 <br>
 
 <div class="chatgpt-4o-box">
-    <b>ChatGPT 4o</b>: 
+    <b>ChatGPT 4o</b>: AI Education Plan for K-12 in Denver Public School District (DPS)
 
 <details  markdown="1">
 
@@ -984,7 +998,7 @@ Targeted outcome: Students as AI-literate, ethically-aware technology creators, 
 
 <br>
 <div class="llama-box">
-    <b>Llama3.1:8b</b>: 
+    <b>Llama3.1:8b</b>: Denver Public Schools (DPS) AI Education Plan (K-12)
 
 <details  markdown="1">
 
@@ -1051,7 +1065,7 @@ By following this plan, Denver Public Schools can ensure that students are well-
 
 <br>
 <div class="claude-box">
-    <b>Claude 3.5 Haiku</b>: 
+    <b>Claude 3.5 Haiku</b>: Denver Public Schools AI Education Implementation Plan
 
 <details  markdown="1">
 
@@ -1095,7 +1109,21 @@ Targeted Outcome: Prepare students as AI-capable, ethically-informed innovators.
 </details>
 </div>
 
-Again we can see distinct differences, but strong similarities between both the models for the same school district as well as the same model for different school districts. This is a fairly strong confirmation of my hypothesis that however complex the transformer networks are, next token prediction fails to consider the nuanced differences between policy tailored for AI promotion in fairly different school districts. This leads to our next investigation of AI generated world models; my hope is that we can elicit some of this nuance by building world models of these social and economic scenarios, even if they are simple models.
+Again we can see distinct differences between each models response for the two different cities, however the similarities overwhelm the differences in these two prompts. For each model, the two city responses are formatted very similarly and contain very similar content. Each of the models broke the policy down by age group for both cities. And each policy (all 6 combinations) mentioned working with local industry and academia, basic coding skills, providing devices and compute, and AI ethics and diversity. 
+
+I had expected that these two fairly different cities would require different AI education policy given the different levels of socio-economic diversity, the prevalence of high tech industry, and the different sizes of the populations and school districts.
+
+Given the latitudinal (same prompt different models) and longitudinal (same model different prompt) similarities, I assess that my hypothesis is confirmed in this case. I should note that an expansion on this would be to prompt the model with hints about what the expected differences would be. For instance: 
+
+*write a policy for a city given X amount of income per capita, Y number of free-and-reduced lunch students in the district, and Z local universities and companies.* 
+
+I suspect that "leading the AI" like this would produce different results from what I observed, however, part of this study was to see if the model can infer differences in the attributes of a city and if those differences manifest in their responses.
+
+One key difference is that **both** llama3.1 and Claude 3.5 included a budget for Denver but not for Boulder. I wonder if this is because their is more mention of budgets and funding for Denver than for Boulder (simply because one is bigger) in the training data.
+
+## AI Specificity
+
+Given the above analyses, the results seem mixed, There are marked differences in the policy recommendations at the high (abstract) level, and the specific focus on AI education. However, when prompted to produce policy for a specific city, all of the responses are very similar. This indicates that while LLMs serve as a great starting point for policy generation, we might need something more to get specific recommendations. Furthermore, by generating simulations and World Models of the system we are trying to learn, we might be able to obtain much more specific insight. 
 
 # Modeling of AI Uptake
 
