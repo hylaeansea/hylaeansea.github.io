@@ -2580,17 +2580,17 @@ There is a vigorous debate within the AI safety community about whether enhancin
 
 If it isn't obvious, this paper fell far short of my intended goal. Not to dispare though, that leaves pleanty of interesting work, and interesting questions for me, (and hopefully you!) to answer in the future. These include:
 
-1. Can we quantify the amount of knowldege gained from the World Model generation?
-2. Can we standardize suggested prompts for generating either public policy suggestions, or world models of said policy?
+1. Can we quantify the amount of knowldege gained from the World Model generation? How about the ammount lost in other domains?
+2. Can we standardize suggested prompts for generating either public policy suggestions, or world models of the given policy?
 3. Can the input (parameter) output (results) pairs of numeric data be transformed into natural language descriptions for fine tuning or base model training?
 
-I also set out to investigate other public policy topics including Ocean Biodiversity and Conservation, Public Heath/epidemiology policy, and Space Development Policy. However, if I am not an expert in tech pedagogy policy then I am certainly not an expert in these fields. I do however think that these fields being at the intersection of technology, public policy, and economics might prove for interesting case studies.
+I also aimed to explore other public policy topics, such as Ocean Biodiversity and Conservation, Public Health/Epidemiology Policy, and Space Development Policy. However, just as I am not an expert in tech pedagogy policy, I am not an expert in these areas either. Nonetheless, I believe that these fields, situated at the intersection of technology, public policy, and economics, could offer intriguing case studies, and I hope to explore these in the future.
 
 # Closing
 
-To conclude, I think the jury is still out on computable policy: I showed that advanced language models can create progressively more detailed policy recomendations through progressively more detailed prompting. And that LLMs can generate world models that can run simulations of different aspects of a given policy. However, I think this work falls short of making policy truely computable. Despite this shortcoming, I hope this work contributes to your mental model of Language Model and World Model interactions. Furthermore, if you are so inclined, please critique, critisize, augment, implement, or extend this work to make it more detailed and rich. That would have made this worth it. 
+To conclude, I think the jury is still out on computable policy: I showed that advanced language models can create progressively more detailed policy recomendations through progressively more detailed prompting. And that LLMs can generate world models that can run simulations of different aspects of a given policy. However, I think this work falls short of making policy truely computable. Despite this shortcoming, I hope this work contributes to your philosophy concerning Language Models and World Models interaction. Furthermore, if you are so inclined, please critique, critisize, augment, implement, or extend this work to make it more detailed and rich. That would have made this worth it. 
 
-Thank you to the people at Blue Dot Impact, facilitators, moderators, and all of those in my cohort, this was a great course and you all are doing great work. Thank you to 80,000 Hours, your work is changing peoples careers and hopefully the course of humanity for the long term. Thank you to my local AI chat group, your questions and insights are thought provoking and fun. And finally, thank you to my family, for giving me this time to pursue this interest of mine, and for putting up with the clacking of the mechanical keyboard in the kitchen.
+Thank you to the people at [Blue Dot Impact](https://bluedot.org/), facilitators, moderators, and all of those in my cohort, this was a great course and you all are doing great work. Thank you to [80,000 Hours](https://80000hours.org/), your work is changing peoples careers and hopefully the course of humanity for the long term. Thank you to my local AI chat group, your questions and insights are thought provoking and fun. And finally, thank you to my family, for giving me this time to pursue this interest of mine, and for putting up with the clacking of the mechanical keyboard in the kitchen.
 
 Cheers,
 Kyle
