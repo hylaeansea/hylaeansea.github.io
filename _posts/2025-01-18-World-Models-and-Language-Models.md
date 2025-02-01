@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "World Models and Language Models, a Philosophy"
-date:   2025-01-25 16:05:00 +0000
+date:   2025-02-01 16:05:17 +0000
 categories: blog
 ---
 
