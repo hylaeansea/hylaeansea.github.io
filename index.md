@@ -11,4 +11,4 @@ title: Home
 
 <p>{{ latest_post.content }}</p>
 
-<a href="{{ latest_post.url }}">Read more</a>
+<!-- <a href="{{ latest_post.url }}">Read more</a> -->
