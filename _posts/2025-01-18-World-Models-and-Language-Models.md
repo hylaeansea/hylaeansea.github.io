@@ -2544,7 +2544,7 @@ To really hammer this point home, I desperately wanted to get to fine tuning on 
 
 # Discussion
 
-Well that was a long and winding (but hopefully somewhat coherent) exploration of Language Model and World Model policy generation and analysis. I also love the astetic of using AI to generate policy concerning AI, and these are the sitations where we need to pay particularly close attention to alignment. Here are a couple of my key takeaways from this effort:
+Well that was a long and winding (but hopefully somewhat coherent) exploration of Language Model and World Model policy generation and analysis. I also love the feel of using AI to generate policy concerning AI, and these are the sittations where we need to pay particularly close attention to alignment. Here are a couple of my key takeaways from this effort:
 
 ## Power in colaborative policy generation with LLMs 
 
@@ -2556,7 +2556,7 @@ The notion of a diversity of models all working with clever human prompting and 
 
 ## AIs can generate computational models for which they can't necessarily predict the behaviour
 
-It wasn't one of my original goals, however at some point I hit on the notion that I was using an LLM (o1 in this case) to 1) generate the code for the World Model, 2) create input parameter sets for this model, and 3) interpret the results and draw conclusions. Furthermore, in at least one sitation, the model made predictions about the execution of the World Model that were proven incorrect when shown the output. It was then able to update these predictions. That is astounding to me: 
+It wasn't one of my original goals, however at some point I hit on the notion that I was using an LLM (o1 in this case) to 1) generate the code for the World Model, 2) create input parameter sets for this model, and 3) interpret the results and draw conclusions. Furthermore, in at least one situation, the model made predictions about the execution of the World Model that were proven incorrect when shown the output. It was then able to update these predictions. That is astounding to me: 
 
 **Its as if I were to write a book, and then upon reading the book discover something new.** 
 
@@ -2568,7 +2568,7 @@ I could see a future where a Language Model, with all its ability to write code,
 
 ## Differences and Imense similarities to Agentic AI
 
-I have mentioned this multiple times above, but these ideas seem very similar to the emerging Agentic AI systems. Multiple models colaborating on a common task, external tools including simulation, and access to computational AIs are all halmarks of the agentic promises. I also acknowledged that this idea is not new, however I do think that thinking about this problem as making natural language policy computable through **World Models** is interesting and should be considered further. 
+I have mentioned this multiple times above, but these ideas seem very similar to the emerging Agentic AI systems. Multiple models collaborating on a common task, external tools including simulation, and access to computational AIs are all hallmarks of the agentic promises. I also acknowledged that this idea is not new, however I do think that thinking about this problem as making natural language policy computable through **World Models** is interesting and should be considered further. 
 
 ## What does this mean for safety
 
@@ -2578,9 +2578,9 @@ There is a vigorous debate within the AI safety community about whether enhancin
 
 # Future Work
 
-If it isn't obvious, this paper fell far short of my intended goal. Not to dispare though, that leaves pleanty of interesting work, and interesting questions for me, (and hopefully you!) to answer in the future. These include:
+If it isn't obvious, this paper fell far short of my intended goal. Not to despair though, that leaves plenty of interesting work, and interesting questions for me, (and hopefully you!) to answer in the future. These include:
 
-1. Can we quantify the amount of knowldege gained from the World Model generation? How about the ammount lost in other domains?
+1. Can we quantify the ammount of knowledege gained from the World Model generation? How about the ammount lost in other domains?
 2. Can we standardize suggested prompts for generating either public policy suggestions, or world models of the given policy?
 3. Can the input (parameter) output (results) pairs of numeric data be transformed into natural language descriptions for fine tuning or base model training?
 
@@ -2588,7 +2588,7 @@ I also aimed to explore other public policy topics, such as Ocean Biodiversity a
 
 # Closing
 
-To conclude, I think the jury is still out on computable policy: I showed that advanced language models can create progressively more detailed policy recomendations through progressively more detailed prompting. And that LLMs can generate world models that can run simulations of different aspects of a given policy. However, I think this work falls short of making policy truely computable. Despite this shortcoming, I hope this work contributes to your philosophy concerning Language Models and World Models interaction. Furthermore, if you are so inclined, please critique, critisize, augment, implement, or extend this work to make it more detailed and rich. That would have made this worth it. 
+To conclude, I think the jury is still out on computable policy: I showed that advanced language models can create progressively more detailed policy recommendations through progressively more detailed prompting. And that LLMs can generate world models that can run simulations of different aspects of a given policy. However, I think this work falls short of making policy truly computable. Despite this shortcoming, I hope this work contributes to your philosophy concerning Language Models and World Models interaction. Furthermore, if you are so inclined, please critique, criticize, augment, implement, or extend this work to make it more detailed and rich. That would have made this worth it. 
 
 Thank you to the people at [Blue Dot Impact](https://bluedot.org/), facilitators, moderators, and all of those in my cohort, this was a great course and you all are doing great work. Thank you to [80,000 Hours](https://80000hours.org/), your work is changing peoples careers and hopefully the course of humanity for the long term. Thank you to my local AI chat group, your questions and insights are thought provoking and fun. And finally, thank you to my family, for giving me this time to pursue this interest of mine, and for putting up with the clacking of the mechanical keyboard in the kitchen.
 
