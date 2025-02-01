@@ -1977,15 +1977,15 @@ And we can see that the output Gini coeficient behaves as the o1 model suggested
 
 I am not quite sure what to make of these results; ChatGPT-o1 missed stochastic aspects of the model in the simple case, but was able to correctly interpret the behaviour given the numeric and graphical output of the World Model. Whereas in the more complex case, it was able to interpret descently complex code and predict the behaviour of the Gini Coefficient correctly. 
 
-I suspect that as reasoning models, agentic systems, and external tool access becomes more prevelant, we will see many more examples of this. Much of humanity's knowledge is packed into these relatively small models, and because of this they are capable of producing correct and coherant output for a huge variety of prompts, questions, and domains. 
+I anticipate that with the increasing prevalence of reasoning models, agentic systems, and the ability to access external tools, we will witness a rise in examples of learning from external World Models, which might even be self-authored. Much of humanity's knowledge is compressed into these relatively compact Language Models, enabling them to generate accurate and coherent responses across a vast array of prompts, questions, and fields. However, World Models offer precision in computation, probabilistic assessments, and simulations of various facets of the world and society. Consequently, I believe LLMs may have a great deal to "learn" from these World Models.
 
-
+Now, lets focus on the LLM interpretation of multiple sets of input parameters, and output results.
 
 ## Natural Language Descriptions of Parameters in, and Results Out
 
 ![New Knowledge]({{ site.baseurl }}/assets/images/New_Knowledge.png)
 
-I now have a collaboratively-built World Model of AI adoption in a small toy agent based simulated network. We can now use an LLM to generate input parameters to our World Model (and natural language descriptions of the parameters). In this way we can have the LLM explore different configurations of how the World Model is run. We can also have the LLM evaluate the output metrics of the various runs, and provide a qualitative, natural language description of the output of the run.
+I now have a collaboratively-built World Model of AI adoption in a small toy agent based simulated network. We can now use an LLM to generate input parameters to our World Model and natural language descriptions of these parameters. In this way we can have the LLM explore different configurations of how the World Model is run. We can also have the LLM evaluate the output metrics of the various runs, and provide a qualitative, natural language description of these results.
 
 
 <div class="prompt-box">
@@ -2024,7 +2024,7 @@ parameters = {
 <br>
 
 <div class="chatgpt-o1-box">
-    <b>ChatGPT o1</b>: 
+    <b>ChatGPT o1</b>: 20 Different Configurations of Model Input Parameters
 
 <details markdown="1">
 
@@ -2417,7 +2417,10 @@ parameters = {
 </details>
 </div>
 <br>
-I then ran each of these parameters dictionaries through our colaborative world model and stored the output metrics vs time step as a list of json strings. I then prompted the LLM to interpret this list qualitatively to obtain a natural language description of the results of the World Model run.*Note: I transitioned to GPT-4o for this step as o1 did not support uploading of json files via the chat interface.*
+
+We can see from this that with only 20 runs, to few to explore all the combinations of parameters, the LLM focused on parameters that are likely to have an impact on the outcome, population size, contribution fraction, probabilities of assignment in each category. I am uncertain if this choice is because we have focused on these parameters in the previous conversation context, or if there was some internal reason for the LLM choosing these particular parameters.
+
+In any case, I then ran each of these parameters dictionaries through our colaborative world model and stored the output metrics vs time step as a list of json strings. I then prompted the LLM to interpret this list qualitatively to obtain a natural language description of the results of the World Model run.*Note: I transitioned to GPT-4o for this step as o1 did not support uploading of json files via the chat interface.*
 
 <div class="prompt-box">
     <b>Prompt</b>: provide a qualitative description of the effect of the simulation for each of the 20 runs in this data out file: the file was uploaded as well.
@@ -2427,7 +2430,7 @@ I then ran each of these parameters dictionaries through our colaborative world 
 <br>
 
 <div class="chatgpt-4o-box">
-    <b>ChatGPT 4o</b>: 
+    <b>ChatGPT 4o</b>: Qualitative description of output json
 
 <details markdown="1">
 
@@ -2477,7 +2480,8 @@ I then ran each of these parameters dictionaries through our colaborative world 
 </details>
 </div>
 <br>
-Finally, we have arrived at a table of descriptions of inputs to a World Model, paired with descriptions of the results of each individual model run. For this toy example, it is a simple model and not representative of a real world technology adoption network, and I have only included 20 results, however, this very initial exploration of this idea of collaborative World Model building, followed by LLM generated run parameters and output interpretation, might lead to a technique for "self specialization" or "strong-to-self generalization" for model alignment. The full table of qualitative input and output descriptions is shown below.
+
+We now have qualitative descriptions of both the input parameters, and the output metrics from our World Model. 
 
 | Qualitative Description of the Input Parameters | Qualitative Description of the Output of the Results |
 |-------------------------------------------------|----------------------------------------------------|
@@ -2502,23 +2506,75 @@ Finally, we have arrived at a table of descriptions of inputs to a World Model, 
 | Large population, medium connectivity, and modest rewiring. Lower contributor fraction and a healthy total AI resource pool for investigating sustained adoption. | High adoption, most of the population has adopted the technology. AI resources were heavily consumed, indicating high AI adoption. Significant economic inequality developed during the simulation. |
 | Identical to the base scenario to facilitate direct comparison with other variations. Used as a control test to evaluate the impact of changes in other runs. | High adoption, most of the population has adopted the technology. Moderate AI resource consumption, balancing AI and traditional approaches. Moderate economic inequality, with wealth concentrated in certain groups. |
 
-I desperately wanted to get to fine tuning on these pairs, however I am afraid time did not allow. However, I will describe in some detail, ideas that I have around how these paired descriptions can be used. Even with this shortfall of the final goal, this super-simple toy model, collaboratively built, and run with LLM generated input, does hold (I think) a great deal of promise for coupling Language Models and World Models to discover "New Knowledge."
+And we can subsequently ask the LLM to reverse the problem from its current:
+
+*What are the outcomes of a given set of input parameters?*
+
+To:
+
+*What input parameters should we choose if we want certain outcomes?*
+
+<div class="prompt-box">
+<b>Prompt</b>: based on the following table, what are the qualitites of a network that lead to high adoption, and low income inequality ... 
+</div>
+<br>
+
+<div class="chatgpt-4o-box">
+    <b>ChatGPT 4o</b>: From the table, the qualities of a network that lead to high adoption and low income inequality are as follows:
+
+<details markdown="1">
+
+
+1. **Population Size and Connectivity**: Smaller or moderate-sized populations with moderate connectivity tend to achieve high adoption. This demographic configuration allows for the technology to spread effectively without overwhelming the network.
+
+2. **Rewiring Rate**: Higher rewiring rates promote dynamic shifts in the network, which can facilitate quicker dissemination of the technology across different groups. This adaptability in the network structure supports higher adoption rates.
+
+3. **Contributor Fraction**: A balanced fraction of contributors or a moderate presence of early adopters appears to encourage high adoption without exacerbating income inequality, as it ensures the technology gets an initial push without relying too much on a skewed contributor base.
+
+4. **AI Resource Cost and Availability**: Moderate AI costs with sufficient AI resources encourage adoption by making AI an accessible and reasonable choice for most network members. When these conditions are balanced, AI usage is optimized without leading to economic disparity.
+
+5. **Economic Outcomes**: Scenarios where wealth tends to be distributed equitably correlate with high technology adoption. This distribution suggests a network environment where resources and opportunities are available to a wide range of individuals, thus facilitating adoption across economic classes without concentrating wealth.
+
+Overall, the key is to balance network dynamics, including population size, connectivity, and contributor fractions, while ensuring AI resources are affordable and equitably distributed. This combination promotes high technology adoption and maintains economic equality.
+</details>
+</div>
+<br>
+
+To really hammer this point home, I desperately wanted to get to fine tuning on these pairs, however I am afraid time did not allow. However, I will describe in some detail, ideas that I have around how these paired descriptions can be used. Even with this shortfall of the final goal, this super-simple toy model, collaboratively built, and run with LLM generated input, does hold (I think) a great deal of promise for coupling Language Models and World Models to discover "New Knowledge."
 
 # Discussion
 
+Well that was a long and winding (but hopefully somewhat coherent) exploration of Language Model and World Model policy generation and analysis. I also love the astetic of using AI to generate policy concerning AI, and these are the sitations where we need to pay particularly close attention to alignment. Here are a couple of my key takeaways from this effort:
+
 ## Power in colaborative policy generation with LLMs 
 
-## There is some promising amount of detail and difference between difference generating situations
+By using multiple diverse Language Models, I was able to explore a variety of different aspects of a particular policy area. This collaborative method is almost like a debate, discussion, or brainstorming session on the given topic at hand, and I have mentioned it before, but with ever increasing availability of data, tools, and AI agents, I predict humanity can become hyper-efficient at these tasks that are uncertain and often opaque. 
 
-## AIs can generate computational models that they can't necessarily predict behaviour for
+The notion of a diversity of models all working with clever human prompting and curiosity might also play a key role in alignment. 
+
+**Conjecture 2:** A diversity of ideas, models, and prompts will lead to more aligned, more helpful, and also more creative AI systems.
+
+## AIs can generate computational models for which they can't necessarily predict the behaviour
+
+It wasn't one of my original goals, however at some point I hit on the notion that I was using an LLM (o1 in this case) to 1) generate the code for the World Model, 2) create input parameter sets for this model, and 3) interpret the results and draw conclusions. Furthermore, in at least one sitation, the model made predictions about the execution of the World Model that were proven incorrect when shown the output. It was then able to update these predictions. That is astounding to me: 
+
+**Its as if I were to write a book, and then upon reading the book discover something new.** 
 
 ![AI writes the world model]( {{ base.url }}/assets/images/DALL·E_2025-01-29_22.18.16_-_A_futuristic_robotic_figure_with_a_sleek_silver_metallic_body_and_glowing_blue_lights,_working_in_a_dreamlike_workshop._The_robot_is_surrounded_by_int.webp)
 
+I recognize that this analogy isn't perfect, as humans frequently write code without fully understanding its behavior; that's why we develop simulations. However, the idea that a model could independently create physics, math, or social simulations to learn from is intriguing. Additionally, fine-tuning and adjusting the weights of a language model based on the outcome of its own code should inherently lead to a reduction in knowledge or capability in other areas or domains. If this were not the case, the model could endlessly construct and learn world models without any loss, which isn't realistic. A particularly interesting extension of this concept would be to investigate this effect and identify what might be lost if we fine-tune a Language Model from a World Model.
+
+I could see a future where a Language Model, with all its ability to write code, interpret technical articles, and interface with humans, creates World Models on the fly to answer questions more precisely, and **validate their textual response** through computation rather than just next token prediction. This could also be included as a form of self-referential reasoning.
+
 ## Differences and Imense similarities to Agentic AI
+
+I have mentioned this multiple times above, but these ideas seem very similar to the emerging Agentic AI systems. Multiple models colaborating on a common task, external tools including simulation, and access to computational AIs are all halmarks of the agentic promises. I also acknowledged that this idea is not new, however I do think that thinking about this problem as making natural language policy computable through **World Models** is interesting and should be considered further. 
 
 ## What does this mean for safety
 
-There is intense debate in the AI safety community as to whether increasing the capability of AIs is better for AI safety and alignment, or if with it comes inherant danger. I believe this is as yet un-settled and still a matter of taste and philosophy. With that being said, I believe that increasing the training corpus of LLMs with data from progressively more realistic policy, economic and agent models, will result in a general decrease in the risk posed by these models, for this purpose. Furthermore, if we can lower the barier, and through this investigation, increase the awareness of the benefits, of language model and world model integration, this should generally increase the number of practicioners of both AI computing and public policy generating these models and evaluating their performance. And with increased participation, education, and awareness, comes an inherant increase in safety.
+There is a vigorous debate within the AI safety community about whether enhancing AI capabilities improves safety and alignment or introduces inherent risks. I believe this issue remains unresolved, largely depending on individual perspectives and philosophies. Nevertheless, I am convinced that expanding the training datasets of large language models (LLMs) with data from increasingly realistic policy, economic, and agent based world models will generally reduce the risks associated with these systems. Moreover, by lowering the barriers and raising awareness of the benefits of integrating language and world models, we can increase the number of practitioners in both AI computing and public policy who develop and assess these models. 
+
+**Conjecture 3:** Increased participation, education, and awareness inherently lead to enhanced safety.
 
 # Future Work
 
