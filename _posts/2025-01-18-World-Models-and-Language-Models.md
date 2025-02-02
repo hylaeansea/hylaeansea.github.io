@@ -48,32 +48,34 @@ categories: blog
 
 # Abstract
 
-The problem of AI Alignment and the desire to develop safe but also helpful AI has seen a staggering increase in research and innovation over the last year or two. Many of the most successful innovations however, rely on expensive human feedback. This has lead to innovative ideas such as constitutional AI, Reinforcement Learning through AI Feedback, and others. Also, the explosion of computational power, scientific computing frameworks, and openly available software have made it easier than ever to simulate many aspects of the world. 
+In recent years, research on AI Alignment and the efforts to develop safe yet effective artificial intelligence has surged dramatically. Many of the leading breakthroughs in this area depend heavily on costly human feedback which is difficult to scale, spurring creative approaches such as Constitutional AI and Reinforcement Learning through AI Feedback. At the same time, advances in computational power, scientific computing frameworks, and open-source software have made it easier than ever to simulate diverse aspects of our world.
 
-In this paper I expand on the concept that (many) others have proposed and developed, for linking the natural language power of Language Models with the computational precision and numerical simulation capabilities of World Models. While this concept can and should be applied to a wide range of domains, I explore public policy development for technology adoption as an example and explore answers to the question; **can we make policy computable**.
+In this paper, I extend a concept that many researchers have already explored: integrating the natural language capabilities of Language Models with the computational accuracy and simulation strengths of World Models. Although this framework can be applied across a variety of domains, I use public policy development for technology adoption as a case study, tackling the question: **can we make policy computable?**
 
 ![Computable Policy]({{ site.baseurl }}/assets/images/DALL·E_2025-01-18_11.27.13-A_futuristic_and_realistic_scene_depicting_the_concept_of_computable_policy.webp) 
 *Image generated with DALL·E; prompt: make a futuristic but realistic image that exemplifies "computable policy" as you have just described*
 
 In this investigation, I demonstrate that:
 
-1. through progressively more detailed prompts, modern Language Models provide a great starting point for policy development, but also lack detail that might be required for *effective* or *optimal* policy development,
-2. Large Language Models can (through clever prompting) produce code to simulate a specific domain in the form of a World Model,
-3. runs of these World Models can produce emergent behaviour and "New Knowledge" that the generating LLM did not expect, and that
-4. these concepts can be used to generate input output pairs of natural language descriptions computed on by the world model. 
+1. By utilizing increasingly detailed prompts, modern language models serve as an excellent foundation for policy development. However, they often lack the specificity necessary for creating effective or optimal policies.
+2. With clever prompting, large language models can generate code to simulate specific domains through the creation of a World Model.
+3. Executing these World Models can lead to emergent behaviors and "new knowledge" that the original language model did not anticipate.
+4. These concepts can also be employed to create input-output pairs of natural language descriptions processed by the World Model.
 
 This investigation shows a potential path to leverage the ever-increasing power of LLMs for the generation and analysis of policy that can be hopefully more creative, more impactful, and more effective. I conclude with a discussion of the findings as well as a non-exhaustive enumeration of ideas for further work. 
 
 # Introduction
 
-Many of the incredible advances in AI over the last few years have come as the result of connecting external tools to large language models (LLMs). Tools in the form of:
+Many of the incredible advances in AI over the last few years have come as the result of connecting external tools to large language models (LLMs). These tools give the Language Model access to data that wouldn't necessarily be included in their training corpus and can make them more capable in a given domain. These tools include:
 
 - [OpenAI Code Interpreter and IDEs](https://platform.openai.com/docs/assistants/tools)
 - [LangChain access to APIs](https://python.langchain.com/docs/introduction/)
 - [Nvidia World Foundation Models](https://blogs.nvidia.com/blog/cosmos-world-foundation-models/)
-- and many many others,
+- [Retrieval Augmented Generation](https://arxiv.org/abs/2312.10997)
+- [Toolformer](https://arxiv.org/abs/2302.04761)
+- and many, many others,
 
-...provide LLMs with external simulations, application programming interfaces (APIs), data, and computation that doesn't have to be learned as part of the base model training or fine tuning. This allows the LLM to access a much more diverse and rich set of data and ideas than it would otherwise have access to in it's training corpus. In fact, this idea of LLMs as a sort of "glue" for various tasks, data sets, and APIs form the foundational idea of Agentic AI. 
+These tools allow the LLM to access a more rich and diverse set of data and ideas than it would otherwise have access to. In fact, this idea of LLMs as a sort of "glue" for various tasks, data sets, and APIs form the foundational idea of Agentic AI. 
 
 This approach however, has seen most of its success in domains that are readily computable such as access to APIs, physics simulations, or database queries. The very nature of "world models" is that their response can be calculated from physics models of the objects and agents in the virtual world. Another term for these are "Digital Twins" that simulate the behavior of a physical factory, smart city, or other physical system for example. I believe the reason for this rests in the fact that while they can be computationally expensive, we have really good mathematical models for many of these physical systems and thus they lend themselves to computation. This leads to my first conjecture about AIs and World Models: 
 
@@ -114,7 +116,7 @@ In this paper, I will explore these three questions:
 
 To explore these questions, I will break my investigation into the following steps:
 
-1. First I will explore current AI models (gpt4o, claude 3.5 haiku, and ollama3.1:8b) capability in designing a policy to increase the adoption of AI. I will examine the qualitative features of the models at progressively higher levels of detail in the policy. This initial method of model comparison is illustrated in the following figure:
+1. First I will explore current AI models (gpt4o, claude 3.5 haiku, and ollama3.1:8b) and their capability in designing a policy to increase the adoption of AI. I will examine the qualitative features of the models at progressively higher levels of detail in the policy. This initial method of model comparison is illustrated in the following figure:
 
     ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
 *Figure 1: LLM Based Policy Generation and Iteration*
@@ -141,7 +143,7 @@ A quick disclaimer: I have an interest in public policy and public tech policy, 
 
 # Generating Public Policy with LLMs
 
-In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses, as well as differences and similarities between models. For clarity, all the <font style="background-color: #D7BFFF">prompts</font> and model responses(<font style="background-color: #CAEBC2">ChatGPT-4o</font>, <font style="background-color: #9FEA8C">ChatGPT-o1</font>, <font style="background-color: #D1D1D1">llama3.1:8b</font>, and <font style="background-color: #BB8774">Claude 3.5 Haiku</font>) will be highlighted with their respective color. Recalling the figure from before, three models will be given the same prompt and then the differences and similarities between them will be analyzed. This is to test the hypothesis that different models will produce largely similar responses given the fact that the base models have a lot of overlap in training data.
+In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses, as well as differences and similarities between models. For clarity, all the <font style="background-color: #D7BFFF">prompts</font> and model responses (<font style="background-color: #CAEBC2">ChatGPT-4o</font>, <font style="background-color: #9FEA8C">ChatGPT-o1</font>, <font style="background-color: #D1D1D1">llama3.1:8b</font>, and <font style="background-color: #BB8774">Claude 3.5 Haiku</font>) will be highlighted with their respective color. Recalling the figure from before, three models will be given the same prompt and then the differences and similarities between them will be analyzed. This is to test the hypothesis that different models will produce largely similar responses given the fact that the base models have a lot of overlap in training data.
 
 ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
 *Figure 1: LLM Based Policy Generation and Iteration*
@@ -1451,12 +1453,12 @@ As a result, **you would typically expect close to 100%** (often exactly 100%) a
 </div>
 <br>
 
-Because this model is stochastic (namely the initial network setup) lets run the model a few more times and see if we can get 100% adoption. Below shows the fraction of the population that adopted the tech for 5 different runs of this model with the same input parameters.
+Because this model is stochastic (namely the initial network setup) lets run the model a few more times and see if we can get 100% adoption. Below shows the fraction of the population that adopted the tech for 4 different runs of this model with the same input parameters.
 
 ![fraction adopted 2]({{ site.baseurl }}/assets/images/fraction_adopted_02.png)
 *Fraction of tech adoption for 4 model runs of the same parameter* 
 
-From this we see that not only does the adoption fraction never make it to 100% in these 5 runs for 100 simulation steps each, but that the maximum fraction varies pretty wildly between runs of the World Model. I was curious if o1 thought that the output could be variable. 
+From this we see that not only does the adoption fraction never make it to 100% in these 4 runs for 100 simulation steps each, but that the maximum fraction varies pretty wildly between runs of the World Model. I was curious if o1 thought that the output could be variable. 
 
 <div class="prompt-box">
 <b>Prompt</b>: do you expect a high variability between runs of this model?
@@ -2544,7 +2546,7 @@ To really hammer this point home, I desperately wanted to get to fine tuning on 
 
 # Discussion
 
-Well that was a long and winding (but hopefully somewhat coherent) exploration of Language Model and World Model policy generation and analysis. I also love the feel of using AI to generate policy concerning AI, and these are the sittations where we need to pay particularly close attention to alignment. Here are a couple of my key takeaways from this effort:
+Well that was a long and winding (but hopefully somewhat coherent) exploration of Language Model and World Model policy generation and analysis. I also love the feel of using AI to generate policy concerning AI, and these are the situations where we need to pay particularly close attention to alignment. Here are a couple of my key takeaways from this effort:
 
 ## Power in colaborative policy generation with LLMs 
 
@@ -2584,7 +2586,7 @@ If it isn't obvious, this paper fell far short of my intended goal. Not to despa
 2. Can we standardize suggested prompts for generating either public policy suggestions, or world models of the given policy?
 3. Can the input (parameter) output (results) pairs of numeric data be transformed into natural language descriptions for fine tuning or base model training?
 
-I also aimed to explore other public policy topics, such as Ocean Biodiversity and Conservation, Public Health/Epidemiology Policy, and Space Development Policy. However, just as I am not an expert in tech pedagogy policy, I am not an expert in these areas either. Nonetheless, I believe that these fields, situated at the intersection of technology, public policy, and economics, could offer intriguing case studies, and I hope to explore these in the future.
+I also aimed to explore other public policy topics, such as Ocean Biodiversity and Conservation, Public Health/Epidemiology Policy, and Space Development Policy. However, just as I am not an expert in tech pedagogical policy, I am not an expert in these areas either. Nonetheless, I believe that these fields, situated at the intersection of technology, public policy, and economics, could offer intriguing case studies, and I hope to explore these in the future.
 
 # Closing
 
