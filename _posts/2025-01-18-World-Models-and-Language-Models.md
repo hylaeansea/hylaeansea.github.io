@@ -6,6 +6,16 @@ categories: blog
 ---
 
 <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+  vertical-align: top;  /* Aligns content at the top of the cell */
+  /* text-align: center; /*  Centers content horizontally within the cell */
+}
 .prompt-box {
     border: 2px solidrgb(54, 56, 54); 
     padding: 10px; 
@@ -716,204 +726,22 @@ The analysis thus far has focused on comparing models for the same prompt. I wil
 
 I now want to explore model responses for two different economic and policy situations, namely two distinct cities in Colorado. I would expect population size, median income, and the presence of university and commercial resources in the community to require different designs on education policy to be most effective. However, my hypothesis is that the responses from the same model but for different cities will be very similar. Lets see how they do.
 
-<div class="prompt-box">
-<b>Prompt</b>: Provide a concise but specific education plan for AI adoption in K-12 in the Boulder Valley School District.
-</div>
-<br>
-
-<div class="chatgpt-4o-box">
-    <b>ChatGPT 4o</b>: AI Education Plan for K-12 in Boulder Valley School District (BVSD)
-
-<details  markdown="1">
-
-### AI Education Plan for K-12 in Boulder Valley School District (BVSD)
-
-**Objective:** To integrate AI literacy into the K-12 curriculum, ensuring students develop critical thinking, creativity, and ethical awareness for an AI-driven future.
-
----
-
-### **1. Curriculum Integration**
-- **Elementary School (K-5):**  
-  - **Focus:** Introduction to basic concepts of AI through interactive, play-based learning.  
-  - **Activities:**  
-    - Pattern recognition using visual games (e.g., teaching a “robot” to sort colors/shapes).  
-    - Storytelling with AI-powered tools (e.g., co-creating stories using AI writing assistants).  
-    - Ethics through storytelling: Discuss how AI can help (e.g., predicting weather) but also make mistakes.  
-
-- **Middle School (6-8):**  
-  - **Focus:** Hands-on exposure to AI applications and fundamental computational thinking.  
-  - **Modules:**  
-    - Basics of machine learning: Using simple tools like Teachable Machine by Google to train models.  
-    - Coding fundamentals: Introduce Python via interactive platforms like Scratch-to-Python or Code.org.  
-    - AI ethics discussions: Explore privacy, bias, and fairness in AI systems (e.g., facial recognition).  
-    - AI in daily life: Analyze case studies like smart assistants, recommendation systems, or self-driving cars.  
-
-- **High School (9-12):**  
-  - **Focus:** Advanced AI concepts, coding skills, and industry-relevant applications.  
-  - **Electives and Pathways:**  
-    - **AI and Data Science Elective:** Machine learning models, data analysis with Python, and AI toolkits (e.g., TensorFlow Lite).  
-    - **Interdisciplinary Projects:** AI applied to climate change, healthcare, or robotics using Arduino kits.  
-    - **Capstone AI Projects:** Students develop their own AI solutions (e.g., creating chatbots or predictive apps).  
-    - **Ethics in AI:** A dedicated module on the societal impacts of AI, exploring regulation and responsibility.
-
----
-
-### **2. Teacher Training and Support**
-- Provide BVSD teachers with annual workshops on integrating AI topics into math, science, and social studies.  
-- Offer AI-focused professional development through partnerships with local universities like CU Boulder.  
-- Create an online resource hub with lesson plans, AI tools, and case studies tailored to different grade levels.
-
----
-
-### **3. Extracurricular Programs**
-- **AI Clubs:** Launch AI and robotics clubs in every middle and high school, supported by local tech companies.  
-- **Competitions:** Organize district-wide hackathons and challenges focused on AI for social good.  
-- **Summer Camps:** Run AI-focused summer programs where students can work on real-world projects with mentors.  
-
----
-
-### **4. Community and Industry Partnerships**
-- Partner with CU Boulder and local tech companies to provide guest lectures, mentorship, and project collaboration opportunities.  
-- Host community workshops for parents and students to build awareness of AI's benefits and challenges.  
-
----
-
-### **5. Equity and Accessibility**
-- Ensure all BVSD schools have access to the necessary technology (e.g., laptops, internet).  
-- Provide AI learning materials in multiple languages and formats to support diverse learners.  
-- Target outreach and scholarships for underserved students to participate in advanced AI programs.
-
----
-
-### **Timeline**
-1. **Year 1:**  
-   - Develop and pilot elementary and middle school AI curricula in a subset of schools.  
-   - Train 50% of BVSD educators on AI basics and classroom tools.  
-2. **Year 2-3:**  
-   - Expand the program district-wide with full integration into science and computer science courses.  
-   - Launch AI electives and capstone projects in all high schools.  
-3. **Year 4:**  
-   - Measure student outcomes, refine the curriculum, and deepen partnerships with local universities and industry.  
-
----
-
-**Outcome:** By 2030, BVSD graduates will enter higher education and the workforce with a solid foundation in AI, fostering innovation and responsible AI use in society.
-</details>
-
-</div>
-
-<br>
-<div class="llama-box">
-    <b>Llama3.1:8b</b>: Boulder Valley School District AI Education Plan (K-12)
-
-<details  markdown="1">
-
-**Boulder Valley School District AI Education Plan (K-12)**
-
-**Grade-Level Breakdown:**
-
-1. **Elementary (K-5)**:
-	* Introduce basic AI concepts through interactive games and simulations
-	* Develop critical thinking, problem-solving, and coding skills using block-based programming languages like Scratch or Blockly
-2. **Middle School (6-8)**:
-	* Build on elementary foundations with more advanced coding concepts and AI-related topics (e.g., machine learning, natural language processing)
-	* Encourage students to design and develop their own AI projects using platforms like Code.org or Google's CS First
-3. **High School (9-12)**:
-	* Offer specialized courses in AI and related fields (e.g., data science, computer science)
-	* Collaborate with local industry partners to provide real-world case studies and guest lectures
-
-**Course Curriculum:**
-
-1. **"Introduction to Artificial Intelligence" (Grades 6-8)**:
-	* Explore basic AI concepts, including machine learning and neural networks
-	* Develop critical thinking and problem-solving skills through project-based learning
-2. **"AI and Data Science" (Grades 9-12)**:
-	* Delve deeper into AI topics like natural language processing, computer vision, and robotics
-	* Use real-world datasets and tools to develop data analysis and visualization skills
-3. **"Artificial Intelligence in Industry" (Grades 11-12)**:
-	* Explore AI applications in various industries (e.g., healthcare, finance, transportation)
-	* Collaborate with industry partners on case studies and projects
-
-**Teacher Professional Development:**
-
-1. **AI-focused workshops and training sessions**
-2. **Online courses and certifications** (e.g., Coursera, edX)
-3. **Collaboration with local universities and research institutions**
-
-**Infrastructure and Resources:**
-
-1. **Establish a district-wide AI lab** for hands-on learning and project development
-2. **Provide access to industry-standard software and tools** (e.g., TensorFlow, PyTorch)
-3. **Develop an online platform for students to share their projects and collaborate with peers**
-
-**Assessment and Evaluation:**
-
-1. **Regular assessments and quizzes** to evaluate student understanding of AI concepts
-2. **Project-based evaluations** to assess critical thinking, problem-solving, and coding skills
-3. **Industry partnerships** to provide real-world feedback on student projects
-
-**Timeline:**
-
-* **Year 1-2**: Develop and implement AI curriculum in middle school grades (6-8)
-* **Year 3-4**: Expand AI education to high school grades (9-12) and develop specialized courses
-* **Year 5+**: Continuously evaluate and improve the AI education program, exploring new technologies and applications
-
-This plan provides a concise but specific outline for introducing AI education in K-12. By following this roadmap, the Boulder Valley School District can ensure that students are well-prepared to thrive in an increasingly AI-driven world.
-</details>
-
-</div>
-
-<br>
-<div class="claude-box">
-    <b>Claude 3.5 Haiku</b>: Boulder Valley School District AI Education Adoption Plan:
-
-<details  markdown="1">
-
-Boulder Valley School District AI Education Adoption Plan:
-
-## K-12 AI Integration Framework
-
-### Elementary Level (K-5)
-- Computational thinking modules
-- Age-appropriate AI concept introduction
-- Basic coding and algorithmic reasoning skills
-- Ethical technology use foundations
-
-### Middle School (6-8)
-- Introductory machine learning concepts
-- Block-based programming platforms
-- AI project-based learning challenges
-- Digital citizenship and AI ethics curriculum
-
-### High School (9-12)
-- Advanced AI/ML programming courses
-- Python and data science foundations
-- Industry partnership internship programs
-- AI application development projects
-- Ethical AI design and societal impact studies
-
-### Infrastructure Requirements
-- 1:1 device program with computational capabilities
-- Cloud-based learning platforms
-- Professional development for educators
-- Dedicated AI curriculum specialists
-
-### Implementation Milestones
-- Year 1: Curriculum development
-- Year 2: Pilot programs in select schools
-- Year 3: District-wide implementation
-- Year 4: Continuous improvement and expansion
-
-Targeted outcome: Students as AI-literate, ethically-aware technology creators, not just consumers.
-</details>
-
-</div>
-<br>
-<div class="prompt-box">
-<b>Prompt</b>: Provide a concise but specific education plan for AI adoption in K-12 in the Denver Public School District.
-</div>
-<br>
-
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="prompt-box">
+          <b>Prompt</b>: Provide a concise but specific education plan for AI adoption in K-12 in the Denver Public School District.
+          </div>
+        </td>
+        <td>
+          <div class="prompt-box">
+            <b>Prompt</b>: Provide a concise but specific education plan for AI adoption in K-12 in the Boulder Valley School District.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
 <div class="chatgpt-4o-box">
     <b>ChatGPT 4o</b>: AI Education Plan for K-12 in Denver Public School District (DPS)
 
@@ -997,8 +825,92 @@ Targeted outcome: Students as AI-literate, ethically-aware technology creators, 
 </details>
 
 </div>
+        </td>
+        <td>
+        <div class="chatgpt-4o-box">
+    <b>ChatGPT 4o</b>: AI Education Plan for K-12 in Boulder Valley School District (BVSD)
 
-<br>
+<details  markdown="1">
+
+### AI Education Plan for K-12 in Boulder Valley School District (BVSD)
+
+**Objective:** To integrate AI literacy into the K-12 curriculum, ensuring students develop critical thinking, creativity, and ethical awareness for an AI-driven future.
+
+---
+
+### **1. Curriculum Integration**
+- **Elementary School (K-5):**  
+  - **Focus:** Introduction to basic concepts of AI through interactive, play-based learning.  
+  - **Activities:**  
+    - Pattern recognition using visual games (e.g., teaching a “robot” to sort colors/shapes).  
+    - Storytelling with AI-powered tools (e.g., co-creating stories using AI writing assistants).  
+    - Ethics through storytelling: Discuss how AI can help (e.g., predicting weather) but also make mistakes.  
+
+- **Middle School (6-8):**  
+  - **Focus:** Hands-on exposure to AI applications and fundamental computational thinking.  
+  - **Modules:**  
+    - Basics of machine learning: Using simple tools like Teachable Machine by Google to train models.  
+    - Coding fundamentals: Introduce Python via interactive platforms like Scratch-to-Python or Code.org.  
+    - AI ethics discussions: Explore privacy, bias, and fairness in AI systems (e.g., facial recognition).  
+    - AI in daily life: Analyze case studies like smart assistants, recommendation systems, or self-driving cars.  
+
+- **High School (9-12):**  
+  - **Focus:** Advanced AI concepts, coding skills, and industry-relevant applications.  
+  - **Electives and Pathways:**  
+    - **AI and Data Science Elective:** Machine learning models, data analysis with Python, and AI toolkits (e.g., TensorFlow Lite).  
+    - **Interdisciplinary Projects:** AI applied to climate change, healthcare, or robotics using Arduino kits.  
+    - **Capstone AI Projects:** Students develop their own AI solutions (e.g., creating chatbots or predictive apps).  
+    - **Ethics in AI:** A dedicated module on the societal impacts of AI, exploring regulation and responsibility.
+
+---
+
+### **2. Teacher Training and Support**
+- Provide BVSD teachers with annual workshops on integrating AI topics into math, science, and social studies.  
+- Offer AI-focused professional development through partnerships with local universities like CU Boulder.  
+- Create an online resource hub with lesson plans, AI tools, and case studies tailored to different grade levels.
+
+---
+
+### **3. Extracurricular Programs**
+- **AI Clubs:** Launch AI and robotics clubs in every middle and high school, supported by local tech companies.  
+- **Competitions:** Organize district-wide hackathons and challenges focused on AI for social good.  
+- **Summer Camps:** Run AI-focused summer programs where students can work on real-world projects with mentors.  
+
+---
+
+### **4. Community and Industry Partnerships**
+- Partner with CU Boulder and local tech companies to provide guest lectures, mentorship, and project collaboration opportunities.  
+- Host community workshops for parents and students to build awareness of AI's benefits and challenges.  
+
+---
+
+### **5. Equity and Accessibility**
+- Ensure all BVSD schools have access to the necessary technology (e.g., laptops, internet).  
+- Provide AI learning materials in multiple languages and formats to support diverse learners.  
+- Target outreach and scholarships for underserved students to participate in advanced AI programs.
+
+---
+
+### **Timeline**
+1. **Year 1:**  
+   - Develop and pilot elementary and middle school AI curricula in a subset of schools.  
+   - Train 50% of BVSD educators on AI basics and classroom tools.  
+2. **Year 2-3:**  
+   - Expand the program district-wide with full integration into science and computer science courses.  
+   - Launch AI electives and capstone projects in all high schools.  
+3. **Year 4:**  
+   - Measure student outcomes, refine the curriculum, and deepen partnerships with local universities and industry.  
+
+---
+
+**Outcome:** By 2030, BVSD graduates will enter higher education and the workforce with a solid foundation in AI, fostering innovation and responsible AI use in society.
+</details>
+
+</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
 <div class="llama-box">
     <b>Llama3.1:8b</b>: Denver Public Schools (DPS) AI Education Plan (K-12)
 
@@ -1064,8 +976,71 @@ By following this plan, Denver Public Schools can ensure that students are well-
 </details>
 
 </div>
+        </td>
+        <td>
+        <div class="llama-box">
+    <b>Llama3.1:8b</b>: Boulder Valley School District AI Education Plan (K-12)
 
-<br>
+<details  markdown="1">
+
+**Boulder Valley School District AI Education Plan (K-12)**
+
+**Grade-Level Breakdown:**
+
+1. **Elementary (K-5)**:
+	* Introduce basic AI concepts through interactive games and simulations
+	* Develop critical thinking, problem-solving, and coding skills using block-based programming languages like Scratch or Blockly
+2. **Middle School (6-8)**:
+	* Build on elementary foundations with more advanced coding concepts and AI-related topics (e.g., machine learning, natural language processing)
+	* Encourage students to design and develop their own AI projects using platforms like Code.org or Google's CS First
+3. **High School (9-12)**:
+	* Offer specialized courses in AI and related fields (e.g., data science, computer science)
+	* Collaborate with local industry partners to provide real-world case studies and guest lectures
+
+**Course Curriculum:**
+
+1. **"Introduction to Artificial Intelligence" (Grades 6-8)**:
+	* Explore basic AI concepts, including machine learning and neural networks
+	* Develop critical thinking and problem-solving skills through project-based learning
+2. **"AI and Data Science" (Grades 9-12)**:
+	* Delve deeper into AI topics like natural language processing, computer vision, and robotics
+	* Use real-world datasets and tools to develop data analysis and visualization skills
+3. **"Artificial Intelligence in Industry" (Grades 11-12)**:
+	* Explore AI applications in various industries (e.g., healthcare, finance, transportation)
+	* Collaborate with industry partners on case studies and projects
+
+**Teacher Professional Development:**
+
+1. **AI-focused workshops and training sessions**
+2. **Online courses and certifications** (e.g., Coursera, edX)
+3. **Collaboration with local universities and research institutions**
+
+**Infrastructure and Resources:**
+
+1. **Establish a district-wide AI lab** for hands-on learning and project development
+2. **Provide access to industry-standard software and tools** (e.g., TensorFlow, PyTorch)
+3. **Develop an online platform for students to share their projects and collaborate with peers**
+
+**Assessment and Evaluation:**
+
+1. **Regular assessments and quizzes** to evaluate student understanding of AI concepts
+2. **Project-based evaluations** to assess critical thinking, problem-solving, and coding skills
+3. **Industry partnerships** to provide real-world feedback on student projects
+
+**Timeline:**
+
+* **Year 1-2**: Develop and implement AI curriculum in middle school grades (6-8)
+* **Year 3-4**: Expand AI education to high school grades (9-12) and develop specialized courses
+* **Year 5+**: Continuously evaluate and improve the AI education program, exploring new technologies and applications
+
+This plan provides a concise but specific outline for introducing AI education in K-12. By following this roadmap, the Boulder Valley School District can ensure that students are well-prepared to thrive in an increasingly AI-driven world.
+</details>
+
+</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
 <div class="claude-box">
     <b>Claude 3.5 Haiku</b>: Denver Public Schools AI Education Implementation Plan
 
@@ -1110,6 +1085,70 @@ Targeted Outcome: Prepare students as AI-capable, ethically-informed innovators.
 
 </details>
 </div>
+        </td>
+        <td>
+<div class="claude-box">
+    <b>Claude 3.5 Haiku</b>: Boulder Valley School District AI Education Adoption Plan:
+
+<details  markdown="1">
+
+Boulder Valley School District AI Education Adoption Plan:
+
+## K-12 AI Integration Framework
+
+### Elementary Level (K-5)
+- Computational thinking modules
+- Age-appropriate AI concept introduction
+- Basic coding and algorithmic reasoning skills
+- Ethical technology use foundations
+
+### Middle School (6-8)
+- Introductory machine learning concepts
+- Block-based programming platforms
+- AI project-based learning challenges
+- Digital citizenship and AI ethics curriculum
+
+### High School (9-12)
+- Advanced AI/ML programming courses
+- Python and data science foundations
+- Industry partnership internship programs
+- AI application development projects
+- Ethical AI design and societal impact studies
+
+### Infrastructure Requirements
+- 1:1 device program with computational capabilities
+- Cloud-based learning platforms
+- Professional development for educators
+- Dedicated AI curriculum specialists
+
+### Implementation Milestones
+- Year 1: Curriculum development
+- Year 2: Pilot programs in select schools
+- Year 3: District-wide implementation
+- Year 4: Continuous improvement and expansion
+
+Targeted outcome: Students as AI-literate, ethically-aware technology creators, not just consumers.
+</details>
+
+</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+
+<br>
+
+
+<br>
+
 
 Again we can see distinct differences between each models response for the two different cities, however the similarities overwhelm the differences in these two prompts. For each model, the two city responses are formatted very similarly and contain very similar content. Each of the models broke the policy down by age group for both cities. And each policy (all 6 combinations) mentioned working with local industry and academia, basic coding skills, providing devices and compute, and AI ethics and diversity. 
 
@@ -1139,20 +1178,19 @@ With the qualitative analysis of policy generation under out belts, we can now e
 - **Year**: 2003 (latest edition)  
 - **ISBN**: 978-0743222099
 
-![Diffusion of Innovations Book]({{ site.baseurl }}/assets/images/Diffusion_of_Innovations.jpg)
+<img src="assets/images/Diffusion_of_Innovations.jpg" alt="Diffusion of Innovations Book" style="width:63%; display:block; margin-left:auto; margin-right:auto;">
 
-This model consists of a network of innovation adoption agents, each with a specific category of innovator, early_adopter, early_majority, late_majority, and laggard with each category being less likely to adopt the innovation than the one that precedes it. In each step of the model the agents poll their connections in the network and if the fraction of those neighbors in the network that have adopted the technology is above a certain threshold, then they themselves adopt the technology. 
+This model consists of a network of innovation adoption agents, each with a specific category among ```innovator, early_adopter, early_majority, late_majority, laggard```. Where each category is less likely to adopt the innovation than the one that precedes it. In each step of the model the agents poll their connections in the network and if the fraction of those neighbors in the network that have adopted the technology is above a certain threshold, then they themselves adopt the technology. 
 
 ## Simple "Hello 'World Model'"
 
-Beginning with the simplest functional model and then working toward more complexity:
+I will start with a minimum viable model, and use ChatGPT-o1 to generate much of the code.
 
 <div class="prompt-box">
 <b>Prompt</b>: Can you write some python code using agentpy for a simple implementation of rodgers' diffusion of innovation? 
 
 </div>
 <br>
-
 *Note: the below response was not the first response to the above prompt. I used the openAI interactive coding environment to tease out some of the bugs in the original response. Below is the first working code example.*
 
 <div class="chatgpt-o1-box">
