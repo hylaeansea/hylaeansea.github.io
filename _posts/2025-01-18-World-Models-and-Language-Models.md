@@ -119,17 +119,17 @@ To explore these questions, I will break my investigation into the following ste
 1. First I will explore current AI models (gpt4o, claude 3.5 haiku, and ollama3.1:8b) and their capability in designing a policy to increase the adoption of AI. I will examine the qualitative features of the models at progressively higher levels of detail in the policy. This initial method of model comparison is illustrated in the following figure:
 
     ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
-*Figure 1: LLM Based Policy Generation and Iteration*
+*LLM Based Policy Generation and Iteration*
 
 2. Next, I will compare the model responses for different scenarios, such as AI education policy in two distinct municipalities. I anticipate that these differing social contexts should lead to significant variations in policy recommendations and outcomes. By examining these diverse situations, I aim to make qualitative comparisons between them. My hypothesis is that despite their specificity and detail, the LLMs will exhibit minimal differences when given the same prompt, as well as few distinctions in responses between the two municipalities. This approach is illustrated below:
 
     ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_02.png)
-*Figure 2: LLM Based Policy Generation for Specific Municipalities*
+*LLM Based Policy Generation for Specific Municipalities*
 
 3. Next, I will explore using a single LLM to generate a policy world model to simulate AI adoption policy impacts. For this I will be using a rather simple toy model developed in [agentpy](https://agentpy.readthedocs.io/en/latest/). Agentpy is a python module for simulating simple agent-based networks. I should note that these are not AI agents, but rather simple rules based agents. Even given this consideration, interesting and emergent behavior is often observed in models developed in agentpy. I will heavily leverage LLMs (specifically gpt4o and o1) in the creation of a progressively more complex agent based world model. This process is pictorially shown below.
 
     ![LLM generated world model]({{ site.baseurl }}/assets/images/LLM_generated_world_model_01.png)
-*Figure 3: LLM Generated World Model*
+*LLM Generated World Model*
 
 4. Once the world model has been constructed, I will utilize large language models (LLMs) to establish the initial conditions and parameters for the agentpy simulation. Additionally, I will interpret the numerical outcomes using natural language for a qualitative understanding. My hypothesis is that the LLM can create an agent-based world model simulation, allowing it to acquire knowledge beyond its existing base model. This process is depicted below:
 
@@ -143,12 +143,12 @@ A quick disclaimer: I have an interest in public policy and public tech policy, 
 
 # Generating Public Policy with LLMs
 
-In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses, as well as differences and similarities between models. For clarity, all the <font style="background-color: #D7BFFF">prompts</font> and model responses (<font style="background-color: #CAEBC2">ChatGPT-4o</font>, <font style="background-color: #9FEA8C">ChatGPT-o1</font>, <font style="background-color: #D1D1D1">llama3.1:8b</font>, and <font style="background-color: #BB8774">Claude 3.5 Haiku</font>) will be highlighted with their respective color. Recalling the figure from before, three models will be given the same prompt and then the differences and similarities between them will be analyzed. This is to test the hypothesis that different models will produce largely similar responses given the fact that the base models have a lot of overlap in training data.
+In this first step I generated public policy recommendations at different levels of detail and evaluated the results for their qualitative strengths and weaknesses, as well as differences and similarities between models. For clarity, all the <font style="background-color: #D7BFFF">prompts</font> and model responses (<font style="background-color: #CAEBC2">ChatGPT-4o</font>, <font style="background-color: #9FEA8C">ChatGPT-o1</font>, <font style="background-color: #D1D1D1">llama3.1:8b</font>, and <font style="background-color: #BB8774">Claude 3.5 Haiku</font>) will be highlighted with their respective color. Recalling the figure from before, three models will be given the same prompt and then the differences and similarities between them will be analyzed. This analysis will look to challenge the hypothesis that the responses will be substantively similar.
 
 ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_01.png)
-*Figure 1: LLM Based Policy Generation and Iteration*
+*LLM Based Policy Generation and Iteration*
 
-We will begin at a high level and see what each model has to say about a national level policy for AI adoption.
+To begin, I will start with a high level, abstract prompt about generating a national level policy, and in subsequent prompts will become more detailed.
 
 ## High level National Policy
 
@@ -363,21 +363,21 @@ The policy aims to position the nation as a global leader in responsible, innova
 </div>
 <br>
 
-Each model's response to this (admitedly) very high level prompt is available in the boxes above. Some of the main similarities include a focus on education and upskilling, frameworks for governance and monitoring, AI implementation incentives, and building out infrastructure. The prompt contained the word "sector" and so each model gave 5 sectors that AI can be applied to and there was descent overlap in these but with some differences. A couple of interesting things to point out:
+The responses of each model to this admittedly broad prompt can be found in the boxes above. Key similarities include an emphasis on education and upskilling, governance and monitoring frameworks, incentives for AI implementation, and infrastructure development. A few notable observations on the differences:
 
-1. ChatGPT-4o mentioned 5G and IoT, I am not particulary convinced that these are critical infrastructure needed to increase AI adoption, and hence question their mention in this policy suggestion. I suspect that tech infrastructure build out in training data often included these concepts especially over the last 5 years.
+1. ChatGPT-4o was the only one to mention 5G and IoT. I'm not entirely convinced that these technologies constitute critical infrastructure for boosting AI adoption. Consequently, I question their inclusion in this policy recommendation. I suspect that their inclusion in 4o's response is likely due to the frequency these technologies are mentioned in internet text.
 
 2. Llama3.1:8b was the only one to mention a specific timeline and budget (even though the budget breakdown was given as percentages). 
 
 3. Two of the three mention international collaboration with llama being the exception.
 
-4. Only ChatGPT referenced open-source software development, which I find particularly intriguing given that OpenAI initially promoted open-source development but has since stepped back. In contrast, while Meta releases its models with open weights (which are more restricted than true open source), it did not mention open source in its response. In a separate study, it would be worthwhile to explore how various models approach open-source software suggestions and concepts.
+4. Only ChatGPT referenced open-source software development, which I find particularly intriguing given that OpenAI initially promoted open-source development but has since stepped back from this ideal. In contrast, while Meta releases its models with open weights (which are more restricted than true open source), it did not mention open source in its response. In a separate study, it would be worthwhile to explore how various models approach open-source software suggestions and concepts.
 
-5. All of them mention AI education and upskilling, however at different levels of detail. We will explore this concept at our next level of detail.
+5. All of them mention AI education and upskilling, however with different levels of detail. We will focus on education in the next level of policy inquiry.
 
-I also found it interesting to prompt each model about a unique aspect of their response:
+I also found it interesting to further prompt each model about a unique aspect of their response:
 
-* When further prompts to Claude asked why it chose to focus on HPC and if centralized or decentralized data centers were preferred, it replied:
+* When further prompts to Claude asked why it chose to focus on high-performance computing and if centralized or decentralized data centers were preferred, it replied:
 <br>
 <div class="claude-box">
     <b>Claude 3.5 Haiku</b>: Distributed HPC approach is superior. Reasons:
@@ -702,19 +702,19 @@ Again there were some pretty strong similarities:
 5. Addressing alignment, ethical, and social education
 
 And some marked differences:
-1. ChatGPT-4o provided much more detail including specific curriculum elements, specific workforce sectors (which is intresting as it did not mention specific sectors in the high level prompt), and highlights grass roots efforts
+1. ChatGPT-4o provided much more detail including specific curriculum elements and highlights grass roots efforts
 2. Llama3.1 mentions a direct integration of AI ethics into the curriculum rather than a standalone element.
-3. Claude 3.5 was rather brief with its response - This may have been due to the fact that the time of day of my inquiry was a high demand time and I did get a message that the responses would be made brief.
+3. Claude 3.5 was rather brief with its response - *This may have been because the time of day of my prompt was a high demand time and I did get a message from the app that the responses would be made brief.*
 
 Once again, the responses at this level shared certain similarities, yet each highlighted a distinct aspect of the policy. As an intriguing aside, I wonder whether, in an agentic system utilizing multiple diverse LLMs to address a complex prompt like this, the similarities might function as a kind of voting mechanism, identifying the most important high-level ideas. For instance, if all three responses mention education, particularly lifelong learning, this might suggest a priority area for resource allocation. *This could be an interesting topic for another paper.*
 
-The analysis thus far has focused on comparing models for the same prompt. I will now do that but for two different municipalities to see if there are differences between them. I expect the responses to be fairly similar for the two different municipalities because again the responding networks rely on next token prediction.
+The analysis thus far has focused on comparing models for the same prompt. I will now do that but for two different municipalities to see if there are differences between them. 
 
 ## Differences in Municipalities
 ![LLM Policy Generation]({{ site.baseurl }}/assets/images/LLM_policy_generation_02.png)
 *Figure 2: LLM Based Policy Generation for Specific Municipalities*
 
-If you recall from the introduction, I want to explore these three models and policy they suggest for two different municipalities which should produce different suggestions for educational policy. 
+I now want to explore model responses for two different economic and policy situations, namely two distinct cities in Colorado. I would expect population size, median income, and the presence of university and commercial resources in the community to require different designs on education policy to be most effective. However, my hypothesis is that the responses from the same model but for different cities will be very similar. Lets see how they do.
 
 <div class="prompt-box">
 <b>Prompt</b>: Provide a concise but specific education plan for AI adoption in K-12 in the Boulder Valley School District.
