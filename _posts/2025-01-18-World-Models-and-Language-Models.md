@@ -1355,14 +1355,12 @@ ax = data.plot()
 </details>
 </div>
 <br>
-
-![fraction adopted 1]({{ site.baseurl }}/assets/images/fraction_adopted_01.png)
+Below is the output of the last lines of code to plot the fraction of population that adopted the innovation as a function of the time step in the simulation.
+<br>
+<img src="assets/images/fraction_adopted_01.png" alt="fraction adopted 1" style="width:63%; display:block; margin-left:auto; margin-right:auto;">
 *Rather boring output of the first iteration of the model showing fraction of the population that adopted the innovation vs simulation step.*
 
 This code has all the elements to run a simple network model where agents adopt technology according to 1) the category that they are in and 2) the percentage of their network connections that have adopted the technology. Even with this simple model, we can start to ask the LLM questions about the configuration parameters and the output:
-
-It would be interesting before adding more complexity to see what an LLM "thinks" about these input parameters and what the output might be:
-*Note: I have broken the single response between two blocks for clarity*
 
 <div class="prompt-box">
 <b>Prompt</b>: what is a qualitative description of the parameters: 
@@ -1458,7 +1456,12 @@ In short, **you would expect to see** a classic S-shaped diffusion curve over th
 </div>
 <br>
 
-Straight away we can see a discrepancy between what ChatGPT-o1 expects to happen: full adoption, and what this iteration 0 of the world model produced, adoption fraction increasing but then topping out at only 92%. (close to 100% but not all). Also, examining all 100 agents, some of the laggards do adopt the tech but not all of them. We can prompt the model to tell us what it expects the results of the simulation to be with more specific detail:
+Straight away we can see a discrepancy between what ChatGPT-o1 expects to happen: 
+*full adoption*, 
+and what this iteration 0 of the world model produced; 
+*adoption fraction increasing but then topping out at only 92%.* 
+
+GPT-4o suggested that "even the laggards would eventually adopt the innovation." However, by examining all 100 agents, we see thatsome of the laggards do adopt the tech but not all of them. We can also ask specific questions about the numerical output and its variation run-to-run.
 
 <div class="prompt-box">
 <b>Prompt</b>: what fraction of the population would you expect to have adopted in the end?
@@ -1491,9 +1494,12 @@ As a result, **you would typically expect close to 100%** (often exactly 100%) a
 </div>
 <br>
 
+We can see that not only does the model continue to assert that adoption fraction will be 100%, but gives reasons for this logic.
+
 Because this model is stochastic (namely the initial network setup) lets run the model a few more times and see if we can get 100% adoption. Below shows the fraction of the population that adopted the tech for 4 different runs of this model with the same input parameters.
 
-![fraction adopted 2]({{ site.baseurl }}/assets/images/fraction_adopted_02.png)
+<img src="assets/images/fraction_adopted_02.png" alt="fraction adopted 2" style="width:63%; display:block; margin-left:auto; margin-right:auto;">
+<!-- ![fraction adopted 2]({{ site.baseurl }}/assets/images/fraction_adopted_02.png) -->
 *Fraction of tech adoption for 4 model runs of the same parameter* 
 
 From this we see that not only does the adoption fraction never make it to 100% in these 4 runs for 100 simulation steps each, but that the maximum fraction varies pretty wildly between runs of the World Model. I was curious if o1 thought that the output could be variable. 
@@ -1522,7 +1528,9 @@ Because the thresholds (especially for innovators and early adopters) are low an
 </div>
 <br>
 
-And so we stumbled upon another discrepancy between ChatGPT-o1's expectation of the World Model run and the actual computational results. It "doubles down" on 100% adoption and gives specific reasons for why this would be the case. I should also point out that these interpretive prompts were done in a session that included as context the complete World Model code. 
+And so we stumbled upon another discrepancy between ChatGPT-o1's expectation of the World Model run and the actual computational results. It "doubles down" on 100% adoption and gives specific reasons for why this would be the case. The "moderate variation" that it mentions are features of how the model gets to 100% not if it gets there. 
+
+*I should also point out that these interpretive prompts were done in a session that included as context the complete World Model code as well as the input configuration parameters.*
 
 I suspect that this discrepancy is due in large part to the initial network setup, and variations and "bottle necks" to innovation that specific networks would introduce. 
 
@@ -1607,7 +1615,8 @@ Ah hah! After we give the model the numeric output data, it performs a detailed 
 
 The Language Model also makes suggestions for further analysis and we can take its suggestion and <font style="background-color: #9FEA8C">inspect the network</font> for further insight. Below I have plotted the final state of the network with nodes colored green if they adopted the innovation and grey if not. I have also labeled each node with its category index with 0 being innovator, 1 being early adopter, and so on.
 
-![simple network diagram]({{ site.baseurl }}/assets/images/simple_network_diagram_01.png)
+<img src="assets/images/simple_network_diagram_01.png" alt="simple network diagram" style="width:63%; display:block; margin-left:auto; margin-right:auto;">
+<!-- ![simple network diagram]({{ site.baseurl }}/assets/images/simple_network_diagram_01.png) -->
 
 From this plot it is clear that we have some large clusters of category 4 nodes (laggards) that effectively "block" the wave of adoption from reaching the whole graph. This likely causes the adoption to top out at a certain value and freeze in innovation adoption choices. 
 
@@ -1615,7 +1624,7 @@ Similarly to presenting the Language Model with numeric results, we can ask it t
 
 <div class="prompt-box">
 <b>Prompt</b>: this is a plot of the network at the end of the simulation, what can you infer from this plot?
-<img src="/assets/images/simple_network_diagram_01.png" alt="Network diagram at end of simulation">
+<img src="/assets/images/simple_network_diagram_01.png" alt="Network diagram at end of simulation" style="width:63%; display:block; margin-left:auto; margin-right:auto;">
 </div>
 <br>
 
@@ -1972,7 +1981,8 @@ In short, **the Gini coefficient will tend to go up** under these parameters bec
 
 From this we can see that the Language Model (o1) is able to inspect specific aspects of the code in this more complex tech adoption model and make a specific qualitative prediction about a numerical metric. And, lo and behold, if we run the model, o1 gets it right.
 
-![gini coefficient with no contribution]({{ base.url }}/assets/images/gini_coef_with_0_contribution.png) 
+<img src="assets/images/gini_coef_with_0_contribution.png" alt="gini coefficient with no contribution" style="width:63%; display:block; margin-left:auto; margin-right:auto;">
+<!-- ![gini coefficient with no contribution]({{ base.url }}/assets/images/gini_coef_with_0_contribution.png)  -->
 *Gini Coefficient when the only contributors are innovators*
 
 So it seems as if o1 has redeemed itself. Where it couldn't predict the stochastic and asymotoic behaviour of the AI uptake in the simple model, it did correctly predict an increasing Gini Coefficient in this model. This is really quite remarkable; the o1 language model was able to interpret the code and determine that not only were innovators the only contributors (with contribution_frac=0.00) but that this means an increasing factor of inequality. 
@@ -2006,12 +2016,14 @@ parameters = {
 
 We get this new curve for the Gini Coefficient:
 
-![gini coefficient with 30% contributing]({{base.url}}/assets/images/gini_coef_with_30_contribution.png)
+<img src="assets/images/gini_coef_with_30_contribution.png" alt="gini coefficient with 30% contributing" style="width:63%; display:block; margin-left:auto; margin-right:auto;">
+<!-- ![gini coefficient with 30% contributing]({{base.url}}/assets/images/gini_coef_with_30_contribution.png) -->
 *Gini Coefficient with contribution raised to 30%*
 
 And we see that in fact the Gini Coeficient at the end of 250 simulation step is lower meaning more equality as the Language Model predicted. If we plot the coeficient for multiple contribution fractions we get:
 
-![gini coef with multiple contrib]({{ base.url }}/assets/images/gini_coef_with_multiple_contrib.png)
+<img src="assets/images/gini_coef_with_multiple_contrib.png" alt="gini coef with multiple contrib" style="width:63%; display:block; margin-left:auto; margin-right:auto;">
+<!-- ![gini coef with multiple contrib]({{ base.url }}/assets/images/gini_coef_with_multiple_contrib.png) -->
 
 And we can see that the output Gini coeficient behaves as the o1 model suggested it would: with an increasing fraction of the population that contribute to AI, we get increasing equality of financial resources.
 
