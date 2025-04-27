@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "World Models and Language Models, a Philosophy"
+title:  "Hemispherical Flow"
 date:   2025-04-27 16:38:00 +0000
 categories: blog
 ---
