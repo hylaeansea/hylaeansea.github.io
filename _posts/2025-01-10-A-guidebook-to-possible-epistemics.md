@@ -19,27 +19,67 @@ This concept is a nascent one, and maybe one that isn't particularly novel, but 
 
 # Mental Models
 
-  Kenneth Craik - The Nature of Explanation (1943)
-  - Literally coined "mental model" - argued humans carry "small-scale models" of reality in their heads
+Kenneth Craik - The Nature of Explanation (1943)
+- Literally coined "mental model" - argued humans carry "small-scale models" of reality in their heads
 
-  Philip Johnson-Laird - Mental Models (1983)
+Philip Johnson-Laird - Mental Models (1983)
+- Most comprehensive cognitive science treatment of mental models and reasoning
 
 # World Models
 
-Winsberg
+Eric Winsberg - Science in the Age of Computer Simulation (2010)
+- Models as mediators between theory and phenomena in computational science
+
+Nancy Cartwright - How the Laws of Physics Lie (1983)
+- Models as tools that don't simply mirror reality but construct representations for specific purposes
 
 # Language Models
 
+Ludwig Wittgenstein - Philosophical Investigations (1953)
+- Language games and meaning as use - foundational for understanding language as a social practice
+
+Vaswani et al. - "Attention is All You Need" (2017)
+- Introduced the transformer architecture that underlies modern LLMs
+
 # Interfaces
 
+J.C.R. Licklider - "Man-Computer Symbiosis" (1960)
+- Foundational vision of human-computer partnership and interactive computing
+
+Douglas Engelbart - "Augmenting Human Intellect" (1962)
+- Framework for using technology to expand human cognitive capabilities
+
 # Iteration and Feedback
+
+Norbert Wiener - Cybernetics: Or Control and Communication in the Animal and the Machine (1948)
+- Foundational theory of feedback loops and self-correcting systems
+
+Douglas Hofstadter - Gödel, Escher, Bach: An Eternal Golden Braid (1979)
+- Strange loops, self-reference, and how meaning emerges through recursive, iterative processes
 
 # An Open Society
 
 Focuses on the democratization of knowledge
 
-Phillip kitchner
+Karl Popper - The Open Society and Its Enemies (1945)
+- Defense of liberal democracy and critique of closed, authoritarian epistemologies
 
+Philip Kitcher - Science, Truth, and Democracy (2001)
+- How scientific inquiry can be democratized and serve democratic values
+
+# Also Ran: Thinkers Who Surely Influenced These Thoughts
+
+John von Neumann
+- Pioneered computational simulation, Monte Carlo methods, cellular automata, and the architecture that makes world modeling possible
+
+Kevin Kelly - What Technology Wants (2010)
+- Explores technology as an evolving system with its own tendencies and the co-evolution of humans and technology
+
+Samuel Butler - Erewhon (1872)
+- Early philosophical fiction exploring machine consciousness and evolution, "The Book of the Machines"
+
+Paul Davies - The Demon in the Machine (2019)
+- Life as the intersection of matter and information, exploring emergence and biological complexity through physics and information theory
 
 ---
 
