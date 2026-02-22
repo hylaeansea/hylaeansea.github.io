@@ -81,6 +81,9 @@ Samuel Butler - Erewhon (1872)
 Paul Davies - The Demon in the Machine (2019)
 - Life as the intersection of matter and information, exploring emergence and biological complexity through physics and information theory
 
+Gerard Radnitzky and W.W. Bartley III (eds.) - Evolutionary Epistemology, Rationality, and the Sociology of Knowledge (1987)
+- Foundational collection on evolutionary epistemology, treating knowledge acquisition as an evolutionary process
+
 ---
 
 ## Endnotes
