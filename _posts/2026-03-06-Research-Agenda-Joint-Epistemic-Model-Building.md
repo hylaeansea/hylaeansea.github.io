@@ -5,6 +5,8 @@ date:   2026-03-06 12:00:00 +0000
 categories: blog
 ---
 
+*This article was co-written with Claude (Opus 4.6). The domain expertise, core thesis, editorial direction, and approximately 65% of the content are the author's; the remaining ~35% — including structural framing, methodology formalization, and connective prose — was contributed by the AI.*
+
 # A Research Agenda for Joint Epistemic Model Building
 
 ## Introduction
