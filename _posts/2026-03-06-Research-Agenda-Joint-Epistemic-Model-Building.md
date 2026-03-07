@@ -11,7 +11,7 @@ categories: blog
 
 In a [previous post]({{ site.baseurl }}{% post_url 2025-01-18-World-Models-and-Language-Models %}), I explored the philosophical foundations of connecting Language Models with World Models to make policy computable. That investigation demonstrated that LLMs can generate world models, that those world models can produce emergent "new knowledge," and that the interplay between natural language and simulation opens a promising path toward computational policy analysis.
 
-This post distills that philosophy into a concrete research agenda. The central idea is the construction of what I am calling an **Epistemic Computational Object (ECO)** — a jointly built artifact that fuses three layers of model:
+This post articulates the foundations of a research agenda built on that philosophy. The central idea is the **Epistemic Computational Object (ECO)** — a jointly built artifact that fuses three layers of model:
 
 1. **Mental Models** — the conceptual frameworks, assumptions, and intuitions that domain experts and stakeholders bring to a problem
 2. **World Models** — computational simulations that encode the dynamics, agents, and physical or social processes of a domain
@@ -27,13 +27,13 @@ A simulation that no one can interact with is an epistemic dead end. The ECO fra
 
 Visualization is not a secondary concern — it is constitutive of the epistemic work. The choice of what to render, what to abstract away, and what controls to expose to a user determines which mental model updates are even possible. And there is a strong case that the most effective interfaces for exploring complex systems are *playful* ones — interfaces that invite experimentation, reward curiosity, and make it feel natural to ask "what if?" Serious games, interactive dashboards, and explorable explanations all belong in the design space for ECO interfaces. Getting this right is a research problem in its own right, and one that cuts across all three domains in this agenda.
 
-## The Three Simulations
+## Three Domains
 
-To ground this agenda, I propose building ECOs across three deliberately diverse domains. The diversity is the point: if the framework holds across domains with radically different physics, politics, and timescales, it has generality worth pursuing.
+To ground this agenda, I focus on three deliberately diverse domains. The diversity is the point: if the framework holds across domains with radically different physics, politics, and timescales, it has generality worth pursuing.
 
 ### 1. AI Technology Uptake
 
-Building on the [AI Tech Adoption Model]({{ site.baseurl }}{% post_url 2025-01-12-AI-tech-adoption-model %}) and the agent-based simulations from the World Models post, this simulation extends the work into a fuller ECO:
+Building on the [AI Tech Adoption Model]({{ site.baseurl }}{% post_url 2025-01-12-AI-tech-adoption-model %}) and the agent-based simulations from the World Models post, this domain is a natural starting point for the ECO framework.
 
 Recent work on the macroeconomics of transformative AI, notably [Trammell's analysis of economic growth under AI-driven automation](https://philiptrammell.com/static/egtai_new.pdf), suggests that unequal adoption of AI could break the standard assumptions of balanced growth — the Kaldor Facts that have held for decades. If AI capabilities concentrate among early movers, the resulting lock-in could fundamentally alter the distribution of economic power in ways that are difficult to reverse. This makes AI uptake policy not just a matter of efficiency but of long-run equity and economic structure.
 
@@ -84,21 +84,21 @@ Organizations like the [Open Lunar Foundation](https://www.openlunar.org/) have 
 
 ## The Joint Construction Process
 
-The three simulations above are not just parallel projects — they are instances of a shared methodology that I want to formalize:
+These three domains are not just parallel projects — they are instances of a shared methodology:
 
-### Step 1: Mental Model Elicitation
-Capture the assumptions, beliefs, and conceptual frameworks of relevant stakeholders. This can be done through structured interviews, workshops, or LLM-mediated dialogue. The output is a documented set of causal assumptions, contested claims, and shared objectives.
+### Mental Model Elicitation
+Capture the assumptions, beliefs, and conceptual frameworks of relevant stakeholders through structured interviews, workshops, or LLM-mediated dialogue. The output is a documented set of causal assumptions, contested claims, and shared objectives.
 
-### Step 2: World Model Construction
-Use the Language Model to translate the elicited mental models into computational simulations. This is the step explored in the World Models post — LLMs generating agentpy code, configuring parameters, building coupled system models. The key discipline is maintaining traceability: every simulation parameter should map back to a mental model assumption.
+### World Model Construction
+Use the Language Model to translate the elicited mental models into computational simulations. This is the approach explored in the World Models post — LLMs generating agentpy code, configuring parameters, building coupled system models. The key discipline is maintaining traceability: every simulation parameter should map back to a mental model assumption.
 
-### Step 3: Simulation and Divergence Detection
+### Simulation and Divergence Detection
 Run the world model under various configurations. The critical moment is when simulation outputs *diverge* from mental model expectations. These divergences are the epistemic payload — they are where new knowledge lives.
 
-### Step 4: Epistemic Update
+### Epistemic Update
 Feed simulation results back through the Language Model to update, challenge, or refine the mental models. This is not a one-shot process — it is iterative. The ECO evolves through cycles of construction, simulation, surprise, and revision.
 
-### Step 5: Cross-Domain Transfer
+### Cross-Domain Transfer
 Examine whether patterns, methods, or insights from one domain transfer to another. Does the agent-based adoption model from AI Uptake share structural similarities with fishing fleet behavior in the MPA model? Do governance frameworks for lunar resources illuminate anything about MPA enforcement? The cross-domain comparison is where the framework's generality is tested.
 
 ## What Makes This Epistemic
@@ -107,16 +107,7 @@ The word "epistemic" is doing specific work here. This is not just about buildin
 
 The joint construction process — mental model elicitation, LLM-mediated translation, simulation, and epistemic update — is designed to make the model-building process itself a site of learning and negotiation. The goal is not a single "correct" model but a shared computational object that multiple stakeholders can interrogate, challenge, and evolve.
 
-## Open Questions and Next Steps
-
-- **Tooling**: What is the right software stack for building ECOs? Agentpy is a starting point, but richer coupled simulations may require frameworks like Mesa, NetLogo, or custom physics engines. The LLM integration layer needs formalization.
-- **Validation**: How do we validate an ECO? Traditional model validation (calibration against data) applies to the world model layer, but what does it mean to validate a mental model or an epistemic update?
-- **Scaling participation**: Can the LLM layer make ECOs accessible to non-technical stakeholders? Can a fisherman in a coastal village or a local government official meaningfully interrogate and contribute to an MPA ECO?
-- **Visualization and interaction**: The right interface can make complex dynamics legible; the wrong one can obscure them. Serious games, explorable explanations, and interactive dashboards all belong in the design space — getting the interface right is as much a research problem as getting the simulation right.
-- **Alignment implications**: The World Models post raised the possibility of weak-to-strong self-generalization through LLM-generated world models. If ECOs produce genuine new knowledge, what are the alignment implications of AI systems that can extend their own epistemic reach through simulation?
 
 ## Conclusion
 
-This research agenda is an invitation. The three domains — AI Uptake, Marine Protected Areas, and Lunar Regolith Development — are chosen to stress-test the framework across radically different contexts. The Epistemic Computational Object is the proposed unit of analysis: a jointly constructed, iteratively refined artifact that fuses mental models, world models, and language models into something greater than the sum of its parts.
-
-The next posts in this series will begin the construction process for each of the three ECOs. The work starts now.
+The three domains — AI Uptake, Marine Protected Areas, and Lunar Regolith Development — stress-test the ECO framework across radically different contexts. The Epistemic Computational Object is the proposed unit of analysis: a jointly constructed, iteratively refined artifact that fuses mental models, world models, and language models into something greater than the sum of its parts. The problems are real, the tools are emerging, and the need for shared epistemic infrastructure has never been more acute.
