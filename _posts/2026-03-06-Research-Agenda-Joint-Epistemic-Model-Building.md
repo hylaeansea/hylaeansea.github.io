@@ -71,6 +71,8 @@ With natural resources becoming increasingly expensive to uncover and exploit on
 
 Even with lower launch costs, automated mining and factories in space could potentially be captured by early movers and enable lock-in for very long time horizons, fundamentally breaking the Kaldor Facts of macroeconomic behaviour. The inevitability of this lock-in is highly dependent on several factors including automation, the physics and geology of regolith mining, additive manufacturing, power generation, economics on Earth, policy (currently the mining and exploitation of Lunar resources would be regulated by the 1960s Outer Space Treaty and a patchwork of laws giving companies the right to the resources they extract), and international diplomacy. Assuming that lock-in is a negative outcome, we should be studying ways of making lunar development more equitable, more secure, and ultimately beneficial to all of humanity.
 
+Organizations like the [Open Lunar Foundation](https://www.openlunar.org/) have begun articulating what commons-based governance of the Moon might look like — emphasizing cooperative frameworks, shared stewardship, and open-access infrastructure like the Lunar Ledger for coordinating surface activities. This work provides an important counterpoint to the default trajectory of competitive extraction and first-mover lock-in, and offers a starting point for the governance assumptions that an ECO for this domain would need to encode and test.
+
 - **Mental Model layer**: What do we *think* we know about lunar regolith processing, in-situ resource utilization (ISRU), and the governance of extraterrestrial resources? These mental models are drawn from small-scale experiments, analogue missions, and speculative policy frameworks (the Outer Space Treaty, the Artemis Accords). They are thin and contested.
 - **World Model layer**: A simulation of regolith extraction, processing, and utilization — energy budgets, equipment degradation, supply chain logistics, and the economic viability of different ISRU pathways. Coupled with a governance model that explores resource rights, international cooperation, and commercial incentives. The likely operational reality is swarms of rovers, robots, and semi-autonomous agents on the Moon — the environment is far too harsh for sustained human presence, so automation is not optional but foundational.
 - **Language Model layer**: Here the LLM is especially valuable as a synthesis engine — pulling together scattered technical literature, helping formulate simulation parameters from sparse data, and generating policy scenarios for a domain where no real-world policy laboratory exists.
@@ -79,14 +81,6 @@ Even with lower launch costs, automated mining and factories in space could pote
 - Can the ECO framework function in a data-sparse, high-uncertainty domain?
 - How do different governance assumptions (commons vs. property rights vs. cooperative frameworks) change the optimal development pathway?
 - Can the joint model-building process itself serve as a form of anticipatory governance?
-
-## Where These Domains Overlap: Automation and Structural Analogy
-
-While these three domains are very different in their details, conceptually they share deep structural similarities. All three require understanding of physical sciences, all are influenced by overlapping and uncertain regulation, and crucially, **all will rely heavily on automation**.
-
-As more of the Earth's ocean falls under MPA protection, the monitoring task will fast outstrip the capabilities of humans and manned vessels. While earth observing satellites have provided a critical tool, in-situ monitoring from the surface — not only of vessels but also of the marine ecosystems themselves — will become increasingly important. Similarly, lunar development will be executed by swarms of semi-autonomous agents operating in an environment too harsh for sustained human presence. And AI uptake itself is fundamentally a story about how automation reshapes economies and communities.
-
-The cross-domain transfer question is where it gets interesting: resource commons governance shows up in both the ocean and the Moon. Network effects and adoption dynamics show up in both AI uptake and lunar commercial development. Monitoring and enforcement patterns from MPA surveillance may share structural features with lunar resource oversight. The ECO framework gives us a formal way to ask whether those structural analogies are real or superficial — and if real, whether methods and insights transfer across domains.
 
 ## The Joint Construction Process
 
