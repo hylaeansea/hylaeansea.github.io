@@ -21,15 +21,11 @@ The thesis is that none of these layers alone is sufficient for exploring comple
 
 There are numerous problem domains in which policy, economics, and physics all combine to make for a non-linear complex environment in which optimization schemes are non-intuitive and dynamic. In fact most of the social and economic development, natural resources stewardship, geo-political, and scientific advancement domains fall into this description; they are multi-faceted and very complex. Simultaneous to this increase in complexity though, is the increased availability of software, models, fundamental science, and especially computation that might provide a way to probe these complex domains. This research agenda is fundamentally focused on methods, models, and interfaces to make these complex domains **legible** to the subject matter expert and novice alike.
 
-## Legibility Through Serious Games
+## Visualization Matters, Play Matters
 
-A simulation that no one can interact with is an epistemic dead end. The ECO framework demands an interface layer — a way for stakeholders, domain experts, and even novices to specify their intent, explore tradeoffs, and build intuition about complex systems. Serious games provide exactly this.
+A simulation that no one can interact with is an epistemic dead end. The ECO framework demands an interface layer — a way for stakeholders, domain experts, and even novices to explore tradeoffs and build intuition about complex systems. How an ECO is visualized, how it is manipulated, and how its outputs are presented fundamentally shapes whether it produces genuine shared understanding or just numerical artifacts.
 
-The core interface question that cuts across all three domains in this agenda is:
-
-***What are the most effective, and fun, ways of specifying player intent, goals, and objectives to collections of autonomous systems in serious games?***
-
-This question matters because in each of the domains below, the operational reality is not direct control of individual agents but rather the specification of high-level goals, constraints, and priorities to **semi-autonomous agent swarms**. A player — whether a policy maker, a conservation officer, or a lunar operations planner — needs to express intent to systems that then act with significant autonomy. The legibility of that interaction — in both directions, from player to swarm and from swarm back to player — is what determines whether the ECO actually produces shared understanding or just pretty visualizations.
+Visualization is not a secondary concern — it is constitutive of the epistemic work. The choice of what to render, what to abstract away, and what controls to expose to a user determines which mental model updates are even possible. And there is a strong case that the most effective interfaces for exploring complex systems are *playful* ones — interfaces that invite experimentation, reward curiosity, and make it feel natural to ask "what if?" Serious games, interactive dashboards, and explorable explanations all belong in the design space for ECO interfaces. Getting this right is a research problem in its own right, and one that cuts across all three domains in this agenda.
 
 ## The Three Simulations
 
@@ -61,13 +57,11 @@ Legal structures alone though do not make for a healthy ocean. These MPAs need t
 - **Mental Model layer**: Conservation biologists, fisheries economists, coastal communities, and policy makers each hold different models of what an MPA should protect, how large it should be, and what enforcement looks like. These models often conflict.
 - **World Model layer**: A simulation incorporating ocean circulation, species migration, fishing fleet behavior, economic pressures on coastal communities, and enforcement logistics — including the allocation of autonomous surface vehicles, earth observing satellites, aerial drones, and manned patrol vessels. This is a coupled human-natural system; the interesting dynamics live at the interface.
 - **Language Model layer**: The LLM mediates between the ecological simulation and the policy conversation. It can generate natural language summaries of simulation runs, propose MPA boundary configurations based on stated objectives, and translate between the vocabularies of ecology, economics, and law.
-- **Serious Game layer**: The success or failure of MPAs will rely on smart allocation of monitoring assets across vast ocean areas. A serious game interface allows players to specify patrol priorities, set enforcement thresholds, and allocate autonomous assets — then observe how those high-level decisions propagate through the coupled ecological-economic simulation.
 
 **Key research questions:**
 - Can the ECO help stakeholders with conflicting objectives (conservation vs. livelihood) find Pareto-improving MPA designs?
 - Does the world model surface ecological dynamics (e.g., spillover effects, trophic cascades) that reshape stakeholder mental models?
 - Can the framework handle the deep uncertainty inherent in ocean systems?
-- What interface designs best allow a player to specify monitoring intent to a fleet of autonomous surface vehicles and aerial drones?
 
 ### 3. Lunar Regolith Development
 
@@ -78,25 +72,21 @@ With natural resources becoming increasingly expensive to uncover and exploit on
 Even with lower launch costs, automated mining and factories in space could potentially be captured by early movers and enable lock-in for very long time horizons, fundamentally breaking the Kaldor Facts of macroeconomic behaviour. The inevitability of this lock-in is highly dependent on several factors including automation, the physics and geology of regolith mining, additive manufacturing, power generation, economics on Earth, policy (currently the mining and exploitation of Lunar resources would be regulated by the 1960s Outer Space Treaty and a patchwork of laws giving companies the right to the resources they extract), and international diplomacy. Assuming that lock-in is a negative outcome, we should be studying ways of making lunar development more equitable, more secure, and ultimately beneficial to all of humanity.
 
 - **Mental Model layer**: What do we *think* we know about lunar regolith processing, in-situ resource utilization (ISRU), and the governance of extraterrestrial resources? These mental models are drawn from small-scale experiments, analogue missions, and speculative policy frameworks (the Outer Space Treaty, the Artemis Accords). They are thin and contested.
-- **World Model layer**: A simulation of regolith extraction, processing, and utilization — energy budgets, equipment degradation, supply chain logistics, and the economic viability of different ISRU pathways. Coupled with a governance model that explores resource rights, international cooperation, and commercial incentives.
+- **World Model layer**: A simulation of regolith extraction, processing, and utilization — energy budgets, equipment degradation, supply chain logistics, and the economic viability of different ISRU pathways. Coupled with a governance model that explores resource rights, international cooperation, and commercial incentives. The likely operational reality is swarms of rovers, robots, and semi-autonomous agents on the Moon — the environment is far too harsh for sustained human presence, so automation is not optional but foundational.
 - **Language Model layer**: Here the LLM is especially valuable as a synthesis engine — pulling together scattered technical literature, helping formulate simulation parameters from sparse data, and generating policy scenarios for a domain where no real-world policy laboratory exists.
-- **Serious Game layer**: The likely implementation of lunar regolith mining is swarms of rovers, robots, and semi-autonomous agents on the Moon, interacting with each other and controlled at a high level from other agents or people on Earth. The Moon is far too harsh for humans to sustain large-scale mining and manufacturing, so it will have to be semi-autonomous agents. A serious game interface for this domain lets players specify extraction goals, allocate energy budgets, and manage swarm behavior — making the control problem legible and the governance tradeoffs tangible.
 
 **Key research questions:**
 - Can the ECO framework function in a data-sparse, high-uncertainty domain?
 - How do different governance assumptions (commons vs. property rights vs. cooperative frameworks) change the optimal development pathway?
 - Can the joint model-building process itself serve as a form of anticipatory governance?
-- How do players most effectively specify intent to semi-autonomous mining swarms operating under significant communication delay?
 
-## Where These Domains Overlap: Automation and Legibility
+## Where These Domains Overlap: Automation and Structural Analogy
 
 While these three domains are very different in their details, conceptually they share deep structural similarities. All three require understanding of physical sciences, all are influenced by overlapping and uncertain regulation, and crucially, **all will rely heavily on automation**.
 
-As more of the Earth's ocean falls under MPA protection, the monitoring task will fast outstrip the capabilities of humans and manned vessels. While earth observing satellites have provided a critical tool, in-situ monitoring from the surface — not only of vessels but also of the marine ecosystems themselves — will become increasingly important. Similarly, lunar development will be executed by swarms of semi-autonomous agents operating in an environment too harsh for sustained human presence.
+As more of the Earth's ocean falls under MPA protection, the monitoring task will fast outstrip the capabilities of humans and manned vessels. While earth observing satellites have provided a critical tool, in-situ monitoring from the surface — not only of vessels but also of the marine ecosystems themselves — will become increasingly important. Similarly, lunar development will be executed by swarms of semi-autonomous agents operating in an environment too harsh for sustained human presence. And AI uptake itself is fundamentally a story about how automation reshapes economies and communities.
 
-Semi-autonomous control of agent swarms has been studied in some detail, however there is a gap in the design and specification of systems that allow people to specify goals, rewards, and objectives to these swarms. This gap is where the serious game interface and the ECO framework converge: the game is the medium through which human intent becomes legible to autonomous systems, and through which the behavior of those systems becomes legible back to humans.
-
-The cross-domain transfer question is where it gets interesting: resource commons governance shows up in both the ocean and the Moon. Network effects and adoption dynamics show up in both AI uptake and lunar commercial development. Swarm control patterns developed for MPA patrol fleets may transfer to lunar rover management. The ECO framework gives us a formal way to ask whether those structural analogies are real or superficial.
+The cross-domain transfer question is where it gets interesting: resource commons governance shows up in both the ocean and the Moon. Network effects and adoption dynamics show up in both AI uptake and lunar commercial development. Monitoring and enforcement patterns from MPA surveillance may share structural features with lunar resource oversight. The ECO framework gives us a formal way to ask whether those structural analogies are real or superficial — and if real, whether methods and insights transfer across domains.
 
 ## The Joint Construction Process
 
@@ -114,28 +104,25 @@ Run the world model under various configurations. The critical moment is when si
 ### Step 4: Epistemic Update
 Feed simulation results back through the Language Model to update, challenge, or refine the mental models. This is not a one-shot process — it is iterative. The ECO evolves through cycles of construction, simulation, surprise, and revision.
 
-### Step 5: Serious Game Interface and Player Interaction
-Embed the world model in a serious game that allows players to interact with the simulation through goal specification, constraint setting, and swarm control. Observe how players specify intent, where legibility breaks down, and what interface patterns produce the most effective epistemic updates.
-
-### Step 6: Cross-Domain Transfer
-Examine whether patterns, methods, or insights from one domain transfer to another. Does the agent-based adoption model from AI Uptake share structural similarities with fishing fleet behavior in the MPA model? Do governance frameworks for lunar resources illuminate anything about MPA enforcement? Do swarm control interfaces generalize across domains? The cross-domain comparison is where the framework's generality is tested.
+### Step 5: Cross-Domain Transfer
+Examine whether patterns, methods, or insights from one domain transfer to another. Does the agent-based adoption model from AI Uptake share structural similarities with fishing fleet behavior in the MPA model? Do governance frameworks for lunar resources illuminate anything about MPA enforcement? The cross-domain comparison is where the framework's generality is tested.
 
 ## What Makes This Epistemic
 
 The word "epistemic" is doing specific work here. This is not just about building simulations — it is about building *shared understanding*. The ECO is a boundary object in the sense that Star and Griesemer (1989) described: an artifact that sits at the intersection of multiple communities of practice, flexible enough to be interpreted differently by each, but robust enough to maintain coherence across them.
 
-The joint construction process — mental model elicitation, LLM-mediated translation, simulation, serious game interaction, and epistemic update — is designed to make the model-building process itself a site of learning and negotiation. The goal is not a single "correct" model but a shared computational object that multiple stakeholders can interrogate, challenge, and evolve.
+The joint construction process — mental model elicitation, LLM-mediated translation, simulation, and epistemic update — is designed to make the model-building process itself a site of learning and negotiation. The goal is not a single "correct" model but a shared computational object that multiple stakeholders can interrogate, challenge, and evolve.
 
 ## Open Questions and Next Steps
 
-- **Tooling**: What is the right software stack for building ECOs? Agentpy is a starting point, but richer coupled simulations may require frameworks like Mesa, NetLogo, or custom physics engines. The LLM integration layer and game interface both need formalization.
-- **Validation**: How do we validate an ECO? Traditional model validation (calibration against data) applies to the world model layer, but what does it mean to validate a mental model or an epistemic update? How do we evaluate the effectiveness and fun of a serious game interface?
-- **Scaling participation**: Can the LLM and game layers make ECOs accessible to non-technical stakeholders? Can a fisherman in a coastal village, a local government official, or a student meaningfully interrogate and contribute to an MPA ECO through play?
+- **Tooling**: What is the right software stack for building ECOs? Agentpy is a starting point, but richer coupled simulations may require frameworks like Mesa, NetLogo, or custom physics engines. The LLM integration layer needs formalization.
+- **Validation**: How do we validate an ECO? Traditional model validation (calibration against data) applies to the world model layer, but what does it mean to validate a mental model or an epistemic update?
+- **Scaling participation**: Can the LLM layer make ECOs accessible to non-technical stakeholders? Can a fisherman in a coastal village or a local government official meaningfully interrogate and contribute to an MPA ECO?
+- **Visualization and interaction**: The right interface can make complex dynamics legible; the wrong one can obscure them. Serious games, explorable explanations, and interactive dashboards all belong in the design space — getting the interface right is as much a research problem as getting the simulation right.
 - **Alignment implications**: The World Models post raised the possibility of weak-to-strong self-generalization through LLM-generated world models. If ECOs produce genuine new knowledge, what are the alignment implications of AI systems that can extend their own epistemic reach through simulation?
-- **Legibility of autonomy**: As these simulations grow in complexity, the autonomous agents within them will exhibit emergent behaviors that are difficult to predict or explain. How do we design interfaces that keep swarm behavior legible to players without oversimplifying the dynamics?
 
 ## Conclusion
 
-This research agenda is an invitation. The three domains — AI Uptake, Marine Protected Areas, and Lunar Regolith Development — are chosen to stress-test the framework across radically different contexts. The Epistemic Computational Object is the proposed unit of analysis: a jointly constructed, iteratively refined artifact that fuses mental models, world models, and language models into something greater than the sum of its parts. The serious game is the proposed medium of interaction: the place where human intent meets autonomous systems and where legibility is won or lost.
+This research agenda is an invitation. The three domains — AI Uptake, Marine Protected Areas, and Lunar Regolith Development — are chosen to stress-test the framework across radically different contexts. The Epistemic Computational Object is the proposed unit of analysis: a jointly constructed, iteratively refined artifact that fuses mental models, world models, and language models into something greater than the sum of its parts.
 
 The next posts in this series will begin the construction process for each of the three ECOs. The work starts now.
