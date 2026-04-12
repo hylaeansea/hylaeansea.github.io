@@ -103,19 +103,19 @@ Organizations like the [Open Lunar Foundation](https://www.openlunar.org/) have 
 These three domains are not just parallel projects — they are instances of a shared methodology:
 
 ### Mental Model Elicitation
-Capture the assumptions, beliefs, and conceptual frameworks of relevant stakeholders through structured interviews, workshops, or LLM-mediated dialogue. The output is a documented set of causal assumptions, contested claims, and shared objectives.
+Capture the assumptions, beliefs, and conceptual frameworks of relevant stakeholders through structured interviews, workshops, or LLM-mediated dialogue. The output is a documented set of causal assumptions, contested claims, and shared objectives. The capturing and documenting of mental models will often be started by a LLM assisted literature survey. By searching, translating to a unified format (like markdown), and indexing a wide swath of the relevant literature, a searchable (read grep-able), indexed database can be created in a single git repo, with traceability and attribution back to the source material. This can then be refined, checked, corrected, or enhanced by specific interactions with SMEs. (*a major question to be researched is: given the current state of LLM's (context lenght, reasoning, etc) is this translated/indexed/and grep-ed corpus of domain literature more efficient and accurate or less than RAG based methods?*)
 
 ### World Model Construction
-Use the Language Model to translate the elicited mental models into computational simulations. This is the approach explored in the World Models post — LLMs generating agentpy code, configuring parameters, building coupled system models. The key discipline is maintaining traceability: every simulation parameter should map back to a mental model assumption.
+Use the Language Model to translate the indexed literature and elicited mental models into computational simulations. This is the approach explored in the World Models post — LLMs generating agentpy code, configuring parameters, building coupled system models. The key discipline is maintaining traceability: every simulation parameter should map back to a mental model assumption, and every equation in the sim can be mapped back to the foundational peer-reviewed paper that defines it - and these will be **in the same git repo! There is immense power in that**
 
 ### Simulation and Divergence Detection
-Run the world model under various configurations. The critical moment is when simulation outputs *diverge* from mental model expectations. These divergences are the epistemic payload — they are where new knowledge lives.
+Run the world model under various configurations. The critical moment is when simulation outputs *diverge* from mental model expectations. These divergences are the epistemic payload — they are where new knowledge lives. Furthermore, experts and novices alike can run these models, use LLMs to interrogate them, find references in the literature, configure new simulation runs, and interpret the results. By making the ECO accessible, it draws more eyes.
 
 ### Epistemic Update
 Feed simulation results back through the Language Model to update, challenge, or refine the mental models. This is not a one-shot process — it is iterative. The ECO evolves through cycles of construction, simulation, surprise, and revision.
 
 ### Cross-Domain Transfer
-Examine whether patterns, methods, or insights from one domain transfer to another. Does the agent-based adoption model from AI Uptake share structural similarities with fishing fleet behavior in the MPA model? Do governance frameworks for lunar resources illuminate anything about MPA enforcement? The cross-domain comparison is where the framework's generality is tested.
+Examine whether patterns, methods, or insights from one domain transfer to another. Does the agent-based adoption model from AI Uptake share structural similarities with fishing fleet behavior in the MPA model? Do governance frameworks for lunar resources illuminate anything about MPA enforcement? The cross-domain comparison is where the framework's generality is tested. This process also involves cataloging lessons learned for establishing new ECOs. What if we could build a completely new ECO in a matter of weeks, and in this way respond to new problems, emergent geo-political tensions, or new breakthroughs in physical or social science.
 
 ## What Makes This Epistemic
 
