@@ -9,7 +9,8 @@ categories: blog
 
 # A Research Agenda for Joint Epistemic Model Building
 
-![ECO Visual](../assets/images/Moon_Sea.png)
+![Magenta Sea](../assets/images/Magenta_Sea.png)
+*Magenta Sea - original art by Hannah*
 
 ## Introduction
 
@@ -34,6 +35,9 @@ A simulation that no one can interact with is an epistemic dead end. The ECO fra
 Visualization is not a secondary concern — it is constitutive of the epistemic work. The choice of what to render, what to abstract away, and what controls to expose to a user determines which mental model updates are even possible. And there is a strong case that the most effective interfaces for exploring complex systems are *playful* ones — interfaces that invite experimentation, reward curiosity, and make it feel natural to ask "what if?" Serious games, interactive dashboards, and explorable explanations all belong in the design space for ECO interfaces. Getting this right is a research problem in its own right, and one that cuts across all three domains in this agenda.
 
 ## Three Domains
+
+![Moon Sea](../assets/images/ECO_vis_6.png)
+*Moon Sea - original art by Kyle*
 
 To ground this agenda, I focus on three deliberately diverse domains. The diversity is the point: if the framework holds across domains with radically different physics, politics, and timescales, it has generality worth pursuing. I also chose these domains because they *could* be pivot points around which our future economic development, planetary health, and exploration hinge on.
 
