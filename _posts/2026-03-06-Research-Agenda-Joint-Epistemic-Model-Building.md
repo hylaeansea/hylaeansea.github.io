@@ -9,6 +9,8 @@ categories: blog
 
 # A Research Agenda for Joint Epistemic Model Building
 
+![ECO Visual](../assets/images/ECO_vis_6.png)
+
 ## Introduction
 
 In a [previous post]({{ site.baseurl }}{% post_url 2025-01-18-World-Models-and-Language-Models %}), I explored the philosophical foundations of connecting Language Models with World Models to make policy computable. That investigation demonstrated that LLMs can generate world models, that those world models can produce emergent "new knowledge," and that the interplay between natural language and simulation opens a promising path toward computational policy analysis.
