@@ -9,7 +9,7 @@ categories: blog
 
 # A Research Agenda for Joint Epistemic Model Building
 
-![ECO Visual](../assets/images/ECO_vis_6.png)
+![ECO Visual](../assets/images/Moon_Sea.png)
 
 ## Introduction
 
