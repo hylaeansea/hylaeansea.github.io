@@ -47,6 +47,10 @@ To ground this agenda, I focus on three deliberately diverse domains. The divers
 
 ### 1. AI Technology Uptake
 
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="{{ site.baseurl }}/assets/images/ECO_domain_AI.png" alt="ECO Domain - AI" style="display: block; margin: 0 auto; max-width: 100%; width: 600px; height: auto; border-radius: 4px;">
+</figure>
+
 Building on the [AI Tech Adoption Model]({{ site.baseurl }}{% post_url 2025-01-12-AI-tech-adoption-model %}) and the agent-based simulations from the World Models post, this domain is a natural starting point for the ECO framework.
 
 Recent work on the macroeconomics of transformative AI, notably [Trammell's analysis of economic growth under AI-driven automation](https://philiptrammell.com/static/egtai_new.pdf), suggests that unequal adoption of AI could break the standard assumptions of balanced growth — the Kaldor Facts that have held for decades. Empirical efforts like the [Anthropic Economic Index](https://www.anthropic.com/research/the-anthropic-economic-index), which tracks real-world AI usage patterns across occupations, are beginning to provide observational data on where adoption is concentrating — currently dominated by mid-to-high wage technical roles, with minimal penetration in physical labor occupations — reinforcing concerns about uneven distribution. If AI capabilities concentrate among early movers, the resulting lock-in could fundamentally alter the distribution of economic power in ways that are difficult to reverse. This makes AI uptake policy not just a matter of efficiency but of long-run equity and economic structure.
@@ -61,6 +65,10 @@ Recent work on the macroeconomics of transformative AI, notably [Trammell's anal
 - Can the language model faithfully translate between stakeholder intent and simulation parameters?
 
 ### 2. Marine Protected Areas Monitoring, Control, and Surveillance
+
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="{{ site.baseurl }}/assets/images/ECO_domain_Ocean.png" alt="ECO Domain - Ocean" style="display: block; margin: 0 auto; max-width: 100%; width: 600px; height: auto; border-radius: 4px;">
+</figure>
 
 The ocean is a domain where mental models are particularly fragile — our intuitions about deep-sea ecology, migratory patterns, and enforcement economics are limited by the sheer inaccessibility of the system. This makes it an ideal candidate for joint epistemic model building.
 
@@ -79,6 +87,10 @@ Legal structures alone though do not make for a healthy ocean. These MPAs need t
 - Can the framework handle the deep uncertainty inherent in ocean systems?
 
 ### 3. Lunar Regolith Development
+
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="{{ site.baseurl }}/assets/images/ECO_domain_Moon.png" alt="ECO Domain - Moon" style="display: block; margin: 0 auto; max-width: 100%; width: 600px; height: auto; border-radius: 4px;">
+</figure>
 
 This domain stretches the framework into a frontier with almost no established mental models — and that is precisely the value. Lunar resource development is a domain where we must build our epistemic foundations from scratch, making the joint construction process itself the primary object of study.
 
