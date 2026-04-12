@@ -11,7 +11,7 @@ categories: blog
 
 <figure style="text-align: center; margin: 2em 0;">
   <img src="{{ site.baseurl }}/assets/images/Magenta_Sea.png" alt="Magenta Sea" style="display: block; margin: 0 auto; max-width: 100%; width: 600px; height: auto; border-radius: 4px;">
-  <figcaption style="margin-top: 0.5em; font-style: italic; color: #666;">Magenta Sea - original art by Cheese Lord</figcaption>
+  <figcaption style="margin-top: 0.5em; font-style: italic; color: #666;">Magenta Sea - original art by Cheese Lord aka Felix aka Hannah</figcaption>
 </figure>
 
 ## Introduction
