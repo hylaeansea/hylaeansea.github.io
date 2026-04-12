@@ -5,7 +5,7 @@ date:   2026-03-06 12:00:00 +0000
 categories: blog
 ---
 
-*This article was co-written with Claude (Opus 4.6). The domain expertise, core thesis, editorial direction, and approximately 65% of the content are the author's; the remaining ~35% — including structural framing, methodology formalization, and connective prose — was contributed by the AI.*
+*Intellectual Honesty Statement - This article was co-written with Claude (Opus 4.6). The domain expertise, core thesis, editorial direction, both art pieces, and approximately 65% of the content are the author's and artists; the remaining ~35% — including structural framing, methodology formalization, and connective prose — was contributed by the AI.*
 
 # A Research Agenda for Joint Epistemic Model Building
 
@@ -127,3 +127,5 @@ The joint construction process — mental model elicitation, LLM-mediated transl
 ## Conclusion
 
 The three domains — AI Uptake, Marine Protected Areas, and Lunar Regolith Development — stress-test the ECO framework across radically different contexts. The Epistemic Computational Object is the proposed unit of analysis: a jointly constructed, iteratively refined artifact that fuses mental models, world models, and language models into something greater than the sum of its parts. The problems are real, the tools are emerging, and the need for shared epistemic infrastructure has never been more acute.
+
+*kyjohnso*
