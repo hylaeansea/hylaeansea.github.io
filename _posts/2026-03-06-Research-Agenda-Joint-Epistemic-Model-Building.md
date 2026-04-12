@@ -124,8 +124,13 @@ The word "epistemic" is doing specific work here. This is not just about buildin
 The joint construction process — mental model elicitation, LLM-mediated translation, simulation, and epistemic update — is designed to make the model-building process itself a site of learning and negotiation. The goal is not a single "correct" model but a shared computational object that multiple stakeholders can interrogate, challenge, and evolve.
 
 
-## Conclusion
+## Conclusions
+
+Novelty - I know all the parts of this idea are not new, in fact the idea in its entirety is most likely not new. But writing this essay, and exploring these three domains has helped me to frame a course of action, a research agenda that I have been pursuing for a couple of years now, and will purse in earnest in the coming months. 
+
+Intellectual Property - I make no claim to these ideas and I plan for the vast majority of the products, code, indices, and papers to be open source and or creative commons licensed. If someone reading this, (and that assumes anyone reads it) is inspired to code this up and put it into practice, that will be the best possible outcome that I could imagine - attribution or not (but of course if you are inspired in whole or in part, I would appreciate a shout).
 
 The three domains — AI Uptake, Marine Protected Areas, and Lunar Regolith Development — stress-test the ECO framework across radically different contexts. The Epistemic Computational Object is the proposed unit of analysis: a jointly constructed, iteratively refined artifact that fuses mental models, world models, and language models into something greater than the sum of its parts. The problems are real, the tools are emerging, and the need for shared epistemic infrastructure has never been more acute.
 
+Lets build together,
 *kyjohnso*
