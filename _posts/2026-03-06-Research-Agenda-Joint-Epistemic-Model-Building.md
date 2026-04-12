@@ -10,7 +10,7 @@ categories: blog
 # A Research Agenda for Joint Epistemic Model Building
 
 <figure style="text-align: center; margin: 2em 0;">
-  <img src="../assets/images/Magenta_Sea.png" alt="Magenta Sea" style="max-width: 100%; width: 600px; height: auto; border-radius: 4px;">
+  <img src="../assets/images/Magenta_Sea.png" alt="Magenta Sea" style="display: block; margin: 0 auto; max-width: 100%; width: 600px; height: auto; border-radius: 4px;">
   <figcaption style="margin-top: 0.5em; font-style: italic; color: #666;">Magenta Sea - original art by Cheese Lord</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ Visualization is not a secondary concern — it is constitutive of the epistemic
 ## Three Domains
 
 <figure style="text-align: center; margin: 2em 0;">
-  <img src="../assets/images/ECO_vis_6.png" alt="Moon Sea" style="max-width: 100%; width: 600px; height: auto; border-radius: 4px;">
+  <img src="../assets/images/ECO_vis_6.png" alt="Moon Sea" style="display: block; margin: 0 auto; max-width: 100%; width: 600px; height: auto; border-radius: 4px;">
   <figcaption style="margin-top: 0.5em; font-style: italic; color: #666;">Moon Sea - original art by kyjohnso</figcaption>
 </figure>
 
