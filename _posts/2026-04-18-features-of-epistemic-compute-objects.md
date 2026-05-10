@@ -89,7 +89,3 @@ The vast majority of the internet runs on Linux, the internet itself was built b
 # Conclusions and Intellectual Humility
 
 This idea is surely not new or novel. This formalism and way of talking about ECOs might, though, spark others (hopefully people that can code faster and better than I can) to think about organizing their knowledge like this. This might also add extra gravity to the wave of open source, open science data, AI alignment, and AI skills that are being developed, and give practitioners a way to think about their systems. There are hopefully other benefits, and certainly other failure modes, these are merely the ones that come up for me in my though experiments about this idea. I haven't formally built an ECO yet by this name, but I am actively working on one and hopefully can provide concrete examples in the near future. 
-
-
-
-
