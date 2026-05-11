@@ -11,6 +11,11 @@ categories: blog
 
 This blog post is a result of me writing in my notebook and dreaming about the possible use cases and features of *Epistemic Compute Objects*. I am in the process of developing the first ECO (by this name and with this framing), however I wanted to get these ideas out of my head.
 
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="{{ site.baseurl }}/assets/images/ECO_vis_9.png" alt="Horizon of Ignorance" style="display: block; margin: 0 auto; max-width: 100%; width: 600px; height: auto; border-radius: 4px;">
+  <figcaption style="margin-top: 0.5em; font-style: italic; color: #666;">Horizon of Ignorance</figcaption>
+</figure>
+
 # Epistemic Compute Objects
 
 In a [previous post](https://hylaeansea.org/blog/2026/03/06/Research-Agenda-Joint-Epistemic-Model-Building.html), I outlined a research agenda that I will be pursuing over the next handful of years, and have been noodling through during the last handful of years in one form or another. The agenda orbited around the idea of the Epistemic Compute Object. I don't think I explicitly defined it in that post and rather gave examples of its application and played around with some ideas. Here goes then:
